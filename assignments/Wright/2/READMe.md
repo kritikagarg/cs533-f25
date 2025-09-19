@@ -15,8 +15,9 @@ The four paths I chose are:
 ## Directory Layout
 All work for this assignment is organized under `assignments/Wright/2`:
 
-- `server.js` — the main file that runs my web server with Express  
-- `README.md` — contains assignment description, directory info, and video link  
+- `server.js` — the main file that runs my web server with Express
+- `favicon_io` - contains the icon for favicon.ico
+- `README.md` — contains assignment description, directory info, and video link
 
 ---
 
