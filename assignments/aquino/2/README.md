@@ -17,4 +17,4 @@ The server operates on local host 4000, and the home page lists four paths, each
 
 # Video demonstration
 
-The video showing the files and running the server can be found [here]().
+The video showing the files and running the server can be found [here](https://www.youtube.com/watch?v=5b0GG4-950Q).
