@@ -14,5 +14,5 @@ This assignment sets up an Express server with 4 paths that display my favorites
 Each route sets a human-readable cookie.
 
 ## Video Demonstration
-[Link to my video](PASTE-YOUR-VIDEO-LINK-HERE)
+[Link to my video](https://youtu.be/OPFLFAQ_Nbg)
 EOF
