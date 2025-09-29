@@ -1,26 +1,22 @@
 CS533 Assignment 2
 
-
-
-                   Description
+  Description
 
 This project implements a Node.js server with Express and cookie-parser middleware. It has four routes, each of which sets a cookie and returns an HTML page.
 
-
-
-              Files
+ Files
 
  server.js: Main server file
 
- mymom.html: HTML page for MY MOM
+ 1. mymom.html: HTML page for MY MOM
 
- paris.html: HTML page for PARIS
+ 2.paris.html: HTML page for PARIS
 
- youwerentmeanttobehuman.html: HTML page for You Weren't Meant to Be Human
+ 3. youwerentmeanttobehuman.html: HTML page for You Weren't Meant to Be Human
 
-badfaith.html: HTML page for BAD FAITH
+ 4.badfaith.html: HTML page for BAD FAITH
 
- package.json: Project configuration file
+ 5. package.json: Project configuration file
 
 
 
