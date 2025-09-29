@@ -2,13 +2,13 @@ CS533 Assignment 2
 
 
 
- Description
+                   Description
 
 This project implements a Node.js server with Express and cookie-parser middleware. It has four routes, each of which sets a cookie and returns an HTML page.
 
 
 
- Files
+              Files
 
  server.js: Main server file
 
@@ -24,7 +24,7 @@ badfaith.html: HTML page for BAD FAITH
 
 
 
- Video Demonstration
+        Video Demonstration
 
 Watch the video 
 
