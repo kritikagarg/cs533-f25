@@ -3,68 +3,104 @@ package main
 import (
 	"crypto/tls"
 	"fmt"
+	"net"
 	"net/http"
 	"os"
+	"sort"
 	"strings"
 	"time"
 )
 
-var httpOnlyCounter, secureCounter, sameSiteCounter, ssLaxCounter, ssStrictCounter, ssNoneCounter, pathCounter, nonRootPathCounter, rootPathCounter, cookieCounter int
-var table string
+var httpOnlyTotalCounter, secureTotalCounter, sameSiteTotalCounter, ssLaxTotalCounter, ssStrictTotalCounter, ssNoneTotalCounter, pathTotalCounter, nonRootPathTotalCounter, rootPathTotalCounter, cookieTotalCounter, minCookies, maxCookies int
+var reportTable string = "| URL | Status Code | Total Cookies | HttpOnly | Secure | SameSite | SameSite Strict | SameSite Lax | SameSite None | Path | Non-root Path | Notes |\n|-|-|-|-|-|-|-|-|-|-|-|-|\n"
+
+var cookieTotals []float64
+
+var deadLinks []string
+var erroredURLs []string
+var ErrorCounter int
 
 func fetchCookies(url string) {
-
+	if _, err := net.LookupHost(url); err != nil {
+		fmt.Printf("[%s] Skipping: invalid hostname (%v)\n", url, err)
+		deadLinks = append(deadLinks, url)
+		return
+	}
 	tr := &http.Transport{
 		TLSClientConfig: &tls.Config{
-			ServerName:         url,
 			InsecureSkipVerify: true,
+			MinVersion:         tls.VersionTLS12,
+			MaxVersion:         tls.VersionTLS13,
 		},
-		TLSHandshakeTimeout: 5 * time.Second,
+		DisableKeepAlives:   false,
+		TLSHandshakeTimeout: 480 * time.Second,
 	}
 	client := &http.Client{Transport: tr}
 
-	req, err := http.NewRequest(http.MethodHead, "https://"+url+":443", nil)
+	req, err := http.NewRequest(http.MethodHead, "https://"+url, nil)
+	req.Header.Set("User-Agent", "Mozilla/5.0 (Android 4.4; Mobile; rv:41.0) Gecko/41.0 Firefox/41.0")
+
 	if err != nil {
 		fmt.Println("Error In Creating Request:", err)
+		ErrorCounter++
+		erroredURLs = append(erroredURLs, url)
 		return
 	}
 
 	resp, err := client.Do(req)
 	if err != nil {
 		fmt.Println("Error In processing request:", err)
+		ErrorCounter++
+		erroredURLs = append(erroredURLs, url)
 		return
 	}
+	parseCookies(*resp, url)
 
-	fmt.Println("Response Status:", resp.Status)
-	fmt.Println("Response Headers:", resp.Header)
+	defer resp.Body.Close()
+}
 
-	for _, cookie := range resp.Cookies() {
+func parseCookies(response http.Response, url string) {
+	var httpOnlyCounter, secureCounter, sameSiteCounter, ssLaxCounter, ssStrictCounter, ssNoneCounter, pathCounter, nonRootPathCounter, rootPathCounter, cookieCounter int
+	fmt.Println("Response Status:", response.Status)
+	fmt.Println("Response Headers:", response.Header)
+
+	for _, cookie := range response.Cookies() {
 		fmt.Println("----- COOKIE -----")
 		cookieCounter++
+		cookieTotalCounter++
 		if cookie.HttpOnly == true {
 			fmt.Println("Cookie is HttpOnly")
 			httpOnlyCounter++
+			httpOnlyTotalCounter++
 		}
 		if cookie.Secure == true {
 			fmt.Println("Cookie is Secure")
 			secureCounter++
+			secureTotalCounter++
 		}
 		switch cookie.SameSite {
 		case http.SameSiteDefaultMode:
 			fmt.Println("Cookie SameSite: DefaultMode")
 			sameSiteCounter++
+			sameSiteTotalCounter++
 		case http.SameSiteLaxMode:
 			fmt.Println("Cookie SameSite: LaxMode")
 			sameSiteCounter++
+			sameSiteTotalCounter++
 			ssLaxCounter++
+			ssLaxTotalCounter++
 		case http.SameSiteStrictMode:
 			fmt.Println("Cookie SameSite: StrictMode")
 			sameSiteCounter++
+			sameSiteTotalCounter++
 			ssStrictCounter++
+			ssStrictTotalCounter++
 		case http.SameSiteNoneMode:
 			fmt.Println("Cookie SameSite: NoneMode")
 			sameSiteCounter++
+			sameSiteTotalCounter++
 			ssNoneCounter++
+			ssNoneTotalCounter++
 		default:
 			fmt.Println("SameSite unknown or not present")
 		}
@@ -74,23 +110,85 @@ func fetchCookies(url string) {
 		case "/":
 			fmt.Println("Cookie Path: Root")
 			pathCounter++
+			pathTotalCounter++
 			rootPathCounter++
+			rootPathTotalCounter++
 		default:
 			fmt.Println("Cookie Path:", cookie.Path)
 			pathCounter++
+			pathTotalCounter++
 			nonRootPathCounter++
+			nonRootPathTotalCounter++
 		}
 		fmt.Println("---------------------")
-		row := addRow(url, resp.Status, cookieCounter, httpOnlyCounter, secureCounter, sameSiteCounter, ssStrictCounter, ssLaxCounter, ssNoneCounter, pathCounter, nonRootPathCounter)
-		table += row
-		defer resp.Body.Close()
+	}
+	// Update maxCookies and minCookies after processing all cookies for the current URL
+	if cookieCounter > maxCookies {
+		// Set maxCookies to the current cookieCounter if it's greater than the current maxCookies to find the maximum
+		maxCookies = cookieCounter
+	}
+	// Checking for minCookies being 0 to handle the first iteration case
+	if minCookies == 0 || cookieCounter < minCookies {
+		// Set minCookies to the current cookieCounter if it's less than the current minCookies to find the minimum
+		minCookies = cookieCounter
+	}
+	// Append the current cookieCounter to the slice for median calculation
+	cookieTotals = append(cookieTotals, float64(cookieCounter))
+
+	// adding markdown row for the current URL
+	row := addRowReport(url, response.Status, cookieCounter, httpOnlyCounter, secureCounter, sameSiteCounter, ssStrictCounter, ssLaxCounter, ssNoneCounter, pathCounter, nonRootPathCounter, "")
+	// Append the generated row to the reportTable
+	reportTable += row
+}
+
+func parseInvalidData(urls []string, notes string) {
+	for _, url := range urls {
+		row := addRowReport(url, "N/A", 0, 0, 0, 0, 0, 0, 0, 0, 0, notes)
+		reportTable += row
 	}
 }
 
-func addRow(url string, statusCode string, numCookies int, numHttpOnly int, numSecure int, numSameSite int, numSsStrict int, numSsLax int, numSsNone int, numPath int, numNoneRootPath int) string {
-	row := fmt.Sprintf("| %s | %s | %d | %d | %d | %d | %d | %d | %d | %d | %d |\n", url, statusCode, numCookies, numHttpOnly, numSecure, numSameSite, numSsStrict, numSsLax, numSsNone, numPath, numNoneRootPath)
+func addRowReport(url string, statusCode string, numCookies int, numHttpOnly int, numSecure int, numSameSite int, numSsStrict int, numSsLax int, numSsNone int, numPath int, numNoneRootPath int, notes string) string {
+	row := fmt.Sprintf("| %s | %s | %d | %d | %d | %d | %d | %d | %d | %d | %d | %s |\n", url, statusCode, numCookies, numHttpOnly, numSecure, numSameSite, numSsStrict, numSsLax, numSsNone, numPath, numNoneRootPath, notes)
 	return row
 }
+
+func Median(nums []float64) float64 {
+	if len(nums) == 0 {
+		panic("cannot compute median of empty slice")
+	}
+
+	// Sort the slice
+	sort.Float64s(nums)
+
+	n := len(nums)
+	mid := n / 2
+
+	if n%2 == 0 {
+		// Even length → average of the two middle values
+		return (nums[mid-1] + nums[mid]) / 2
+	}
+	// Odd length → middle value
+	return nums[mid]
+}
+
+func Mean(nums []float64) float64 {
+	if len(nums) == 0 {
+		panic("cannot compute mean of empty slice")
+	}
+	sum := 0.0
+	for _, num := range nums {
+		sum += num
+	}
+	return sum / float64(len(nums))
+}
+
+func summaryTable() string {
+	summary := "|Min| Max | Median | Mean |\n|--------|-------|--------|-------|\n"
+	summary += fmt.Sprintf("| %d | %d | %.2f | %.2f |\n", minCookies, maxCookies, Median(cookieTotals), Mean(cookieTotals))
+	return summary
+}
+
 func main() {
 	sitelist, err := os.ReadFile("../sites.txt")
 	if err != nil {
@@ -104,16 +202,24 @@ func main() {
 			fetchCookies(site)
 		}
 	}
+	parseInvalidData(deadLinks, "Dead Link, DNS Lookup Failed")
+	parseInvalidData(erroredURLs, "Errored URL, TLS Handshake Failed")
+	totals := addRowReport("Totals", "N/A", cookieTotalCounter, httpOnlyTotalCounter, secureTotalCounter, sameSiteTotalCounter, ssStrictTotalCounter, ssLaxTotalCounter, ssNoneTotalCounter, pathTotalCounter, nonRootPathTotalCounter, "")
+	report := reportTable + totals + "\n" + summaryTable()
+	os.WriteFile("report.md", []byte(report), 0644)
+	fmt.Println("Report written to report.md")
+	// Print summary
 	fmt.Println("----- SUMMARY -----")
-	fmt.Println("Total Cookies:", cookieCounter)
-	fmt.Println("HttpOnly Cookies:", httpOnlyCounter)
-	fmt.Println("Secure Cookies:", secureCounter)
-	fmt.Println("Cookies with SameSite attribute:", sameSiteCounter)
-	fmt.Println(" - Lax:", ssLaxCounter)
-	fmt.Println(" - Strict:", ssStrictCounter)
-	fmt.Println(" - None:", ssNoneCounter)
-	fmt.Println("Cookies with Path attribute:", pathCounter)
-	fmt.Println(" - Non-root Path:", nonRootPathCounter)
-	fmt.Println(" - Root Path:", rootPathCounter)
-
+	fmt.Println("Total Cookies:", cookieTotalCounter)
+	fmt.Println("HttpOnly Cookies:", httpOnlyTotalCounter)
+	fmt.Println("Secure Cookies:", secureTotalCounter)
+	fmt.Println("Cookies with SameSite attribute:", sameSiteTotalCounter)
+	fmt.Println(" - Lax:", ssLaxTotalCounter)
+	fmt.Println(" - Strict:", ssStrictTotalCounter)
+	fmt.Println(" - None:", ssNoneTotalCounter)
+	fmt.Println("Cookies with Path attribute:", pathTotalCounter)
+	fmt.Println(" - Non-root Path:", nonRootPathTotalCounter)
+	fmt.Println(" - Root Path:", rootPathTotalCounter)
+	fmt.Println("-------------------")
+	fmt.Println("Total Errors:", ErrorCounter)
 }
