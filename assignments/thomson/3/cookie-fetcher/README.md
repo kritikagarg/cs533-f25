@@ -17,13 +17,13 @@ programUsageReadmePath: "README.md" # if you wish to add this project readme to 
 Either download a compiled version of the software in the links below or if you have GoLang and installed run a make run, and it will begin parsing.
 
 ## Releases
-I know Releases would typically done via the githost of the project, but for your convenience i'll put them here.
+I know Releases would typically done via the githost of the project, but for your convenience i'll put them here. Sorry too Lazy to remote in to my Mac and actually make an ARM build.
 
-[Windows]()
+[Windows](https://github.com/gameguyalien/cs533-f25/releases/download/assigment-3/cookie-fetcher-windows-amd64.exe)
 
-[Linux]()
+[Linux](https://github.com/gameguyalien/cs533-f25/releases/download/assigment-3/cookie-fetcher-linux-amd64)
 
-[OSX(Darwin)]()
+[OSX(Darwin)](https://github.com/gameguyalien/cs533-f25/releases/download/assigment-3/cookie-fetcher-darwin-amd64)
 
 ## MakeFile
 
