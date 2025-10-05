@@ -1,3 +1,11 @@
+# Assignment 3 Submission
+
+### Included Files
+This assignment involves the analysis of the cookie practices of 100 of Mozilla's top 500 sites. The various curl commands used to obtain the data on the cookies of each website can be found in the [HTTP Request Logs Directory](https://github.com/jaqui004/cs533-f25/tree/main/assignments/aquino/3/HTTP%20Request%20Logs). A javascript file, [AnalyzeData.js](https://github.com/jaqui004/cs533-f25/blob/main/assignments/aquino/3/AnalyzeData.js), was used to take the data from the request logs and format them into a table (found below), along with a simple analysis on the minimum, maximum, mean, and median cookies used by the 100 sites.
+
+
+# Data Table
+
 |            Website            | Status Code | Cookies | HttOnly | Secure | SameSite | Strict | Lax | None | Path | Path (Excluding '/') |
 | :---------------------------- | :---------: | :-----: | :-----: | :----: | :------: | :----: | :---: | :---: | :----: | :----: |
 | policies.google.com  | 200 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
