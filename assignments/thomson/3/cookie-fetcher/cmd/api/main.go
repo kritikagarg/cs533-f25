@@ -9,16 +9,29 @@ import (
 	"sort"
 	"strings"
 	"time"
+
+	"github.com/goccy/go-yaml"
 )
 
-var httpOnlyTotalCounter, secureTotalCounter, sameSiteTotalCounter, ssLaxTotalCounter, ssStrictTotalCounter, ssNoneTotalCounter, pathTotalCounter, nonRootPathTotalCounter, rootPathTotalCounter, cookieTotalCounter, minCookies, maxCookies int
-var reportTable string = "| URL | Status Code | Total Cookies | HttpOnly | Secure | SameSite | SameSite Strict | SameSite Lax | SameSite None | Path | Non-root Path | Notes |\n|-|-|-|-|-|-|-|-|-|-|-|-|\n"
+var httpOnlyTotalCounter, secureTotalCounter, sameSiteTotalCounter, ssLaxTotalCounter, ssStrictTotalCounter, ssNoneTotalCounter, pathTotalCounter, nonRootPathTotalCounter, rootPathTotalCounter, cookieTotalCounter, maxCookies int
+var reportTable string = "| URL | Status Code | Total Cookies | HttpOnly | Secure | SameSite | SameSite Strict | SameSite Lax | SameSite None | Path | Root Path | Non-root Path | Notes |\n|-|-|-|-|-|-|-|-|-|-|-|-|-|\n"
+
+var httpReport string = "# HTTP responses\n "
 
 var cookieTotals []float64
 
 var deadLinks []string
 var erroredURLs []string
 var ErrorCounter int
+var minCookies int = 0
+
+type reportConfig struct {
+	ReporterName           string `yaml:"reporterName"`
+	ReportTitle            string `yaml:"reportTitle"`
+	ReportDescription      string `yaml:"reportDescription"`
+	ReportFilename         string `yaml:"reportFilename"`
+	ProgramUsageReadmePath string `yaml:"programUsageReadmePath"`
+}
 
 func fetchCookies(url string) {
 	if _, err := net.LookupHost(url); err != nil {
@@ -61,6 +74,11 @@ func fetchCookies(url string) {
 
 func parseCookies(response http.Response, url string) {
 	var httpOnlyCounter, secureCounter, sameSiteCounter, ssLaxCounter, ssStrictCounter, ssNoneCounter, pathCounter, nonRootPathCounter, rootPathCounter, cookieCounter int
+	responseReport := fmt.Sprintf("## %s\n\n", url)
+	responseReport += fmt.Sprintf("```\n%s\n%s\n```\n\n", response.Status, response.Header)
+	httpReport += responseReport
+
+	// Print response status and headers
 	fmt.Println("Response Status:", response.Status)
 	fmt.Println("Response Headers:", response.Header)
 
@@ -107,6 +125,8 @@ func parseCookies(response http.Response, url string) {
 		switch cookie.Path {
 		case "":
 			fmt.Println("Cookie Path: Not Present")
+			nonRootPathCounter++
+			nonRootPathTotalCounter++
 		case "/":
 			fmt.Println("Cookie Path: Root")
 			pathCounter++
@@ -128,7 +148,7 @@ func parseCookies(response http.Response, url string) {
 		maxCookies = cookieCounter
 	}
 	// Checking for minCookies being 0 to handle the first iteration case
-	if minCookies == 0 || cookieCounter < minCookies {
+	if cookieCounter < minCookies {
 		// Set minCookies to the current cookieCounter if it's less than the current minCookies to find the minimum
 		minCookies = cookieCounter
 	}
@@ -136,20 +156,20 @@ func parseCookies(response http.Response, url string) {
 	cookieTotals = append(cookieTotals, float64(cookieCounter))
 
 	// adding markdown row for the current URL
-	row := addRowReport(url, response.Status, cookieCounter, httpOnlyCounter, secureCounter, sameSiteCounter, ssStrictCounter, ssLaxCounter, ssNoneCounter, pathCounter, nonRootPathCounter, "")
+	row := addRowReport(url, response.Status, cookieCounter, httpOnlyCounter, secureCounter, sameSiteCounter, ssStrictCounter, ssLaxCounter, ssNoneCounter, pathCounter, rootPathCounter, nonRootPathCounter, "")
 	// Append the generated row to the reportTable
 	reportTable += row
 }
 
 func parseInvalidData(urls []string, notes string) {
 	for _, url := range urls {
-		row := addRowReport(url, "N/A", 0, 0, 0, 0, 0, 0, 0, 0, 0, notes)
+		row := addRowReport(url, "N/A", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, notes)
 		reportTable += row
 	}
 }
 
-func addRowReport(url string, statusCode string, numCookies int, numHttpOnly int, numSecure int, numSameSite int, numSsStrict int, numSsLax int, numSsNone int, numPath int, numNoneRootPath int, notes string) string {
-	row := fmt.Sprintf("| %s | %s | %d | %d | %d | %d | %d | %d | %d | %d | %d | %s |\n", url, statusCode, numCookies, numHttpOnly, numSecure, numSameSite, numSsStrict, numSsLax, numSsNone, numPath, numNoneRootPath, notes)
+func addRowReport(url string, statusCode string, numCookies int, numHttpOnly int, numSecure int, numSameSite int, numSsStrict int, numSsLax int, numSsNone int, numPath int, numRootPath int, numNoneRootPath int, notes string) string {
+	row := fmt.Sprintf("| %s | %s | %d | %d | %d | %d | %d | %d | %d | %d | %d | %d | %s |\n", url, statusCode, numCookies, numHttpOnly, numSecure, numSameSite, numSsStrict, numSsLax, numSsNone, numPath, numRootPath, numNoneRootPath, notes)
 	return row
 }
 
@@ -189,6 +209,48 @@ func summaryTable() string {
 	return summary
 }
 
+func writeReport() {
+	file, err := os.ReadFile("config.yaml")
+	if err != nil {
+		fmt.Printf("Failed to read file %s: %v", "config.yaml", err)
+		return
+	}
+
+	var config reportConfig
+	err = yaml.Unmarshal(file, &config)
+	if err != nil {
+		fmt.Printf("Failed to parse YAML in %s: %v", "../config.yaml", err)
+		return
+	}
+
+	totalRow := addRowReport("Totals", "N/A", cookieTotalCounter, httpOnlyTotalCounter, secureTotalCounter, sameSiteTotalCounter, ssStrictTotalCounter, ssLaxTotalCounter, ssNoneTotalCounter, pathTotalCounter, rootPathTotalCounter, nonRootPathTotalCounter, "")
+	reportTable += totalRow + "\n"
+
+	header := fmt.Sprintf("# %s\n\n", config.ReportTitle)
+	header += fmt.Sprintf("Reporter Name: %s\n\n", config.ReporterName)
+	header += fmt.Sprintf("Report Date: %s\n\n", time.Now().Format("01-02-2006"))
+	header += "\n[[_TOC_]]\n\n"
+
+	preamble := fmt.Sprintf("# %s \n %s\n\n", "Report Description", config.ReportDescription)
+
+	var projectReadme []byte
+	projectReadme, err = os.ReadFile(config.ProgramUsageReadmePath)
+	if err != nil {
+		fmt.Printf("Failed to read file %s: %v\n", config.ProgramUsageReadmePath, err)
+		return
+	}
+
+	report := header + preamble + "\n\n" + "# Cookie Report \n\n" + reportTable + "\n" + "\n\n" + "# Cookie Summary\n\n" + summaryTable() + httpReport + "\n\n" + "# Program Usage\n\n" + string(projectReadme)
+
+	err = os.WriteFile(config.ReportFilename, []byte(report), 0644)
+	if err != nil {
+		fmt.Printf("Failed to write report to %s: %v", config.ReportFilename, err)
+		return
+	}
+	fmt.Printf("Report written to %s\n", config.ReportFilename)
+
+}
+
 func main() {
 	sitelist, err := os.ReadFile("../sites.txt")
 	if err != nil {
@@ -204,11 +266,16 @@ func main() {
 	}
 	parseInvalidData(deadLinks, "Dead Link, DNS Lookup Failed")
 	parseInvalidData(erroredURLs, "Errored URL, TLS Handshake Failed")
-	totals := addRowReport("Totals", "N/A", cookieTotalCounter, httpOnlyTotalCounter, secureTotalCounter, sameSiteTotalCounter, ssStrictTotalCounter, ssLaxTotalCounter, ssNoneTotalCounter, pathTotalCounter, nonRootPathTotalCounter, "")
-	report := reportTable + totals + "\n" + summaryTable()
-	os.WriteFile("report.md", []byte(report), 0644)
-	fmt.Println("Report written to report.md")
+	// Generate final report
+
+	// totals := addRowReport("Totals", "N/A", cookieTotalCounter, httpOnlyTotalCounter, secureTotalCounter, sameSiteTotalCounter, ssStrictTotalCounter, ssLaxTotalCounter, ssNoneTotalCounter, pathTotalCounter, rootPathTotalCounter, nonRootPathTotalCounter, "")
+	// report := reportTable + totals + "\n" + summaryTable()
+	// os.WriteFile("report.md", []byte(report), 0644)
+	// fmt.Println("Report written to report.md")
+	writeReport()
+
 	// Print summary
+
 	fmt.Println("----- SUMMARY -----")
 	fmt.Println("Total Cookies:", cookieTotalCounter)
 	fmt.Println("HttpOnly Cookies:", httpOnlyTotalCounter)

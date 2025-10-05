@@ -1,36 +1,61 @@
 # Project cookie-fetcher
 
-One Paragraph of project description goes here
+This program fetches cookies from a list of websites and generates a report on their attributes. The name of the file for the list of sites needs to be sites.txt, and should be formated as site.com\nsite2.ninja. There is also a config.yaml that needs to be present to configure the end report.
+
+```yaml
+
+reporterName: "Reporter"
+reportTitle: "Cookie site analysis"
+reportDescription: |
+    reason for report would go here
+reportFilename: "../README.md" # Report file name
+programUsageReadmePath: "README.md" # if you wish to add this project readme to the Readme ensure it exists here.
+```
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Either download a compiled version of the software in the links below or if you have GoLang and installed run a make run, and it will begin parsing.
+
+## Releases
+I know Releases would typically done via the githost of the project, but for your convenience i'll put them here.
+
+[Windows]()
+
+[Linux]()
+
+[OSX(Darwin)]()
 
 ## MakeFile
 
-Run build make command with tests
-```bash
-make all
-```
 
-Build the application
+Run build make command natively
 ```bash
 make build
 ```
 
-Run the application
+build scoped to create a Linux executable
+``` bash 
+make build-linux
+```
+
+build scoped to create a Windows executable
+``` bash 
+make build-windows
+```
+
+build scoped to create a OSX(Darwin) executable
+``` bash 
+make build-darwin
+```
+
+Creates Builds for all platforms 
+```bash
+make build-all
+```
+
+Run the application directly without compiling
 ```bash
 make run
-```
-
-Live reload the application:
-```bash
-make watch
-```
-
-Run the test suite:
-```bash
-make test
 ```
 
 Clean up binary from the last build:
