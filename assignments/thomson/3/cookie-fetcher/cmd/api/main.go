@@ -229,7 +229,6 @@ func writeReport() {
 	header := fmt.Sprintf("# %s\n\n", config.ReportTitle)
 	header += fmt.Sprintf("Reporter Name: %s\n\n", config.ReporterName)
 	header += fmt.Sprintf("Report Date: %s\n\n", time.Now().Format("01-02-2006"))
-	header += "\n[[_TOC_]]\n\n"
 
 	preamble := fmt.Sprintf("# %s \n %s\n\n", "Report Description", config.ReportDescription)
 
