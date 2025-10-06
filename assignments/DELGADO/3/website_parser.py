@@ -101,14 +101,12 @@ with open(inputFilePath, 'r') as file:
         url = url.strip()           # removes whitespace/linebreaks
         statusCode = 404            # standardized status code
         path = 'None'               # standardized path, if none
-        httpOnly = False
-        sameSite = False
-        secure = False
-        cookieData = {              # dictionary for deeper cookie analysis
-            "strict" : False,
-            "lax" : False,
-            "none" : False
-        }
+        httpOnly = 0
+        sameSite = 0
+        secure = 0
+        numStrict = 0
+        numLax = 0
+        numNone = 0
         numCookies = 0
 
         target = url.split()[0]
@@ -138,26 +136,30 @@ with open(inputFilePath, 'r') as file:
                         print(cookieData)
                         if cookieData["strict"] == True:
                             totalStrict += 1
+                            numStrict += 1
                         if cookieData["lax"] == True:
                             totalLax += 1
+                            numLax += 1
                         if cookieData["none"] == True:
                             totalNone += 1
+                            numNone += 1
                     if 'path=' in line:
                         path = processPath(line)
                         totalPath += 1
                     if 'httponly' in line:
-                        httpOnly = True
+                        httpOnly += 1
                     if 'secure' in line:
-                        secure = True
+                        secure += 1
                         totalSecure += 1
                     # Formats the gathered data into markdown
-                    createRow(statusUrl, httpOnly, secure, sameSite, cookieData["strict"], cookieData["lax"], cookieData["none"], path)
+
         # Before going to the next URL, check for new max, mins, and append this site's cookie total to the overal array
         if numCookies > max:
             max = numCookies
         if numCookies < min:
             min = numCookies
         cookieArray.append(numCookies)
+        createRow(statusUrl, httpOnly, secure, sameSite, numStrict, numLax, numNone, path)
     # Create a final row that gives the requested totals
     createFinalRow(totalCookies, totalSecure, totalSameSite, totalStrict, totalLax, totalNone, totalPath)
 
