@@ -132,6 +132,7 @@ with open(inputFilePath, 'r') as file:
                     numCookies += 1
                     if 'samesite' in line:
                         totalSameSite += 1
+                        sameSite += 1
                         cookieData = getSameSite(line)
                         print(cookieData)
                         if cookieData["strict"] == True:
