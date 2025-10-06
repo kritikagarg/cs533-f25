@@ -1,0 +1,30 @@
+HTTP/1.1 301 Moved Permanently
+Date: Mon, 06 Oct 2025 00:10:28 GMT
+Server: Apache
+Location: https://www.wiley.com/
+Content-Type: text/html; charset=iso-8859-1
+
+HTTP/2 302 
+date: Mon, 06 Oct 2025 00:10:28 GMT
+content-type: text/plain;charset=UTF-8
+location: https://www.wiley.com/en-us/
+cf-ray: 98a0ef97fa367bea-RIC
+set-cookie: __cf_bm=oH_2JUZOiP92TVojIPqSdRsToUCzZm4G.68tVMKuio8-1759709428-1.0.1.1-.ieXyHOi7XNVPxeWtHLp0_TETw9jiVLgocTZuJQ_.KFGii8G91tTBtK2e3Zq1ylKQnhM6CqcYtZt4NyHilW0jWQFCOIu0X5tgnpD6OPcy2E; path=/; expires=Mon, 06-Oct-25 00:40:28 GMT; domain=.www.wiley.com; HttpOnly; Secure; SameSite=None
+strict-transport-security: max-age=15552000; includeSubDomains
+x-content-type-options: nosniff
+server: cloudflare
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 405 
+date: Mon, 06 Oct 2025 00:10:28 GMT
+content-type: application/octet-stream
+content-length: 0
+cf-ray: 98a0ef987a9a7bea-RIC
+etag: "6813a06f-0"
+cf-cache-status: DYNAMIC
+set-cookie: __cf_bm=z0txC1N8k8rqya.kA27728BXvqNLU59WzL.Qc7WyKl8-1759709428-1.0.1.1-vYUAkRUV3fhmP5CbnWwjq4CsqdF_tzuI0R1oV85mx.MwLXkgkSslxH335vLjPay9fGASoKKzG4M4mQsXzgFGUQlOfdgqfPiK.FZ11_fcaIw; path=/; expires=Mon, 06-Oct-25 00:40:28 GMT; domain=.www.wiley.com; HttpOnly; Secure; SameSite=None
+strict-transport-security: max-age=15552000; includeSubDomains
+x-content-type-options: nosniff
+server: cloudflare
+alt-svc: h3=":443"; ma=86400
+

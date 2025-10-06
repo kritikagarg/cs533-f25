@@ -1,0 +1,21 @@
+HTTP/1.0 302 Moved Temporarily
+Location: https://www.admin.ch/
+Connection: Keep-Alive
+Content-Length: 0
+
+HTTP/2 202 
+server: CloudFront
+date: Mon, 06 Oct 2025 00:10:29 GMT
+content-length: 0
+x-amzn-waf-action: challenge
+cache-control: no-store, max-age=0
+content-type: text/html; charset=UTF-8
+access-control-allow-origin: *
+access-control-max-age: 86400
+access-control-allow-methods: OPTIONS,GET,POST
+access-control-expose-headers: x-amzn-waf-action
+x-cache: Error from cloudfront
+via: 1.1 17bd0a3b88141b04bc745d7ececd22ee.cloudfront.net (CloudFront)
+x-amz-cf-pop: IAD89-P4
+x-amz-cf-id: mQ_tcIWu38LfkuWt2eHDua3Q18jcmRKEqANRvunewSl48HrPqlVghQ==
+

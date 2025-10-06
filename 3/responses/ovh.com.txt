@@ -1,0 +1,51 @@
+HTTP/1.1 301 Moved Permanently
+content-length: 0
+location: https://ovh.com/
+date: Mon, 06 Oct 2025 00:10:12 GMT
+x-cdn-pop: bhs
+x-cdn-pop-ip: 137.74.122.0/26
+x-request-id: 74901755
+x-cacheable: Cacheable: miss
+x-iplb-request-id: 32D8CD02:C57D_C61B5C01:0050_68E308E4_12B9035:2E1C
+x-iplb-instance: 54463
+
+HTTP/2 301 
+date: Mon, 06 Oct 2025 00:10:12 GMT
+content-length: 0
+location: https://www.ovh.com/
+x-iplb-request-id: 90D90226:654C_C063418B:01BB_68E308E4_228D45:4A84
+x-iplb-instance: 54395
+x-cdn-pop: bhs
+x-cdn-pop-ip: 137.74.122.0/26
+x-request-id: 91635558
+x-cacheable: Cacheable: miss
+
+HTTP/2 301 
+date: Mon, 06 Oct 2025 00:10:13 GMT
+x-cacheable: Not cacheable: not http 200
+x-cdn-pop: bhs
+x-cdn-pop-ip: 137.74.122.0/26
+content-type: text/html; charset=utf-8
+x-request-id: 96273285
+location: https://www.ovhcloud.com/en/
+content-length: 0
+
+HTTP/2 200 
+date: Mon, 06 Oct 2025 00:10:13 GMT
+content-type: text/html
+vary: Accept-Encoding
+x-frame-options: ORIGIN
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+access-control-allow-origin: *
+x-toujours-debout-location: BHS
+x-toujours-debout-branch: B
+cache-control: public, must-revalidate, max-age=90
+x-iplb-request-id: 90D90252:2B26_C063418B:01BB_68E308E5_246BB4:47BE
+x-iplb-instance: 56499
+x-cdn-pop: bhs
+x-cdn-pop-ip: 137.74.122.0/26
+x-request-id: 85571602
+x-cacheable: Cacheable: miss
+accept-ranges: bytes
+

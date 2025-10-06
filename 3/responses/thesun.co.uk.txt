@@ -1,0 +1,41 @@
+HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Mon, 06 Oct 2025 00:10:36 GMT
+Content-Type: text/html
+Content-Length: 162
+Connection: keep-alive
+Location: https://thesun.co.uk/
+
+HTTP/2 301 
+server: nginx
+date: Mon, 06 Oct 2025 00:10:37 GMT
+content-type: text/html; charset=UTF-8
+location: https://www.thesun.co.uk/
+x-hacker: If you're reading this, you should visit https://join.a8c.com/viphacker and apply to join the fun, mention this header.
+x-powered-by: WordPress VIP <https://wpvip.com>
+host-header: a9130478a60e5f9135f765b23f26593b
+x-redirect-by: WordPress
+x-rq: dca6 0 40 9980
+x-cache: MISS
+strict-transport-security: max-age=31536000
+
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+content-length: 771691
+date: Mon, 06 Oct 2025 00:10:14 GMT
+server: nginx/1.25.3
+x-generated-by: @newsint/nu-sun-helios 1.1515.6
+cache-control: max-age=30, s-maxage=30, stale-if-error=600, public
+x-rendered-from: pagebuilder
+etag: W/"bc66b-cBB0iyQarabEE+t8CONSdxtQhQ8"
+set-cookie: nuk_customer_country_code=US; Path=/; Secure; SameSite=None
+set-cookie: _ngn_pb_p=eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..zAw5sm1vYoYh5tGM.v8fhxurXmrP1F0-8L2mAkP2-BmChwRISLWSbCB-WgRio3C74s_dzDlTi3yrRRUifIhVvokh7uNmpR7Wwy4UbP3Lkkqh-Y1XpVQaUBs8irUor6RZhbtMu3SShdimVUK2aScAwaAuX_ymdfQCfu4TVsfdlyvp9Ataj6DJ15wIxxbG6S2bUKwrLFNgx8LW-YNDAdo1uu4tdbKbUhcMcbULA4w9z6Tf9nOHM94JyJEsG5nLgXXPHbfHg6V445dmDJBZUyGLT1XUQQ2EtbgcJAvI59_-TK0_9b46Dz30EYgIL9xOF.RksJaUyBFeJJYcICJLt-dw; Max-Age=86400; Path=/
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+vary: Accept-Encoding
+via: 1.1 5411e516ed0ae08b04f45ecec0d0c81e.cloudfront.net (CloudFront)
+alt-svc: h3=":443"; ma=86400
+age: 23
+x-cache: Hit from cloudfront
+x-amz-cf-pop: IAD89-P3
+x-amz-cf-id: Lvo2N1XUjSa29kv_soon0-RM9MG5uwHa67mUKA-3TF_9_tKrGFwENQ==
+

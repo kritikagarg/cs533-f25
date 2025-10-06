@@ -1,0 +1,63 @@
+HTTP/1.1 301 Moved Permanently
+Connection: close
+Content-Length: 0
+Retry-After: 0
+Location: https://wikihow.com/
+Accept-Ranges: bytes
+Date: Mon, 06 Oct 2025 00:10:51 GMT
+X-Timer: S1759709451.461704,VS0,VE0
+Vary: Cookie, Accept-Encoding, User-Agent
+x-c: cache-iad-kiad7000061-IAD,M
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+alt-svc: h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+
+HTTP/2 301 
+retry-after: 0
+location: https://www.wikihow.com/
+accept-ranges: bytes
+date: Mon, 06 Oct 2025 00:10:51 GMT
+x-timer: S1759709452.535320,VS0,VE0
+vary: Cookie, Accept-Encoding, User-Agent
+x-c: cache-iad-kiad7000148-IAD,M
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+alt-svc: h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+content-length: 0
+
+HTTP/2 301 
+retry-after: 0
+location: https://www.wikihow.com/Main-Page
+accept-ranges: bytes
+date: Mon, 06 Oct 2025 00:10:51 GMT
+x-timer: S1759709452.624509,VS0,VE0
+vary: Cookie, Accept-Encoding, User-Agent
+x-c: cache-iad-kcgs7200118-IAD,M
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+alt-svc: h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+content-length: 0
+
+HTTP/2 200 
+content-type: text/html; charset=UTF-8
+content-language: en
+x-frame-options: SAMEORIGIN
+cache-control: s-maxage=3600, must-revalidate, max-age=0
+last-modified: Sat, 04 Oct 2025 13:03:21 GMT
+accept-ranges: bytes
+date: Mon, 06 Oct 2025 00:10:51 GMT
+age: 43568
+x-timer: S1759709452.646491,VS0,VE5
+x-c: cache-iad-kcgs7200118-IAD,H,43568
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+set-cookie: whv=KgtEkBiJZewW72HMPyhU; expires=Thu, 04 Oct 2035 00:10:51 GMT; domain=.wikihow.com; path=/; secure
+set-cookie: vr=US-VA; domain=.wikihow.com; path=/; secure
+set-cookie: vi=NA; domain=.wikihow.com; path=/; secure
+vary: Cookie, Accept-Encoding
+alt-svc: h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+content-length: 342274
+

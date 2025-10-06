@@ -1,0 +1,53 @@
+HTTP/1.1 301 Moved Permanently
+Connection: close
+Content-Length: 0
+Server: Varnish
+Retry-After: 0
+Location: https://target.com/
+Accept-Ranges: bytes
+Date: Mon, 06 Oct 2025 00:10:39 GMT
+Via: 1.1 varnish
+X-Served-By: cache-iad-kiad7000135-IAD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1759709440.933425,VS0,VE0
+
+HTTP/2 301 
+server: Varnish
+retry-after: 0
+location: https://www.target.com/
+accept-ranges: bytes
+date: Mon, 06 Oct 2025 00:10:40 GMT
+via: 1.1 varnish
+x-served-by: cache-iad-kiad7000144-IAD
+x-cache: HIT
+x-cache-hits: 0
+x-timer: S1759709440.002024,VS0,VE0
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+content-length: 0
+
+HTTP/2 200 
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+etag: "pwc6ko32t09vpz"
+content-type: text/html; charset=utf-8
+cache-control: private, no-cache
+referrer-policy: no-referrer-when-downgrade
+x-sigsci-origin-status: 200
+accept-ranges: bytes
+date: Mon, 06 Oct 2025 00:10:40 GMT
+vary: Accept-Encoding
+content-security-policy: frame-ancestors 'self' https://*.target.com;
+strict-transport-security: max-age=31536000; includeSubDomains
+set-cookie: TealeafAkaSid=CRnpCB7cpCyNTy85z0dUsqvU_4hqlmh2; Expires=WedTealeafAkaSid=CRnpCB7cpCyNTy85z0dUsqvU_4hqlmh2; Expires=Wed, 05 Nov 2025 00:10:40 GMT; Path=/; Domain=target.com;
+set-cookie: adScriptData=VA; Domain=target.com; Path=/; SameSite=none; Secure; Max-Age=86400;
+set-cookie: idToken=eyJhbGciOiJub25lIn0.eyJzdWIiOiI4YmYyMTE4Ni1jZTBhLTQ5ODctOWMwZi1kY2ZjZjdkZjExZWEiLCJpc3MiOiJNSTYiLCJleHAiOjE3NTk3OTU4NDAsImlhdCI6MTc1OTcwOTQ0MCwiYXNzIjoiTCIsInN1dCI6IkciLCJjbGkiOiJlY29tLXdlYi0xLjAuMCIsInBybyI6eyJmbiI6bnVsbCwiZm51IjpudWxsLCJlbSI6bnVsbCwicGgiOmZhbHNlLCJsZWQiOm51bGwsImx0eSI6ZmFsc2UsInN0IjoiVkEiLCJzbiI6bnVsbH19.; Domain=target.com; Path=/; SameSite=none; Secure;
+set-cookie: visitorId=0199B6DB287F020193D58A1DBE5401A8; Max-Age=63072000; Expires=Wed, 06 Oct 2027 00:10:40 GMT; Path=/; Domain=.target.com; Secure; SameSite=None
+set-cookie: fiatsCookie=DSI_1016|DSN_Colonial%20Heights|DSZ_23834|server; Domain=.target.com; Path=/; Secure; SameSite=Lax
+set-cookie: sddStore=DSI_1016|DSN_Colonial%20Heights|DSZ_23834|server; Domain=.target.com; Path=/
+set-cookie: GuestLocation=23803|37.240|-77.430|VA|US;Path=/; Secure; Max-Age=86400
+set-cookie: sapphire=1; Max-Age=2629746; Expires=Wed, 05 Nov 2025 10:39:46 GMT; Path=/; Domain=.target.com; Secure; SameSite=None
+set-cookie: refreshToken=y-fopjO-gLOxQgkKTVrcoMqYwqW8HNdXl1LFp74QMAn7yd5lzcIieRw_DkzNE8bCDnzfTpi66OPiVyYn7I_0iA; Domain=target.com; Path=/; SameSite=none; Secure; HttpOnly; Max-Age=15552000;
+set-cookie: accessToken=eyJraWQiOiJlYXMyIiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI4YmYyMTE4Ni1jZTBhLTQ5ODctOWMwZi1kY2ZjZjdkZjExZWEiLCJpc3MiOiJNSTYiLCJleHAiOjE3NTk3OTU4NDAsImlhdCI6MTc1OTcwOTQ0MCwianRpIjoiVEdULmQwZjZkNWJhODc2NjRjNTY5MWFmZmI5ZjAxMWMyZjEzLWwiLCJza3kiOiJlYXMyIiwic3V0IjoiRyIsImRpZCI6ImY4YWFlNzczYTE2YTczODJjOGVjMWQwZDJmZjA3Nzc4M2Y0MTZiMTI3NTU0N2FmMTJlOGIzMWZhZDA4YzUyMGIiLCJzY28iOiJlY29tLm5vbmUsb3BlbmlkIiwiY2xpIjoiZWNvbS13ZWItMS4wLjAiLCJhc2wiOiJMIn0.HgDI83-uFBUGQOXAXfxeRTTIwXUTEAymiNhpLMKicNp1nODdRoVNurYgk_EW5SGuVt7Qn5qAICTGfoeM2zvUkHOHwyT-1QSR-3SF5ufhYaQCsFpxrHCXbzRNgqiMbXoXrhoAmimaS0XTN9Xhd8eXGFWB4WsBntm79QvZpYMb4Kj-S_-QaC8mb934IcCA-VS76Kdiqx-qxmNQtGpU3GDV3WZxNZN-aLdq1VcRnzAlbsm2yBFT3uJg1F61EVJpEdOFbMHGvkj8PfFf-lykUmauchcBHTTjyS7RyLPyr4976Gz6gB0v4Va7lIdL7EFTr8az9mXv-0mxuxqiFFXj1vBhpw; Domain=target.com; Path=/; SameSite=none; Secure; HttpOnly;
+set-cookie: egsSessionId=d1b65494-d885-4f79-a6d3-a16dc2cc98d9; Domain=target.com; Path=/; SameSite=none; Secure; HttpOnly; Max-Age=3600;
+

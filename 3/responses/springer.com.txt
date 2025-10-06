@@ -1,0 +1,73 @@
+HTTP/1.1 301 Moved Permanently
+Connection: close
+Content-Length: 0
+Retry-After: 0
+cache-control: max-age=3600
+Location: http://www.springer.com/
+Server: ee-www-redirect
+Accept-Ranges: bytes
+Date: Mon, 06 Oct 2025 00:10:18 GMT
+Via: 1.1 varnish
+X-Served-By: cache-chi-klot8100092-CHI
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1759709418.280222,VS0,VE0
+alt-svc: h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+
+HTTP/1.1 301 Moved Permanently
+Connection: keep-alive
+Content-Length: 166
+Cache-Control: public,max-age=600
+Content-Security-Policy: upgrade-insecure-requests;
+Content-Type: text/html
+Location: https://www.springer.com/
+Server: Oscar Platform 0.1837.0
+X-Vcap-Request-Id: 9fb0a714-1b4b-4f51-4c9e-4017a0748405
+Via: 1.1 google, 1.1 varnish
+X-Cdn-Origin: SNPaaS
+Accept-Ranges: bytes
+Age: 0
+Date: Mon, 06 Oct 2025 00:10:18 GMT
+X-Served-By: cache-iad-kiad7000137-IAD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1759709418.374481,VS0,VE98
+Vary: x-forwarded-host, upgrade-insecure-requests
+alt-svc: h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+
+HTTP/2 303 
+age: 0
+location: https://www.springer.com/us
+server: Oscar Platform 0.1837.0
+set-cookie: springercomcountry=us; Path=/; Domain=springer.com
+x-vcap-request-id: a479557f-66b3-47b6-5e03-09ed934fb481
+via: 1.1 google, 1.1 varnish
+x-cdn-origin: SNPaaS
+accept-ranges: bytes
+date: Mon, 06 Oct 2025 00:10:18 GMT
+x-served-by: cache-10587794-internal, cache-iad-kiad7000172-IAD
+x-cache: MISS, MISS
+x-cache-hits: 0
+x-timer: S1759709419.531783,VS0,VE111
+alt-svc: h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+content-length: 0
+
+HTTP/2 200 
+accept-ranges: bytes
+age: 0
+cache-control: private,must-revalidate,max-age=0,no-store
+content-type: text/html; charset=utf-8
+server: Oscar Platform 0.1837.0
+set-cookie: springercomcountry=us; Path=/; Domain=springer.com
+strict-transport-security: max-age=31536000;preload
+x-vcap-request-id: 2c9b0e09-79f0-4561-6431-dfb22064ed9b
+via: 1.1 google, 1.1 varnish
+x-cdn-origin: SNPaaS
+date: Mon, 06 Oct 2025 00:10:18 GMT
+x-served-by: cache-047dc0ba-internal, cache-iad-kiad7000172-IAD
+x-cache: MISS, MISS
+x-cache-hits: 0
+x-timer: S1759709419.660634,VS0,VE182
+vary: Accept-Encoding
+alt-svc: h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+

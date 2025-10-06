@@ -1,0 +1,37 @@
+HTTP/1.1 301 Moved Permanently
+location: https://www.spotify.com/
+date: Mon, 06 Oct 2025 00:10:20 GMT
+server: envoy
+Via: 1.1 google
+Transfer-Encoding: chunked
+
+HTTP/2 301 
+location: https://open.spotify.com/
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+vary: Accept-Encoding
+date: Mon, 06 Oct 2025 00:10:20 GMT
+server: envoy
+via: HTTP/2 edgeproxy, 1.1 google
+
+HTTP/2 200 
+x-spotify-open-index: true
+via: HTTP/1.1 fringe, HTTP/2 edgeproxy, 1.1 google, 1.1 varnish
+server: envoy
+x-envoy-upstream-service-time: 135
+content-type: text/html; charset=utf-8
+content-security-policy: script-src 'self' 'unsafe-eval' blob: open.spotifycdn.com open-exp.spotifycdn.com open-review.spotifycdn.com open-exp-review.spotifycdn.com quicksilver.scdn.co www.google-analytics.com www.googletagmanager.com static.ads-twitter.com analytics.twitter.com s.pinimg.com sc-static.net https://www.google.com/recaptcha/ cdn.ravenjs.com connect.facebook.net www.gstatic.com sb.scorecardresearch.com pixel-static.spotify.com cdn.cookielaw.org geolocation.onetrust.com www.googleoptimize.com www.fastly-insights.com static.hotjar.com script.hotjar.com https://www.googleadservices.com/pagead/conversion_async.js https://www.googleadservices.com/pagead/conversion/ https://analytics.tiktok.com/i18n/pixel/sdk.js https://analytics.tiktok.com/i18n/pixel/identify.js https://analytics.tiktok.com/i18n/pixel/config.js https://www.redditstatic.com/ads/pixel.js https://t.contentsquare.net/uxa/22f14577e19f3.js https://get.microsoft.com/badge/ms-store-badge.bundled.js 'sha256-WfsTi7oVogdF9vq5d14s2birjvCglqWF842fyHhzoNw=' 'sha256-KRzjHxCdT8icNaDOqPBdY0AlKiIh5F8r4bnbe1PQwss=' 'sha256-Z5wh7XXSBR1+mTxLSPFhywCZJt77+uP1GikAgPIsu2s='; frame-ancestors 'self' https://adgen-dev.spotify.com/account/*/ad/*/details https://adgen-dev.spotify.com/preview/* https://local.spotify.net/account/*/ad/*/details https://local.spotify.net/preview/* https://app.smartly.io/*;
+x-content-type-options: nosniff
+set-cookie: sp_t=3b721062037b34320eb80cd22e6708a3; path=/; expires=Tue, 06 Oct 2026 00:10:21 GMT; domain=.spotify.com; samesite=none; secure
+set-cookie: sp_landing=https%3A%2F%2Fopen.spotify.com%2F%3Fsp_cid%3D3b721062037b34320eb80cd22e6708a3%26device%3Ddesktop; path=/; expires=Tue, 07 Oct 2025 00:10:21 GMT; domain=.spotify.com; samesite=none; secure; httponly
+strict-transport-security: max-age=31536000
+accept-ranges: bytes
+date: Mon, 06 Oct 2025 00:10:21 GMT
+x-served-by: cache-iad-kcgs7200118-IAD, cache-iad-kjyo7100061-IAD
+x-cache: MISS, MISS
+x-cache-hits: 0, 0
+x-timer: S1759709421.049688,VS0,VE194
+vary: Accept-Encoding
+

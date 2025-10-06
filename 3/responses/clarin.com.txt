@@ -1,0 +1,28 @@
+HTTP/1.1 301 Moved Permanently
+Date: Mon, 06 Oct 2025 00:10:48 GMT
+Content-Type: text/html
+Content-Length: 167
+Connection: keep-alive
+Cache-Control: max-age=3600
+Expires: Mon, 06 Oct 2025 01:10:48 GMT
+Location: https://www.clarin.com/
+Set-Cookie: __cf_bm=.H0.WcJoX3WM6H_w03MiZHzPQ_dsqQg7ijZwuu83cQ0-1759709448-1.0.1.1-rFP8uKZX9ufmmCy7MbSwhLIvy.cpOKysvcyKDUr6.KaU4B8fOdMjuXnHmeJBrJOUavCyX68sZYFe1UgKf6Zl1xkkDhAkcFGokjlscMUzJjA; path=/; expires=Mon, 06-Oct-25 00:40:48 GMT; domain=.clarin.com; HttpOnly
+Server: cloudflare
+CF-RAY: 98a0f015591e1814-RIC
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 200 
+date: Mon, 06 Oct 2025 00:10:48 GMT
+content-type: text/html; charset=utf-8
+cf-ray: 98a0f015d84a1820-RIC
+last-modified: 2025-10-05T21:02:48-03:00
+vary: Accept-Encoding
+cache-control: private, max-age=120
+x-powered-by: ASP.NET
+x-aspnet-version: 4.0.30319
+via: 1.1 google
+cf-cache-status: HIT
+set-cookie: __cf_bm=DOWfPtocMf5UNE2fovMAXCx9idTsZpDImg3olsTNMMc-1759709448-1.0.1.1-kqBALLWzh_Xcr6bHhCOsoRFQtCcVIDC64rBhOHMmAdYULtCZlthavvmiuKIE_fu3MqGyLfqsMlHdt36OzUXLWqc0jxEgcJevzB0Dp92Cn_g; path=/; expires=Mon, 06-Oct-25 00:40:48 GMT; domain=.clarin.com; HttpOnly; Secure; SameSite=None
+server: cloudflare
+alt-svc: h3=":443"; ma=86400
+

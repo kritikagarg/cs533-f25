@@ -1,0 +1,82 @@
+HTTP/1.1 301 Moved Permanently
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Length: 0
+Location: https://outlook.com/
+Server: Microsoft-IIS/10.0
+request-id: 142cee67-2407-4ef0-acd8-5dddd876c59d
+X-FEServer: BN9PR03CA0732
+X-RequestId: 7f8a8a6b-3635-4ba0-963a-62cf312a35f9
+X-FEProxyInfo: BN9PR03CA0732.NAMPRD03.PROD.OUTLOOK.COM
+X-FEEFZInfo: LYH
+MS-CV: Z+4sFAck8E6s2F3d2HbFnQ.0
+X-Powered-By: ASP.NET
+X-FEServer: BN9PR03CA0732
+Date: Mon, 06 Oct 2025 00:10:37 GMT
+Connection: close
+
+HTTP/2 301 
+cache-control: no-cache
+pragma: no-cache
+content-length: 0
+location: https://www.outlook.com/owa/
+server: Microsoft-IIS/10.0
+request-id: d2323d48-ef10-8dca-45f8-9ec5248e43d2
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-feserver: BN9PR03CA0728
+x-requestid: 0af5e08f-f18a-40be-94a3-8de3ce937611
+alt-svc: ":443";ma=2592000,h3-29=":443";ma=2592000
+x-feproxyinfo: BN9PR03CA0728.NAMPRD03.PROD.OUTLOOK.COM
+x-feefzinfo: LYH
+ms-cv: SD0y0hDvyo1F+J7FJI5D0g.0
+x-powered-by: ASP.NET
+x-feserver: BN9PR03CA0728
+date: Mon, 06 Oct 2025 00:10:37 GMT
+
+HTTP/2 301 
+cache-control: no-cache
+pragma: no-cache
+content-length: 0
+location: https://outlook.live.com/owa/
+server: Microsoft-IIS/10.0
+request-id: 63b15aec-4c61-a21f-be71-c02b4939b600
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-feserver: BL0PR01CA0035
+x-requestid: 8bddeafb-c5c1-492d-ac02-1e9d3c6a5afe
+alt-svc: ":443";ma=2592000,h3-29=":443";ma=2592000
+x-feproxyinfo: BL0PR01CA0035.PROD.EXCHANGELABS.COM
+x-feefzinfo: MNZ
+x-feserver: BL0PR01CA0035
+date: Mon, 06 Oct 2025 00:09:19 GMT
+
+HTTP/2 440 
+content-length: 154
+content-type: text/html; charset=utf-8
+request-id: bc27c350-8456-cc85-6b15-cc9983f72d5c
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-calculatedfetarget: DS7PR03CU011.internal.outlook.com
+x-backendhttpstatus: 440
+set-cookie: RoutingKeyCookie=; expires=Fri, 06-Oct-1995 00:10:38 GMT; path=/;SameSite=None; secure; HttpOnly
+set-cookie: HostSwitchPrg=; expires=Fri, 06-Oct-1995 00:10:38 GMT; path=/;SameSite=None; secure; HttpOnly
+set-cookie: OptInPrg=; expires=Fri, 06-Oct-1995 00:10:38 GMT; path=/;SameSite=None; secure; HttpOnly
+x-nanoproxy: 1
+x-backend-begin: 2025-10-06T00:10:38.301
+x-calculatedbetarget: DM6PR05MB4313.namprd05.prod.outlook.com
+x-backend-end: 2025-10-06T00:10:38.301
+x-backendhttpstatus: 440
+x-owa-diagnosticsinfo: 3;0;0;
+x-proxy-backendserverstatus: 440
+x-proxy-routingcorrectness: 1
+x-responseorigin: OwaAppPool
+x-ua-compatible: IE=EmulateIE7
+x-feserver: DS7PR03CA0329
+x-feefzinfo: MNZ
+ms-cv: UMMnvFaEhcxrFcyZg/ctXA.1
+report-to: {"group":"NelOfficeUpload1","max_age":7200,"endpoints":[{"url":"https://exo.nel.measure.office.net/api/report?TenantId=&FrontEnd=Cafe&DestinationEndpoint=MNZ&RemoteIP=50.216.205.2&Environment=MT"}],"include_subdomains":true}
+nel: {"report_to":"NelOfficeUpload1","max_age":7200,"include_subdomains":true,"failure_fraction":1.0,"success_fraction":0.01}
+alt-svc: ":443";ma=2592000,h3-29=":443";ma=2592000
+x-firsthopcafeefz: MNZ
+x-feproxyinfo: MN2PR05CA0042.NAMPRD05.PROD.OUTLOOK.COM
+x-feserver: MN2PR05CA0042
+date: Mon, 06 Oct 2025 00:10:29 GMT
+
