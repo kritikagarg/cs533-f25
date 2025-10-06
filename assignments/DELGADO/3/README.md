@@ -1,3 +1,13 @@
+Attached is my submission for Assignment 3. Each website has the final returned code (200, 403, etc.) in parenthesis next to its name. Any site that failed to resolve
+using curl still has an entry on this list, however because it returned and improper resolution it is not counted as a valid part of the mean or median.
+
+Assignment 3 YouTube Demonstration: https://www.youtube.com/watch?v=-8aKgKs2GAc
+
+Note: Duplicated entries (of which there were only three or four) were deemed to be errors in the script and thus were removed manually, as the entry that contained
+actual values and data matched the results when curling the URL.
+
+Extra Credit: "Turtles all the way down" is an anecdote based off the Hindu, Chinese, and Indigenous North American creation myths that revolve around the Earth resting on the back of a giant World Turtle. Its current use is in the search for a fundamental foundation of knowledge or purpose or the deferrment of explainations for such foundations (such as what supports the Earth) being deferred indefinitely. The "Turtles" version is relatively modern, as there is an older variation described as "Rocks all the way down", printed in 1838 in the New York Mirror.
+
 | Website  | HttpOnly | Secure | SameSite | Strict | Lax | None | Path |
 | :------- | :------- | :----- | :------- | :----- | :-- | :--- | :--- |
 | archives.gov (200) | 0 | 0 | 0 | 0 | 0 | 0 | None |
