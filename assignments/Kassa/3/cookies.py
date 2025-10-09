@@ -29,22 +29,22 @@ def analyze_cookie_files():
             if path_match and path_match.group(1) != '/':
                 path_nr += 1
         data.append({
-            'site': f.replace('.txt', ''),
-            'status': final_status,
-            'num_cookies': len(cookies),
-            'httponly': http,
-            'secure': secure,
-            's_strict': s_strict,
-            's_lax': s_lax,
-            's_none': s_none,
-            'path_non_root': path_nr
+            'Site': f.replace('.txt', ''),
+            'Status': final_status,
+            'Num_Cookies': len(cookies),
+            'Httponly': http,
+            'Secure': secure,
+            'S_Strict': s_strict,
+            'S_Lax': s_lax,
+            'S_None': s_none,
+            'Path_Non_Root': path_nr
         })
     return data
 data = analyze_cookie_files()
 total_cookies = 211
-sites_with_cookies = 62  # from your median of 0.0
-sites_with_httponly = sum(1 for d in data if d['httponly'] > 0)
-sites_with_secure = sum(1 for d in data if d['secure'] > 0)
+sites_with_cookies = 62  
+sites_with_httponly = sum(1 for d in data if d['Httponly'] > 0)
+sites_with_secure = sum(1 for d in data if d['Secure'] > 0)
 
 summary = f"""
    Enhanced Summary:
@@ -61,14 +61,14 @@ def print_report(data):
     print("| Site | Status | #Cookies | HttpOnly | Secure | SameSite (Strict|Lax|None) | Path (non-|) |")
     print("|--------|----------|------------|------------|----------|-------------------|-----------------|")    
     for d in data:
-        print(f"| {d['site']} | {d['status']} | {d['num_cookies']} | {d['httponly']} | {d['secure']} | "
-              f"{d['s_strict']}/{d['s_lax']}/{d['s_none']} | {d['path_non_root']} |")
+        print(f"| {d['Site']} | {d['Status']} | {d['Num_Cookies']} | {d['Httponly']} | {d['Secure']} | "
+              f"{d['S_Strict']}/{d['S_Lax']}/{d['S_None']} | {d['Path_Non_Root']} |")
 
-    cookie_counts = [d['num_cookies'] for d in data]
+    cookie_counts = [d['Num_Cookies'] for d in data]
     print("\n Summary: ")
-    print(f"- HttpOnly: {sum(d['httponly'] for d in data)}, Secure: {sum(d['secure'] for d in data)}")
-    print(f"- SameSite Strict|Lax|None : {sum(d['s_strict'] for d in data)}/{sum(d['s_lax'] for d in data)}/{sum(d['s_none'] for d in data)}")
-    print(f"- Path != / : {sum(d['path_non_root'] for d in data)}")
+    print(f"- HttpOnly: {sum(d['Httponly'] for d in data)}, Secure: {sum(d['Secure'] for d in data)}")
+    print(f"- SameSite Strict|Lax|None : {sum(d['S_Strict'] for d in data)}/{sum(d['S_Lax'] for d in data)}/{sum(d['S_None'] for d in data)}")
+    print(f"- Path != / : {sum(d['Path_Non_Root'] for d in data)}")
     if cookie_counts:
         print(f"- Min/Max/Mean/Median cookies per site: {min(cookie_counts)}/{max(cookie_counts)}/{statistics.mean(cookie_counts):.2f}/{statistics.median(cookie_counts)}")
     else:
@@ -81,13 +81,13 @@ def save_to_readme(data):
         f.write("| Site | Status | #Cookies | HttpOnly | Secure | SameSite  (Strict|Lax|None)  | Path (non-|) |\n")
         f.write("|------|--------|----------|----------|--------|--------------|--------------|\n")
         for d in data:
-            f.write(f"| {d['site']} | {d['status']} | {d['num_cookies']} | {d['httponly']} | {d['secure']} | "
-                   f"{d['s_strict']}/{d['s_lax']}/{d['s_none']} | {d['path_non_root']} |\n")
-        cookie_counts = [d['num_cookies'] for d in data]
+            f.write(f"| {d['Site']} | {d['Status']} | {d['Num_Cookies']} | {d['Httponly']} | {d['Secure']} | "
+                   f"{d['S_Strict']}/{d['S_Lax']}/{d['S_None']} | {d['Path_Non_Root']} |\n")
+        cookie_counts = [d['Num_Cookies'] for d in data]
         f.write("\n Summary: \n")
-        f.write(f"- HttpOnly: {sum(d['httponly'] for d in data)}, Secure: {sum(d['secure'] for d in data)}\n")
-        f.write(f"- SameSite Strict|Lax|None : {sum(d['s_strict'] for d in data)}/{sum(d['s_lax'] for d in data)}/{sum(d['s_none'] for d in data)}\n")
-        f.write(f"- Path != / : {sum(d['path_non_root'] for d in data)}\n")
+        f.write(f"- HttpOnly: {sum(d['Httponly'] for d in data)}, Secure: {sum(d['Secure'] for d in data)}\n")
+        f.write(f"- SameSite Strict|Lax|None : {sum(d['S_Strict'] for d in data)}/{sum(d['S_Lax'] for d in data)}/{sum(d['S_None'] for d in data)}\n")
+        f.write(f"- Path != / : {sum(d['Path_Non_Root'] for d in data)}\n")
         if cookie_counts:
             f.write(f"- Min/Max/Mean/Median cookies per site: {min(cookie_counts)}/{max(cookie_counts)}/{statistics.mean(cookie_counts):.2f}/{statistics.median(cookie_counts)}\n")
 
