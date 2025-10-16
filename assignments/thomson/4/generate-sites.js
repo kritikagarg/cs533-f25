@@ -9,12 +9,16 @@ const urls = fs.readFileSync('sitelist.txt', 'utf-8')
 
 const results = [];
 const outputFile = 'frame_report.md';
-const framesDir = path.join(__dirname, 'frames');
+const framesDir = path.join(__dirname, 'framable');
 
 // Ensure frames directory exists
 if (!fs.existsSync(framesDir)) {
     fs.mkdirSync(framesDir);
 }
+
+let framableCount = 0;
+let nonFramableCount = 0;
+let unknownCount = 0;
 
 async function checkHeaders() {
     for (const url of urls) {
@@ -24,27 +28,104 @@ async function checkHeaders() {
 
         try {
             console.log(`Checking ${url}...`);
-            const response = await axios.head(`https://${url}`, { timeout: 10000, validateStatus: null });
+            // Use GET with browser-like headers. Some sites block HEAD requests or
+            // non-browser user-agents which can produce false 403s.
+            const response = await axios.get(`https://${url}`, {
+                timeout: 50000,
+                validateStatus: null,
+                maxRedirects: 50,
+                headers: {
+                    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                    'Accept-Language': 'en-US,en;q=0.9',
+                    'Referer': 'https://www.google.com/'
+                }
+            });
+
             status = response.status;
-            const xFrameOptions = response.headers['x-frame-options'];
+            const headers = response.headers || {};
+            const xFrameOptions = headers['x-frame-options'];
+            const cspHeader = headers['content-security-policy'] || headers['content-security-policy-report-only'] || '';
+
+            // Try to extract frame-ancestors from CSP
+            let frameAncestors = null;
+            const faMatch = cspHeader.match(/frame-ancestors\s+([^;]+)/i);
+            if (faMatch) {
+                frameAncestors = faMatch[1].trim();
+            }
 
             if (status >= 200 && status < 400) {
-                framable = !xFrameOptions ? 'Yes' : 'No';
-                notes = xFrameOptions ? `X-Frame-Options: ${xFrameOptions}` : 'X-Frame-Options: Not set';
+                if (xFrameOptions) {
+                    framable = 'No';
+                    notes = `X-Frame-Options: ${xFrameOptions}`;
+                    nonFramableCount++;
+                } else if (frameAncestors) {
+                    // If frame-ancestors is present and not a wildcard, assume it's blocking
+                    if (frameAncestors === "*") {
+                        framable = 'Yes';
+                        notes = `Content-Security-Policy frame-ancestors: ${frameAncestors}`;
+                        framableCount++;
+                    } else {
+                        framable = 'No';
+                        notes = `Content-Security-Policy frame-ancestors: ${frameAncestors}`;
+                        nonFramableCount++;
+                    }
+                } else {
+                    framable = 'Yes';
+                    notes = `No X-Frame-Options or frame-ancestors detected (Server: ${headers['server'] || 'unknown'})`;
+                    framableCount++;
+                }
             } else if (status >= 400 && status < 500) {
-                framable = 'Unknown';
-                notes = `HTTP error ${status}`;
+                // If X-Frame-Options blocks framing or frame-ancestors is restrictive, mark as 'No'
+                if (
+                    (xFrameOptions && /deny|sameorigin/i.test(xFrameOptions)) ||
+                    (frameAncestors && frameAncestors !== "*")
+                ) {
+                    framable = 'No';
+                    notes = `HTTP error ${status} ${response.statusText || ''}`;
+                    if (xFrameOptions) notes += ` | X-Frame-Options: ${xFrameOptions}`;
+                    if (frameAncestors) notes += ` | CSP frame-ancestors: ${frameAncestors}`;
+                    nonFramableCount++;
+                } else {
+                    framable = 'Unknown';
+                    notes = `HTTP error ${status} ${response.statusText || ''}`;
+                    if (xFrameOptions) notes += ` | X-Frame-Options: ${xFrameOptions}`;
+                    if (frameAncestors) notes += ` | CSP frame-ancestors: ${frameAncestors}`;
+                    unknownCount++;
+                }
+                console.error(`Received HTTP ${status} checking ${url}`);
             } else if (status >= 500) {
                 framable = 'No';
                 notes = `Server error ${status}`;
+                nonFramableCount++;
             } else {
                 framable = 'Unknown';
                 notes = `Unexpected status ${status}`;
+                unknownCount++;
             }
         } catch (error) {
-            console.warn(`Dead site: ${url} (${error.message})`);
-            framable = 'No';
-            notes = 'Dead site';
+            // axios can put a response on the error for HTTP responses; surface that
+            if (error.response) {
+                const errRes = error.response;
+                status = errRes.status || 0;
+                const headers = errRes.headers || {};
+                const xFrameOptions = headers['x-frame-options'];
+                const cspHeader = headers['content-security-policy'] || headers['content-security-policy-report-only'] || '';
+                let frameAncestors = null;
+                const faMatch = cspHeader.match(/frame-ancestors\s+([^;]+)/i);
+                if (faMatch) frameAncestors = faMatch[1].trim();
+
+                framable = (xFrameOptions || frameAncestors) ? 'No' : 'Unknown';
+                notes = `HTTP ${status} from server`;
+                if (xFrameOptions) notes += ` | X-Frame-Options: ${xFrameOptions}`;
+                if (frameAncestors) notes += ` | CSP frame-ancestors: ${frameAncestors}`;
+                if (headers['server']) notes += ` | Server: ${headers['server']}`;
+                console.warn(`Received HTTP ${status} checking ${url}`);
+            } else {
+                console.warn(`Dead site: ${url} (${error.message})`);
+                framable = 'No';
+                notes = 'Dead site or network error';
+            }
         }
 
         results.push({ url, framable, notes });
@@ -106,6 +187,8 @@ function writeMarkdownReport() {
     for (const { url, framable, notes } of results) {
         markdown += `| ${url} | ${framable} | ${notes} |\n`;
     }
+    
+    markdown += `\nTotal Sites: ${results.length} | Framable: ${framableCount} | Not Framable: ${nonFramableCount} | Unknown: ${unknownCount}\n`;
 
     fs.writeFileSync(outputFile, markdown);
     console.log(`\n Markdown report written to ${outputFile}`);
@@ -149,6 +232,7 @@ function createIndexPage() {
 
     html += `
 </table>
+<p>Total Sites: ${results.length} | Framable: ${framableCount} | Not Framable: ${nonFramableCount} | Unknown: ${unknownCount}</p>
 </body>
 </html>
 `;
