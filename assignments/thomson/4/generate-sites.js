@@ -211,6 +211,7 @@ function createIndexPage() {
   tr:nth-child(even) { background: #f0f4f8; }
   a { color: #007acc; text-decoration: none; }
   a:hover { text-decoration: underline; }
+  
 </style>
 </head>
 <body>
