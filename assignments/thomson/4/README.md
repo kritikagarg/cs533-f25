@@ -1,123 +1,149 @@
-# Assignment 3
-
-Reporter Name: Ryan Thomson
-
-Report Date: 10-05-2025
-
-# Report Description 
- This Cookie Fetcher program fetches cookies from a list of websites and generates a report on their attributes. As specified in the assignment, the program counts various cookie attributes such as HttpOnly, Secure, SameSite policies, and Path attributes. 
-It also tracks the minimum and maximum number of cookies found on any single site. 
-I wrote this program in go primarly using the http module, with goccy/go-yaml for YAML parsing for a small config to fully generate the README.md.
-The report as outlined contains a summary of the findings, including total counts and percentages for each attribute, as well as a detailed breakdown of cookies per site. 
-The program is designed to handle errors gracefully, logging any issues encountered during the fetching process. 
-Overall, this assignment helped me understand how to work with HTTP requests and responses in Go, as well as how to parse and analyze cookie data effectively.
+# Assignment 4
 
 
-# Youtube Demo
-[Demo link](https://www.youtube.com/watch?v=wyUo2yNZIPI)
+# Framable Sites
+Generated Markdown table via the generate-sites.js, which pulls the site headers from the site list and marks if they're frameable or not then outputs it to html and mark down. 
+[Demo link](https://youtu.be/nAXf6XiQy3M)
 
-# Cookie Report 
+## Table
 
-| URL | framable? | Notes | 
+| URL | Framable? | Notes |
 |-|-|-|
-| amazon.com | No | 1 | X-Frame-Options: SAMEORIGIN |
-| www.hauawei.com | No | 1 | X-Frame-Options: SAMEORIGIN |
-| news.google.com | No | 1 | X-Frame-Options: SAMEORIGIN |
-| biblegateway.com | Yes |
-| oup.com | Yes |  |
-| whatsapp.com | No | X-Frame-Options: SAMEORIGIN  |
-| estadao.com.br | Yes |
-| berkeley.edu | No | X-Frame-Options: SAMEORIGIN  |
-| pinterest.com | No | X-Frame-Options: SAMEORIGIN  |
-| ietf.org | No | X-Frame-Options: SAMEORIGIN  |
-| theguardian.com | No | X-Frame-Options: SAMEORIGIN  |
-| joomla.org | No | X-Frame-Options: SAMEORIGIN  |
-| dan.com || Yes |
-| java.com | Yes |
-| sina.com.cn | Yes |
-| ads.google.com | Yes |
-| www.over-blog.com | No | X-Frame-Options: SAMEORIGIN  |
-| code.google.com | Yes |
-| google.com.tw | No | X-Frame-Options: SAMEORIGIN  |
-| public-api.wordpress.com | No | X-Frame-Options: SAMEORIGIN  |
-| narod.ru | 200 OK | 4 | 1 | 0 | 0 | 0 | 0 | 0 | 4 | 4 | 0 |  |
-| bigcommerce.com | 200 OK | 5 | 1 | 1 | 5 | 0 | 4 | 1 | 5 | 5 | 0 |  |
-| howstuffworks.com | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| justgiving.com | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| www.livejournal.com | 200 OK | 1 | 0 | 1 | 1 | 0 | 0 | 1 | 1 | 1 | 0 |  |
-| weather.com | 200 OK | 2 | 0 | 1 | 0 | 0 | 0 | 0 | 2 | 2 | 0 |  |
-| themeforest.net | 200 OK | 1 | 1 | 1 | 1 | 0 | 0 | 1 | 1 | 1 | 0 |  |
-| bestfreecams.club | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| scmp.com | 200 OK | 1 | 1 | 1 | 1 | 0 | 0 | 1 | 1 | 1 | 0 |  |
-| techcrunch.com | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| gizmodo.com | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| metro.co.uk | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| indiatimes.com | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| tinyurl.com | 524  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| amazon.es | 405 Method Not Allowed | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 10 | 10 | 0 |  |
-| smh.com.au | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| zendesk.com | 200 OK | 1 | 1 | 1 | 1 | 0 | 0 | 1 | 1 | 1 | 0 |  |
-| gravatar.com | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| googleblog.com | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| uol.com.br | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| disney.com | 403 Forbidden | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| taringa.net | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| sky.com | 200 OK | 4 | 0 | 2 | 0 | 0 | 0 | 0 | 4 | 4 | 0 |  |
-| newyorker.com | 200 OK | 5 | 1 | 3 | 3 | 0 | 0 | 3 | 5 | 5 | 0 |  |
-| depositfiles.com | 200 OK | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 0 |  |
-| intel.com | 403 Forbidden | 2 | 2 | 2 | 0 | 0 | 0 | 0 | 2 | 2 | 0 |  |
-| thenai.org | 403 Forbidden | 1 | 1 | 1 | 1 | 0 | 0 | 1 | 1 | 1 | 0 |  |
-| sciencemag.org | 403 Forbidden | 1 | 1 | 1 | 1 | 0 | 0 | 1 | 1 | 1 | 0 |  |
-| tmz.com | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| draft.blogger.com | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| policies.google.com | 200 OK | 1 | 1 | 1 | 1 | 0 | 0 | 1 | 1 | 1 | 0 |  |
-| reverbnation.com | 200 OK | 1 | 1 | 1 | 1 | 0 | 0 | 1 | 1 | 1 | 0 |  |
-| independent.co.uk | 200 OK | 18 | 2 | 10 | 0 | 0 | 0 | 0 | 18 | 18 | 0 |  |
-| bp0.blogger.com | 400 Bad Request | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| mega.io | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| box.com | 200 OK | 1 | 1 | 1 | 1 | 0 | 0 | 1 | 1 | 1 | 0 |  |
-| ovh.com | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| nps.gov | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| google.it | 200 OK | 2 | 2 | 2 | 2 | 0 | 1 | 1 | 2 | 2 | 0 |  |
-| tvtropes.org | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| ok.ru | 200  | 4 | 4 | 1 | 1 | 0 | 0 | 1 | 3 | 3 | 1 |  |
-| google.co.jp | 200 OK | 2 | 2 | 2 | 2 | 0 | 1 | 1 | 2 | 2 | 0 |  |
-| doi.org | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| tiktok.com | 200 OK | 3 | 3 | 3 | 1 | 0 | 1 | 0 | 3 | 3 | 0 |  |
-| wp.com | 200 OK | 4 | 0 | 4 | 4 | 1 | 0 | 3 | 4 | 4 | 0 |  |
-| biglobe.ne.jp | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| standard.co.uk | 200 OK | 1 | 1 | 1 | 1 | 0 | 0 | 1 | 1 | 1 | 0 |  |
-| un.org | 200 OK | 4 | 0 | 1 | 2 | 0 | 0 | 2 | 4 | 4 | 0 |  |
-| theverge.com | 200 OK | 2 | 0 | 1 | 1 | 0 | 1 | 0 | 2 | 2 | 0 |  |
-| gsmarena.com | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| amzn.to | 200 OK | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 0 |  |
-| canva.com | 403 Forbidden | 1 | 1 | 1 | 1 | 0 | 0 | 1 | 1 | 1 | 0 |  |
-| spiegel.de | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| ziddu.com | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| vice.com | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| get.google.com | 200 OK | 2 | 2 | 2 | 2 | 0 | 1 | 1 | 2 | 2 | 0 |  |
-| microsoft.com | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| ibm.com | 200 OK | 2 | 0 | 1 | 0 | 0 | 0 | 0 | 2 | 2 | 0 |  |
-| target.com | 200 OK | 11 | 3 | 9 | 8 | 0 | 1 | 7 | 11 | 11 | 0 |  |
-| justice.gov | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| alexa.com | 405 Method Not Allowed | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| aliexpress.com | 200  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| forms.gle | 400 Bad Request | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| hollywoodreporter.com | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| kakao.com | 200 OK | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 0 |  |
-| video.google.com | 200 OK | 2 | 2 | 2 | 2 | 0 | 1 | 1 | 2 | 2 | 0 |  |
-| freepik.com | 403 Forbidden | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| francetvinfo.fr | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| interia.pl | 200 OK | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 0 |  |
-| reddit.com | 200 OK | 6 | 1 | 6 | 4 | 1 | 0 | 3 | 6 | 6 | 0 |  |
-| whitehouse.gov | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| google.es | 200 OK | 2 | 2 | 2 | 2 | 0 | 1 | 1 | 2 | 2 | 0 |  |
-| psychologytoday.com | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| ja.wikipedia.org | 200 OK | 6 | 4 | 6 | 2 | 0 | 0 | 2 | 6 | 6 | 0 |  |
-| telegram.me | 200 OK | 1 | 1 | 1 | 1 | 0 | 0 | 1 | 1 | 1 | 0 |  |
-| enable-javascript.com | 200 OK | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  |
-| de.wikipedia.org | 200 OK | 5 | 3 | 5 | 2 | 0 | 0 | 2 | 5 | 5 | 0 |  |
-| akamaihd.net | N/A | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Dead Link, DNS Lookup Failed |
-| ggpht.com | N/A | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Dead Link, DNS Lookup Failed |
-| huawei.com | N/A | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Errored URL, TLS Handshake Failed |
-| Totals | N/A | 151 | 58 | 96 | 68 | 2 | 16 | 50 | 150 | 150 | 1 |  |
+| amazon.com | No | X-Frame-Options: SAMEORIGIN |
+| huawei.com | No | Dead site or network error |
+| news.google.com | No | X-Frame-Options: SAMEORIGIN |
+| biblegateway.com | Yes | No X-Frame-Options or frame-ancestors detected (Server: nginx) |
+| oup.com | Yes | No X-Frame-Options or frame-ancestors detected (Server: cloudflare) |
+| whatsapp.com | No | HTTP error 400 Bad Request | X-Frame-Options: DENY |
+| buydomains.com | No | HTTP error 403 Forbidden | X-Frame-Options: SAMEORIGIN |
+| estadao.com.br | Yes | No X-Frame-Options or frame-ancestors detected (Server: openresty) |
+| berkeley.edu | No | X-Frame-Options: SAMEORIGIN |
+| pinterest.com | No | X-Frame-Options: SAMEORIGIN |
+| ietf.org | No | X-Frame-Options: DENY |
+| theguardian.com | No | X-Frame-Options: SAMEORIGIN |
+| joomla.org | No | X-Frame-Options: SAMEORIGIN |
+| dan.com | Yes | No X-Frame-Options or frame-ancestors detected (Server: envoy) |
+| java.com | Yes | |
+| sina.com.cn | Yes | No X-Frame-Options or frame-ancestors detected (Server: Tengine) |
+| ads.google.com | No | X-Frame-Options: SAMEORIGIN |
+| www.over-blog.com | No | X-Frame-Options: DENY |
+| code.google.com | Yes | No X-Frame-Options or frame-ancestors detected (Server: sffe) |
+| google.com.tw | No | X-Frame-Options: SAMEORIGIN |
+| public-api.wordpress.com | No | X-Frame-Options: SAMEORIGIN |
+| narod.ru | Yes | No X-Frame-Options or frame-ancestors detected (Server: ddos-guard) |
+| bigcommerce.com | No | Content-Security-Policy frame-ancestors: 'self' app.makeswift.com |
+| howstuffworks.com | Yes | No X-Frame-Options or frame-ancestors detected (Server: nginx) |
+| justgiving.com | No | X-Frame-Options: SAMEORIGIN |
+| www.livejournal.com | No | Content-Security-Policy frame-ancestors: 'self' |
+| weather.com | No | X-Frame-Options: SAMEORIGIN |
+| themeforest.net | No | X-Frame-Options: SAMEORIGIN |
+| bestfreecams.club | Yes | No X-Frame-Options or frame-ancestors detected (Server: cloudflare) |
+| scmp.com | No | Content-Security-Policy frame-ancestors: 'none' |
+| techcrunch.com | No | X-Frame-Options: SAMEORIGIN |
+| gizmodo.com | No | X-Frame-Options: SAMEORIGIN |
+| metro.co.uk | Yes | No X-Frame-Options or frame-ancestors detected (Server: nginx) |
+| indiatimes.com | No | X-Frame-Options: SAMEORIGIN |
+| tinyurl.com | No | X-Frame-Options: SAMEORIGIN |
+| amazon.es | No | X-Frame-Options: SAMEORIGIN |
+| smh.com.au | No | X-Frame-Options: sameorigin |
+| zendesk.com | No | Content-Security-Policy frame-ancestors: 'self' app.optimizely.com *.zendesk.com *.zendesk.co.jp *.zendesk.co.uk *.zendesk.com.br *.zendesk.com.mx *.zendesk.de *.zendesk.es *.zendesk.fr *.zendesk.kr *.zendesk.nl *.zendesk.tw *.zendesk.hk |
+| gravatar.com | No | X-Frame-Options: SAMEORIGIN |
+| googleblog.com | Yes | No X-Frame-Options or frame-ancestors detected (Server: Google Frontend) |
+| uol.com.br | No | Content-Security-Policy frame-ancestors: 'self' *.intranet *.uolinc.com |
+| disney.com | Yes| |
+| taringa.net | Yes | No X-Frame-Options or frame-ancestors detected (Server: AmazonS3) |
+| sky.com | No | X-Frame-Options: SAMEORIGIN |
+| newyorker.com | Yes | No X-Frame-Options or frame-ancestors detected (Server: CloudFront) |
+| depositfiles.com | No | X-Frame-Options: SAMEORIGIN |
+| intel.com | No | HTTP error 403 Forbidden | X-Frame-Options: SAMEORIGIN | CSP frame-ancestors: 'self' https://premiersupport.intel.com https://c0.avaamo.com *.intel.com |
+| thenai.org | Yes | No X-Frame-Options or frame-ancestors detected (Server: cloudflare) |
+| sciencemag.org | No | HTTP error 403 Forbidden | X-Frame-Options: SAMEORIGIN |
+| tmz.com | No | X-Frame-Options: SAMEORIGIN |
+| draft.blogger.com | Yes | No X-Frame-Options or frame-ancestors detected (Server: sffe) |
+| policies.google.com | Yes | No X-Frame-Options or frame-ancestors detected (Server: ESF) |
+| reverbnation.com | No | X-Frame-Options: SAMEORIGIN |
+| independent.co.uk | No | X-Frame-Options: SAMEORIGIN |
+| bp0.blogger.com | Yes | |
+| mega.nz | No | X-Frame-Options: DENY |
+| box.com | No | X-Frame-Options: SAMEORIGIN |
+| ovh.com | No | X-Frame-Options: ORIGIN |
+| nps.gov | Yes | No X-Frame-Options or frame-ancestors detected (Server: Apache) |
+| google.it | No | X-Frame-Options: SAMEORIGIN |
+| tvtropes.org | No | X-Frame-Options: DENY |
+| ok.ru | No | X-Frame-Options: SAMEORIGIN |
+| google.co.jp | No | X-Frame-Options: SAMEORIGIN |
+| doi.org | Yes | No X-Frame-Options or frame-ancestors detected (Server: AmazonS3) |
+| tiktok.com | No | X-Frame-Options: SAMEORIGIN |
+| wp.com | No | X-Frame-Options: SAMEORIGIN |
+| biglobe.ne.jp | Yes | No X-Frame-Options or frame-ancestors detected (Server: Apache) |
+| akamaihd.net | No | Dead site or network error |
+| standard.co.uk | No | Content-Security-Policy frame-ancestors: 'self' https://*.brightsites.co.uk |
+| un.org | No | X-Frame-Options: SAMEORIGIN |
+| theverge.com | No | Content-Security-Policy frame-ancestors: https://platform.theverge.com https://*.theverge.com https://platform.theverge.com https://*.theverge.com 'self' |
+| gsmarena.com | No | Content-Security-Policy frame-ancestors: 'self' *.gsmarena.com |
+| amzn.to | No | X-Frame-Options: SAMEORIGIN |
+| canva.com | No | HTTP error 403 Forbidden | X-Frame-Options: SAMEORIGIN |
+| spiegel.de | No | Content-Security-Policy frame-ancestors: 'self' |
+| ziddu.com | Yes | No X-Frame-Options or frame-ancestors detected (Server: LiteSpeed) |
+| vice.com | No | X-Frame-Options: SAMEORIGIN |
+| get.google.com | No | X-Frame-Options: SAMEORIGIN |
+| microsoft.com | Yes | No X-Frame-Options or frame-ancestors detected (Server: AkamaiNetStorage) |
+| ibm.com | No | X-Frame-Options: SAMEORIGIN |
+| target.com | No | X-Frame-Options: SAMEORIGIN |
+| justice.gov | No | X-Frame-Options: SAMEORIGIN |
+| alexa.com | No | X-Frame-Options: SAMEORIGIN |
+| aliexpress.com | Yes | No X-Frame-Options or frame-ancestors detected (Server: Tengine/Aserver) |
+| forms.gle | Yes | |
+| hollywoodreporter.com | No | Content-Security-Policy frame-ancestors: 'none' |
+| kakao.com | Yes | No X-Frame-Options or frame-ancestors detected (Server: unknown) |
+| video.google.com | No | X-Frame-Options: SAMEORIGIN |
+| freepik.com | No |  |
+| francetvinfo.fr | Yes | No X-Frame-Options or frame-ancestors detected (Server: Microsoft IIS 4.0) |
+| interia.pl | Yes | No X-Frame-Options or frame-ancestors detected (Server: nginx) |
+| ggpht.com | No | Dead site or network error |
+| reddit.com | No | X-Frame-Options: SAMEORIGIN |
+| whitehouse.gov | No | X-Frame-Options: DENY |
+| google.es | No | X-Frame-Options: SAMEORIGIN |
+| psychologytoday.com | No | X-Frame-Options: SAMEORIGIN |
+| ja.wikipedia.org | Yes | No X-Frame-Options or frame-ancestors detected (Server: mw-web.eqiad.main-99cbb7fcd-7bwx8) |
+| telegram.me | No | X-Frame-Options: SAMEORIGIN |
+| enable-javascript.com | Yes | No X-Frame-Options or frame-ancestors detected (Server: nginx) |
+| de.wikipedia.org | Yes | No X-Frame-Options or frame-ancestors detected (Server: mw-web.eqiad.canary-5686fb55b8-777v8) |
+
+### Table Summary
+
+Total Sites: 100 | Framable: 32 | Not Framable: 65 |
+
+## How to Run
+Input your lists of sites at sitelist.txt it should be the plain fqdn without protcol then a new line.
+
+Example
+
+```
+amazon.com
+google.com
+```
+
+Then run the javascript using node.js
+
+```bash
+node generate-sites.js
+```
+
+Once the script finishes rendering, place in a webserver or run 
+
+``` bash
+node server.js 
+```
+
+Then navigate to http://localhost:8080
+
+
+
+# Frame Path Attack 
+
+I demonstrate this attack by setting the cookie to the root path and not setting secure or samesite rules, thus allowing sites to steal any cookies set by my site.
+
+[Demo link](https://youtu.be/CE2jXqegx1c)
+
+![GIF Demo for a Frame Path Attack](Frame-attack.gif)

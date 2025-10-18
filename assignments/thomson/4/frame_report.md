@@ -2,7 +2,7 @@
 
 | URL | Framable? | Notes |
 |-|-|-|
-| amazon.com | Yes | No X-Frame-Options or frame-ancestors detected (Server: Server) |
+| amazon.com | No | X-Frame-Options: SAMEORIGIN |
 | huawei.com | No | Dead site or network error |
 | news.google.com | No | X-Frame-Options: SAMEORIGIN |
 | biblegateway.com | Yes | No X-Frame-Options or frame-ancestors detected (Server: nginx) |
@@ -98,9 +98,9 @@
 | whitehouse.gov | No | X-Frame-Options: DENY |
 | google.es | No | X-Frame-Options: SAMEORIGIN |
 | psychologytoday.com | No | X-Frame-Options: SAMEORIGIN |
-| ja.wikipedia.org | Yes | No X-Frame-Options or frame-ancestors detected (Server: mw-web.eqiad.main-77cdbfb8d7-vnjkd) |
+| ja.wikipedia.org | Yes | No X-Frame-Options or frame-ancestors detected (Server: mw-web.eqiad.main-99cbb7fcd-7bwx8) |
 | telegram.me | No | X-Frame-Options: SAMEORIGIN |
 | enable-javascript.com | Yes | No X-Frame-Options or frame-ancestors detected (Server: nginx) |
-| de.wikipedia.org | Yes | No X-Frame-Options or frame-ancestors detected (Server: mw-web.eqiad.main-77cdbfb8d7-99hml) |
+| de.wikipedia.org | Yes | No X-Frame-Options or frame-ancestors detected (Server: mw-web.eqiad.canary-5686fb55b8-777v8) |
 
-Total Sites: 100 | Framable: 29 | Not Framable: 63 | Unknown: 5
+Total Sites: 100 | Framable: 28 | Not Framable: 64 | Unknown: 5
