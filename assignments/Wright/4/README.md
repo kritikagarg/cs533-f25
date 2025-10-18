@@ -2,12 +2,13 @@
 
 ### Directories
 All work for this assignment is organized under `assignments/Wright/4` and separated into these folders and files:
-- **framable** - HTML files that attempt to iframe the assigned public sites (index + 100 test pages).
-- **frame-path-attack** - This code demonstrates of showing how `Path` is not sufficient to protect cookies.
-- **results** - Partial summary demonstrating framing results from sampled sites.
-- **full_100results** - Complete dataset of all 100 tested sites and their framing results.
+- **framable** - html files that attempt to iframe the assigned public sites (index + 100 test pages)
+- **frame-path-attack** - this code demonstrates of showing how `Path` is not sufficient to protect cookies
+- **results** - partial summary demonstrating framing results from sampled sites
+- **full_100results** - complete dataset of all 100 tested sites and their framing results
 - **extra_credit - showcasing bypassing the 10 websites
-- **README.md** - contains assignment description, methods, results, extra credit, and video links.
+- **screenshots** - consist of screenshots
+- **README.md** - contains assignment description, methods, results, extra credit, and video links
 
 ---
 
@@ -150,9 +151,9 @@ Bypassing 10 sites that are not framable:
 
 For extra credit, I tried to bypass the framing protections on the websites that blocked framing and documented my approach and results (screenshots). The extra credit folder has an extra server.js and framing/index.html to show a local proxy/framing technique and a separate exmaple of the cookie Path misconfiguration attack; the server and screenshots show both attempts that failed and methods that worked. 
 
- <img src="screenshots/not-bypassed.png" width="700"><br><br>
+ <img src="screenshots/not_framable.png" width="700"><br><br>
  <img src="screenshots/bypassing_websites.png" width="700"><br><br>
- <img src="screenshots/now_its_bypassed.png" width="700"><br><br>
+ <img src="screenshots/now_its_framable.png" width="700"><br><br>
 
 ---
 
