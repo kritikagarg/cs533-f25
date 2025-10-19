@@ -1,5 +1,5 @@
 # Assignment 2 – CS 433/533 Web Security
-**Student:** Nirel Mason
+Nirel Mason
 
 ## Overview
 Node.js + Express + cookie-parser with four routes:
@@ -12,4 +12,4 @@ node server.js
 Then open http://localhost:4000 and visit each route.
 
 ## YouTube Demo
-(Insert your unlisted link here)
+(https://youtu.be/s09_V1tpZTo)
