@@ -1,5 +1,10 @@
 # Assignment 1 — MASON
 
+We have three directories:
+- [html](./html)
+- [javascript](./javascript)
+- [node](./node)
+
 ## Description
 This assignment used three NodeSchool workshops:
 - **LearnYouHTML** – HTML tags, structure, attributes
@@ -14,7 +19,7 @@ assignments/
       javascript/ # JavaScript solutions 
       node/ # Node.js solutions 
       screenshots/ # images for proof of completion 
-``` 
+```
 ## Screenshots
 > Place these images in `assignments/MASON/1/screenshots/`.
 
