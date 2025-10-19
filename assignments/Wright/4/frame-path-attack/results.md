@@ -90,7 +90,7 @@ These sites utilize the ```Content-Security-Policy``` header with the ```frame-a
 |  97 | mirror.co.uk | frame-ancestors 'self'                                  |
 | 100 | ebay.com     | frame-ancestors *.ebay.com                              |
 
-** Total: 14 blocked via CSP**
+**Total: 14 blocked via CSP**
 
 ---
 
