@@ -27,6 +27,6 @@ assignments/
 ![Javascripting](screenshots/javascripting.png)
 ![LearnYouNode](screenshots/learnyounode.png)
 ## Video Demo
-[Watch my video here](https://www.youtube.com/your-unlisted-video-link)
+[Click here to watch on YouTube](https://youtu.be/sozopWW_048)
 
 The video shows me listing all files in each folder and the completion screens for all workshops.
