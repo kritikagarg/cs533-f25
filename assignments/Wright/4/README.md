@@ -6,7 +6,7 @@ All work for this assignment is organized under `assignments/Wright/4` and separ
 - **frame-path-attack** - this code demonstrates of showing how `Path` is not sufficient to protect cookies
 - **results** - partial summary demonstrating framing results from sampled sites
 - **full_100results** - complete dataset of all 100 tested sites and their framing results
-- **extra_credit - showcasing bypassing the 10 websites
+- **extra_credit** - showcasing bypassing the 10 websites
 - **screenshots** - consist of screenshots
 - **README.md** - contains assignment description, methods, results, extra credit, and video links
 
