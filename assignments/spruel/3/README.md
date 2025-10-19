@@ -3411,7 +3411,7 @@ and a cookie details table that list all the cookies collected from the assigned
 
 ## Youtube Video
 
-To view the script running you can check out the following video on YouTube: 
+To view the script running you can check out the following video on YouTube: https://youtu.be/8sJunMmhzvA
 
 # Turtles all the way down
 
