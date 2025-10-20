@@ -1,7 +1,19 @@
 # Assignment 4 Submission
 
 ## Assignment Description
-This assignment is split up into two sections. In the first, a report was created on how a list of 100 websites behaves when they are rendered by another website in an iFrame. 100 html files which render a website in an iFrame were created using [GenerateWebsiteHTMLs.js](https://github.com/jaqui004/cs533-f25/tree/main/assignments/aquino/4/frame-path-attack/GenerateWebsiteHTMLs.html), a server was created capable of displaying each site with [iFrameServer.js](https://github.com/jaqui004/cs533-f25/tree/main/assignments/aquino/4/frame-path-attack/iFrameServer.js), and the results were documented below in the framing report. In the second section, a frame attack is demonstrated by showing how a [page that sets a cookie](https://github.com/jaqui004/cs533-f25/tree/main/assignments/aquino/4/frame-path-attack/VulnerableSite.html) with only the path attribute can have that cookie stolen by [a page displaying it in an iFrame](https://github.com/jaqui004/cs533-f25/tree/main/assignments/aquino/4/frame-path-attack/MaliciousSite.html). Videos showing both of these sections can be found below.
+This assignment is split up into two sections. In the first, a report was created on how a list of 100 websites behaves when they are rendered by another website in an iFrame. 100 html files which render a website in an iFrame were created using [GenerateWebsiteHTMLs.js](https://github.com/jaqui004/cs533-f25/tree/main/assignments/aquino/4/frame-path-attack/GenerateWebsiteHTMLs.html), a server was created capable of displaying each site with [iFrameServer.js](https://github.com/jaqui004/cs533-f25/tree/main/assignments/aquino/4/frame-path-attack/iFrameServer.js), and the results were documented below in the framing report. 
+
+Website iFrame Link Page
+
+![image alt](https://github.com/jaqui004/cs533-f25/blob/main/assignments/aquino/4/frame-path-attack/images/Website-iFrame-Root.png)
+
+In the second section, a frame attack is demonstrated by showing how a [page that sets a cookie](https://github.com/jaqui004/cs533-f25/tree/main/assignments/aquino/4/frame-path-attack/VulnerableSite.html) with only the path attribute can have that cookie stolen by [a page displaying it in an iFrame](https://github.com/jaqui004/cs533-f25/tree/main/assignments/aquino/4/frame-path-attack/MaliciousSite.html). 
+
+iFrame Attack Page
+
+[image alt](https://github.com/jaqui004/cs533-f25/blob/main/assignments/aquino/4/frame-path-attack/images/iFrame-Attack-Site.png)
+
+Videos showing both of these sections can be found below.
 
 ## Included Files
 The files for this assignment are distributed among two directories: 
@@ -22,6 +34,21 @@ In addition, this directory contains the files necessary for performing a frame 
 
 
 # Framing Report
+The results of each websites ability to be framed can be separated into one of three categories. Successful framings, failed framings, and errors. Successful framings displayed the webpages within iFrames, failed framings refused to display the webpages due to it being embedded, and errors occur when the specified webpage did not exist or had other issues.
+
+Success Example: 
+
+![image alt](https://github.com/jaqui004/cs533-f25/blob/main/assignments/aquino/4/frame-path-attack/images/Website-iFrame-Success.png)
+
+Failure Example: 
+
+![image alt](https://github.com/jaqui004/cs533-f25/blob/main/assignments/aquino/4/frame-path-attack/images/Website-iFrame-Fail.png)
+
+Error Example:
+
+![image alt](https://github.com/jaqui004/cs533-f25/blob/main/assignments/aquino/4/frame-path-attack/images/Website-iFrame-Error.png)
+
+
 |            Website            | Framable | Explanation |
 | :---------------------------- | :---------: | :------------------------------------------------- |
 | policies.google.com | Yes | N/A |
