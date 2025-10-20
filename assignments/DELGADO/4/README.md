@@ -1,4 +1,20 @@
-| URL  | Status | Framable |
+# Assignment 4
+
+Attached is my submission for Assighment 4. For each website, I captured the URL being checked, the status, and whether or not the website was framable. The framability boiled down to whether or not there were Cross-Frame-Options or Content-Security-Policies enabled, or frame ancestors. All of these indicate security that restricts using iframes at least from trying through localhost. If no security was detected, then the website was deemed "Framable" and verified by opening its respetive .html.
+
+Youtube Video: https://www.youtube.com/watch?v=fL_QXuifztg&feature=youtu.be
+
+## Errors
+
+Primary error was time management due to work this week. As a result, I did not entirely understand how to write an exploitation for Paths and did not have time to look up clarifications. This is my fault and is why there is no frame-attack directory submitted with this assignment.
+
+## iFrame Tables
+| Descriptor | # of URLs |
+| :------- | :------- |
+| # of Framable URLs | 23 |
+| # of Unframable URLs | 77 |
+
+| URL  | Status | Framability |
 | :------- | :------- | :----- |
 | https://archives.gov | 200 | X-Frame-Options: SAMEORIGIN |
 | https://mega.io | 200 | Content-Security-Policy: frame-ancestors Unknown |
@@ -100,5 +116,3 @@
 | https://depositfiles.com | 200 | Content-Security-Policy: frame-ancestors Unknown |
 | https://usgs.gov | 200 | X-Frame-Options: SAMEORIGIN |
 | https://yahoo.co.jp | 200 | X-Frame-Options: SAMEORIGIN |
-| # of Framable URLs: | 23 |
-| # of Unframable URLs: | 79 |
