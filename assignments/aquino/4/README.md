@@ -3,15 +3,15 @@
 ## Assignment Description
 This assignment is split up into two sections. In the first, a report was created on how a list of 100 websites behaves when they are rendered by another website in an iFrame. 100 html files which render a website in an iFrame were created using [GenerateWebsiteHTMLs.js](https://github.com/jaqui004/cs533-f25/tree/main/assignments/aquino/4/frame-path-attack/GenerateWebsiteHTMLs.html), a server was created capable of displaying each site with [iFrameServer.js](https://github.com/jaqui004/cs533-f25/tree/main/assignments/aquino/4/frame-path-attack/iFrameServer.js), and the results were documented below in the framing report. 
 
-Website iFrame Link Page
+Website iFrame Link Page:
 
 ![image alt](https://github.com/jaqui004/cs533-f25/blob/main/assignments/aquino/4/frame-path-attack/images/Website-iFrame-Root.png)
 
 In the second section, a frame attack is demonstrated by showing how a [page that sets a cookie](https://github.com/jaqui004/cs533-f25/tree/main/assignments/aquino/4/frame-path-attack/VulnerableSite.html) with only the path attribute can have that cookie stolen by [a page displaying it in an iFrame](https://github.com/jaqui004/cs533-f25/tree/main/assignments/aquino/4/frame-path-attack/MaliciousSite.html). 
 
-iFrame Attack Page
+iFrame Attack Page:
 
-[image alt](https://github.com/jaqui004/cs533-f25/blob/main/assignments/aquino/4/frame-path-attack/images/iFrame-Attack-Site.png)
+![image alt](https://github.com/jaqui004/cs533-f25/blob/main/assignments/aquino/4/frame-path-attack/images/iFrame-Attack-Site.png)
 
 Videos showing both of these sections can be found below.
 
@@ -48,6 +48,7 @@ Error Example:
 
 ![image alt](https://github.com/jaqui004/cs533-f25/blob/main/assignments/aquino/4/frame-path-attack/images/Website-iFrame-Error.png)
 
+The framing results of the 100 websites found in [Websites.txt](https://github.com/jaqui004/cs533-f25/blob/main/assignments/aquino/4/frame-path-attack/Websites.txt) is summarized in the table below.
 
 |            Website            | Framable | Explanation |
 | :---------------------------- | :---------: | :------------------------------------------------- |
