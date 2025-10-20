@@ -31,7 +31,7 @@ In addition, this directory contains the files necessary for performing a frame 
 | thefreedictionary.com | Yes | N/A |
 | vice.com | No | Refused to connect when embedded |
 | bing.com | No | Refused to connect when embedded |
-| abril.com.br | No | Refused to connect when embedded |
+| abril.com.br | Yes | N/A |
 | outlook.com | No | Refused to connect when embedded |
 | addtoany.com | Yes | N/A |
 | huawei.com | No | Refused to connect when embedded |
@@ -127,7 +127,7 @@ In addition, this directory contains the files necessary for performing a frame 
 
 | Framable Websites | Non-Framable Websites | Errors |
 | :---------------: | :---------: | :---------- |
-| 30 | 64 | 6 |
+| 31 | 63 | 6 |
 
 
 # Video Demonstrations
