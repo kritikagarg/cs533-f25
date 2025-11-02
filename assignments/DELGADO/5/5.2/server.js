@@ -1,11 +1,3 @@
-/*
-Test Steps:
-1) Run new firefox browser
-2) localhost:4000, show console f12. Should see CORS error
-3) Uncomment cors line in server2, restart servers, refresh browser. Should see no more CORS but no custom headers
-4) Uncomment expose-headers in server2, restart servers, refresh browser. Should see console log fill with proper information.
-*/
-
 const express = require('express');
 const path = require('path');
 
@@ -35,7 +27,6 @@ server.get('/', (req, res) => {
 
 // localhost:3000/
 fileServer.get('/fail', (req, res) => {
-    // res.setHeader('Access-Control-Expose-Headers', '*');
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('X-CS533f25-FOOD', 'LASAGNA');
     res.setHeader('X-CS533f25-SHOW', 'THE RESIDENCE');
