@@ -19,15 +19,19 @@ requesting the json data and serving the html files that the displayed in the de
 
 ## Example Images
 Here's an example for the Monk entry:
+
 <img src="img/5.1-monk.png" width="700">
 
 Here's an example for the Psych entry:
+
 <img src="img/5.1-psych.png" width="700">
 
 Here's an example for the Mr.Robot entry:
+
 <img src="img/5.1-mr-robot.png" width="700">
 
 Here's an example for the Parks and Rec entry:
+
 <img src="img/5.1-parks-and-rec.png" width="700">
 
 -----------------
@@ -46,15 +50,19 @@ requesting the json data and serving the html files that the displayed in the de
 
 ## Example Images
 Here's an example for the Monk entry:
+
 <img src="img/5.2-monk.png" width="700">
 
 Here's an example for the Psych entry:
+
 <img src="img/5.2-psych.png" width="700">
 
 Here's an example for the Mr.Robot entry:
+
 <img src="img/5.2-mr-robot.png" width="700">
 
 Here's an example for the Parks and Rec entry:
+
 <img src="img/5.2-parks-and-rec.png" width="700">
 
 
@@ -71,6 +79,7 @@ sites (see line [16](5.3/5.3/server.js)).
 
 ## Example Images
 Here's an example for the Zoom.us entry:
+
 <img src="img/5.3-zoom.png" width="700">h="700">
 
 -----------------
