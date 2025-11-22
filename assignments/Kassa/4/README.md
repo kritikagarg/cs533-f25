@@ -52,9 +52,7 @@ Defense Recommendations
 - Consider SameSite attribute for CSRF protection
 
  Screen shoots 
-Framable Sites Test Screenshot framable/images/Framable%20Sites%20Test.png
-Frame Path Cookie Screenshot framable/images/Frame%20Path%20Cookie.png
-Setting Victim Cookie Screenshot framable/images/Setting%20Victim%20Cookie.png
+
 
 YouTube Videos
 
