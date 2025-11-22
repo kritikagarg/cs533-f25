@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Iframe Test – namecheap.com</title>
+<style>
+iframe { width: 100%; height: 90vh; border: 2px solid black; }
+#status { font-size: 18px; font-weight: bold; margin-top: 10px; }
+</style>
+</head>
+<body>
+<h2>Testing iframe for: namecheap.com</h2>
+
+<div id="status">Loading…</div>
+
+<iframe id="testframe" src="https://namecheap.com"></iframe>
+
+<script>
+// Detect frame busting / denial
+let frameLoaded = false;
+
+document.getElementById("testframe").onload = function () {
+    frameLoaded = true;
+    document.getElementById("status").innerText =
+        "Frame loaded successfully — This site is framable.";
+};
+
+// After 4 seconds, check if frame was blocked
+setTimeout(() => {
+    if (!frameLoaded) {
+        document.getElementById("status").innerText =
+            "Frame blocked — This site is NOT framable.";
+    }
+}, 4000);
+</script>
+
+</body>
+</html>
