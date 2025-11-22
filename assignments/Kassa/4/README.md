@@ -1,28 +1,78 @@
-Assignment 4 
-Framing & Frame-Path Attack
+ Assignment 4 - CS 433/533 Web Security
+ Part 1: Framable Sites Analysis
+Tested 100 sites from Assignment 3 to determine which can be embedded in iframes and which employ framing protection mechanisms.
 
-Framable Sites
-Tested 100 sites. See framability_summary.csv for per-site results.
-1 node framable_server.js
-Server running at http://localhost:3000
-http://localhost:3000/parent.html
-2. node frame_path_demo.js
-Running http://localhost:8080
-3. type framepath_secret_response.txt
- 
-4. you tube link 
-https://youtu.be/liL0xLzaX10?si=N6hM0bStqJ6YkGtd 
-5.Evidence: Frame-path attack (stolen cookie)
-Parent page showing stolen cookie from iframe:
+Results Summary
 
-[Frame-path stolen cookie](./screenshots/framepath_secret.png)
+- Framable Sites: X out of 100
 
-Evidence: Framability test
-Example framing test screenshot:
+- Non-Framable Sites: Y out of 100
 
-[Framability test](./screenshots/Framablity_test.png)
+- Protection Mechanisms Identified:
 
- Evidence: Cookie set in victim iframe
-Victim iframe showing cookie set confirmation:
+  - X-Frame-Options Header
 
-[Cookie set in iframe](./screenshots/cookie_path.png)
+  - Content Security Policy (CSP) frame-ancestors
+
+  - JavaScript frame-busting techniques
+
+
+ Part 2: Frame Path Attack Demonstration
+
+The Path attribute in cookies is designed to limit which paths on a domain can access the cookie, but it provides no security against malicious JavaScript when:
+
+- Cookies lack HttpOnly flag
+
+- Attacker can embed victim content
+
+- Same-origin policy allows frame access
+
+
+
+Attack Flow
+
+1. Victim sets cookie with `Path=/victim-path` but no HttpOnly
+
+2. Attacker embeds victim page in iframe
+
+3. Attacker uses JavaScript to access iframe's document.cookie
+
+4. Cookie is stolen despite Path restriction
+
+
+
+Defense Recommendations
+
+- Always use HttpOnly flag for session cookies
+
+- Use Secure flag for HTTPS-only transmission
+
+- Implement proper CSP headers
+
+- Consider SameSite attribute for CSRF protection
+
+ Screen shoots 
+Framable Sites Test Screenshot framable/images/Framable%20Sites%20Test.png
+Frame Path Cookie Screenshot framable/images/Frame%20Path%20Cookie.png
+Setting Victim Cookie Screenshot framable/images/Setting%20Victim%20Cookie.png
+
+YouTube Videos
+
+- Framable Analysis:https://youtu.be/I8gzkTC6Fl4
+
+- Frame Path Attack:https://youtu.be/WwZSn89wFjU
+
+Setup Instructions
+Part 1 - Framable 
+cd framable
+node server.js
+Visit http://localhost:3001
+
+Part2  - Frame Path Attack
+cd framable
+node server.js
+Visit http://localhost:3000
+
+
+
+
