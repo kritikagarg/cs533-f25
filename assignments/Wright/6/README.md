@@ -24,22 +24,22 @@ These values are read with `req.get(...)`, joined into a single string, and then
 ---
 
 ### Screenshots
-Fingerprint From Brave:  
+- Fingerprint From Brave:  
 <img src="fingerprint-brave.png" width="800">  
 
-Fingerprint From Google Chrome:  
+- Fingerprint From Google Chrome:  
 <img src="fingerprint-chrome.png" width="800">
 
-Fingerprint From Microsoft Edge:  
+- Fingerprint From Microsoft Edge:  
 <img src="fingerprint-edge.png" width="800">
 
-Fingerprint From Mozilla Firefox:  
+- Fingerprint From Mozilla Firefox:  
 <img src="fingerprint-firefox.png" width="800">
 
-Fingerprint From Curl (PowerShell request):  
+- Fingerprint From Curl (PowerShell request):  
 <img src="fingerprint-curl.png" width="800">
 
-Fingerprint From Opera Browser:  
+- Fingerprint From Opera Browser:  
 <img src="fingerprint-opera.png" width="800">
 
 ---
