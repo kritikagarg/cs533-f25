@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 6</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1 id="statusHeader">This website is totally not tracking you!</h1>
+        <p id="userid"></p>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+    <script>
+        const serverUrl = 'http://192.168.50.100:4000/capture';
+        const LS = localStorage;
+        
+        /* If localstorage contains a key 'user-id' then it will grab the value and send it  
+            over to the server to pull user information. Otherwise a random user id integer
+            is generated and sent to the server for storage
+        */
+
+        if(LS['user-id']) {
+            console.log(`found value ${LS['user-id']}`);
+            fetch(`${serverUrl}/${LS['user-id']}`, {mode:"same-origin"})
+                .then(res => {
+                    const host = res.headers.get('host-info');
+                    const agent = res.headers.get('agent-info');
+                    document.getElementById('statusHeader').innerText = `JK, your host is ${host} and agent is ${agent}`
+                    document.getElementById('userid').innerText = `Also your uid is ${LS['user-id']}`;
+                    console.log(res);
+            });
+        } else {
+            const uid = Math.floor(Math.random() * 10000);
+            LS['user-id'] = uid;
+            fetch(`${serverUrl}/${LS['user-id']}`)
+                .then(res => {
+                console.log(res);
+        });
+        }      
+    </script>
+</html>
