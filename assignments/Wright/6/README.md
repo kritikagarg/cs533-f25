@@ -5,7 +5,7 @@ All work for this assignment is organized under `assignments/Wright/5`.
 - `server.js` – Express server that generates and tracks browser fingerprints.
 - `server.log` – Server-side log file that records each fingerprint and visit count.
 - `README.md` – This file describes the fingerprinting method, how to run the server, screenshots, and a video link.
-- 
+
 ---
 
 ## Running the Server
