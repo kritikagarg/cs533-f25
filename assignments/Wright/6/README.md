@@ -25,22 +25,22 @@ These values are read with `req.get(...)`, joined into a single string, and then
 
 ### Screenshots
 Fingerprint From Brave  
-<img src="6/fingerprint-brave.png" width="800">  
+<img src="fingerprint-brave.png" width="800">  
 
 Fingerprint From Google Chrome  
-<img src="6/fingerprint-chrome.png" width="800">
+<img src="fingerprint-chrome.png" width="800">
 
-Fingerprint From Miscrosoft Edge  
-<img src="6/fingerprint-edge.png" width="800">
+Fingerprint From Microsoft Edge  
+<img src="fingerprint-edge.png" width="800">
 
 Fingerprint From Mozilla Firefox  
-<img src="6/fingerprint-firefox.png" width="800">
+<img src="fingerprint-firefox.png" width="800">
 
-Fingerprint From Curl (Powershell request)  
-<img src="6/fingerprint-curl.png" width="800">
+Fingerprint From Curl (PowerShell request)  
+<img src="fingerprint-curl.png" width="800">
 
 Fingerprint From Opera Browser  
-<img src="6/fingerprint-opera.png" width="800">
+<img src="fingerprint-opera.png" width="800">
 
 ---
 
