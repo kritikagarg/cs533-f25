@@ -1,6 +1,9 @@
 ## Assignment 6
 
 ### Breakdown
+
+YouTube Link: https://www.youtube.com/watch?v=cW6zPad3epQ
+
 For this assignment, we were tasked to fingerprent browsers across my network. To do this, I created an Express server that served a single index.html file. Once a browser communicated with that server, a check was made to see whether or not that browser had interacted with the server before or not. 
 
 If it did not previously interact with the server:
@@ -35,5 +38,3 @@ Desktop Edge (Second Visit):
 
 Android Chrome (First Visit):
 <img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/46138c05-96a2-4a9b-be3e-1b39256e6d47" />
-
-YouTube Link: https://www.youtube.com/watch?v=cW6zPad3epQ
