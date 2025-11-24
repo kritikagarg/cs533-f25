@@ -1,58 +1,30 @@
+# Assignment 6 — Browser Fingerprinting
 
-Assignment 6 — Browser Fingerprinting
+## Links to Code
+- server.js: [View on GitHub](https://github.com/dkass002/cs533-f25/blob/main/assignments/Kassa/6/server.js)  
+- fingerprints.log: [View on GitHub](https://github.com/dkass002/cs533-f25/blob/main/assignments/Kassa/6/fingerprints.log)  
+- clients directory: [View on GitHub](https://github.com/dkass002/cs533-f25/tree/main/assignments/Kassa/6/clients)  
 
-
-
-Links to Code
-
-server.js
-
- https://github.com/dkass002/cs533-f25/blob/main/assignments/Kassa/6/server.js
-
-fingerprints.log 
-
- https://github.com/dkass002/cs533-f25/blob/main/assignments/Kassa/6/fingerprints.log
-
-clients directory  
-
- https://github.com/dkass002/cs533-f25/tree/main/assignments/Kassa/6/clients
-
-
-
- Fingerprinting Algorithm 
-
+## Fingerprinting Algorithm
 My fingerprinting server uses four HTTP headers to generate a browser fingerprint:
 
-  User-Agent
+- User-Agent  
+- Accept-Language  
+- DNT  
 
-  Accept-Language
+These values are combined and hashed using MD5 to create a unique fingerprint for each client.
 
-   DNT
+## Fingerprint Screenshots
+Here are six example fingerprints captured by the server:
 
+![Fingerprint 1](screenshots/Screenshot%201.png)  
+![Fingerprint 2](screenshots/Screenshot%202.png)  
+![Fingerprint 3](screenshots/Screenshot%203.png)  
+![Fingerprint 4](screenshots/Screenshot%204.png)  
+![Fingerprint 5](screenshots/Screenshot%205.png)  
+![Fingerprint 6](screenshots/Screenshot%206.png)  
 
+> Note: The images are stored in the `screenshots/` folder in this repository.
 
-These values are combined and hashed using MD5
-
-
-
-Fingerprints screenshots 
-
-
-
-[1](screenshots/Screenshot 1.png)
-
-[2](screenshots/Screenshot 2.png)
-
-[3](screenshots/Screenshot 3.png)
-
-[4](screenshots/Screenshot 4.png)
-
-[5](screenshots/Screenshot 5.png)
-
-[6](screenshots/Screenshot 6.png)
-
-
-
-YouTube link
-
-https://www.youtube.com/watch?v=ysgxfDSAMTg
+## YouTube Demonstration
+[Watch the video on YouTube](https://www.youtube.com/watch?v=ysgxfDSAMTg)
