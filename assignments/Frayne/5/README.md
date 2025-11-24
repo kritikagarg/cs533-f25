@@ -12,11 +12,24 @@ All code, HTML, and JSON files are located in the corresponding directories unde
 ---
 
 ## Directory Structure
+```
 5/
-├── 5.1/ # CORS: Blocking and allowing JSON
-├── 5.2/ # CORS: Blocking and allowing custom headers
-├── 5.3/ # CSP: Embedding a framable site
-└── README.md
+├── 5.1/
+│ ├── public/
+│ │ └── index.html
+│ ├── server1.js
+│ └── server2.js
+│
+├── 5.2/
+│ ├── public/
+│ │ └── index.html
+│ ├── server1.js
+│ └── server2.js
+│
+└── 5.3/
+├── index.html
+└── server.js
+```
 
 ## 5.1 - CORS: Blocking and Reading JSON Responses
 
