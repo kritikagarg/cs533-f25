@@ -1,14 +1,15 @@
+const cookieParser = require("cookie-parser");
 const express = require("express");
-const md5 = require("md5");
 const fs = require("fs");
 const path = require("path");
+const md5 = require("md5");
+
 
 const app = express();
 const PORT = 3000;
-
-const knownClients = new Map();
 const LOG_FILE = "fingerprints.log";
 
+app.use(cookieParser());
 function logFingerprint(id, headers) {
   const entry =
     `\n=== Client ${id} ===\n` +
@@ -23,43 +24,36 @@ function logFingerprint(id, headers) {
 }
 
 app.get("/", (req, res) => {
-  const fingerprintData = [
-    req.headers["user-agent"] || "",
-    req.headers["accept-language"] || "",
-    req.headers["accept"] || "",
-    req.headers["dnt"] || "",
-  ].join("|");
+  let fingerprint = req.cookies.fp;
 
-  const fingerprint = md5(fingerprintData);
+  if (!fingerprint) {
+    const fingerprintData = [
+      req.headers["user-agent"] || "",
+      req.headers["accept-language"] || "",
+      req.headers["accept"] || "",
+      req.headers["dnt"] || ""
+    ].join("|");
 
-  let message;
-  if (knownClients.has(fingerprint)) {
-    message = `Hey, you’re back! Your secret agent code: ${fingerprint}. Mission continues `;
-  } else {
-    knownClients.set(fingerprint, true);
-    message = `Welcome! You’re a brand-new visitor. Your unique browser fingerprint is: ${fingerprint}`;
-    logFingerprint(fingerprint, req.headers);
+    const fingerprint = md5(fingerprintData);
+    res.cookie("fp", fingerprint, { maxAge: 10 * 60 * 60 * 24 * 30 });
   }
-
   const clientDir = path.join(__dirname, "clients");
-  if (!fs.existsSync(clientDir)) {
-    fs.mkdirSync(clientDir);
-  }
-
+  if (!fs.existsSync(clientDir)) fs.mkdirSync(clientDir);
   const htmlFile = path.join(clientDir, `${fingerprint}.html`);
-
   if (!fs.existsSync(htmlFile)) {
-    const htmlContent = `
+    const clientCount = fs.readdirSync(clientDir).length + 1;
+    const message = `Welcome! You’re a brand-new visitor. Your unique browser fingerprint is: ${fingerprint}`;
+const htmlContent = `
       <html>
+      <head><title>Client ${clientCount}</title></head>
       <body>
-        <h1>Unique page for client ${fingerprint}</h1>
+        <h1>Unique page for client ${clientCount}</h1>
         <p>${message}</p>
       </body>
-      </html>
-    `;
-    fs.writeFileSync(htmlFile, htmlContent);
+      </html>`;
+fs.writeFileSync(htmlFile, htmlContent);
+    logFingerprint(fingerprint, req.headers);
   }
-
   res.sendFile(htmlFile);
 });
 
