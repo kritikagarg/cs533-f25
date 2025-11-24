@@ -1,0 +1,47 @@
+HTTP/1.1 301 Moved Permanently
+Connection: close
+Content-Length: 0
+Retry-After: 0
+cache-control: max-age=300, public
+location: https://www.cnn.com/
+Accept-Ranges: bytes
+Date: Mon, 24 Nov 2025 17:27:21 GMT
+Via: 1.1 varnish
+set-cookie: countryCode=US; Domain=cnn.com; Path=/; SameSite=None; Secure
+set-cookie: stateCode=VA; Domain=cnn.com; Path=/; SameSite=None; Secure
+set-cookie: geoData=virginia beach|VA|23454|US|NA|-500|broadband|36.860|-76.040|544; Domain=cnn.com; Path=/; SameSite=None; Secure
+X-Served-By: cache-iad-kcgs7200100-IAD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1764005241.085998,VS0,VE2
+Vary: Origin
+alt-svc: h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 5348316
+x-last-modified: Mon, 24 Nov 2025 17:14:36 GMT
+cache-control: max-age=60
+access-control-allow-origin: *
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+x-content-hub: build-env=prod; unique-deployment-key=rn11206n; build-version=v6.11.6-0-gb5e3475025; build-commit-hash=b5e3475025b1ec30e9298d8183b0c3991647b8ec
+content-type: text/html; charset=utf-8
+content-security-policy: default-src 'self' blob: https://*.cnn.com:* http://*.cnn.com:* *.cnn.io:* *.cnn.net:* *.turner.com:* *.turner.io:* *.ugdturner.com:* courageousstudio.com *.vgtf.net:*; script-src 'unsafe-eval' 'unsafe-inline' 'self' *; style-src 'unsafe-inline' 'self' blob: *; child-src 'self' blob: *; frame-src 'self' *; object-src 'self' *; img-src 'self' data: blob: *; media-src 'self' data: blob: *; font-src 'self' data: *; connect-src 'self' data: *; frame-ancestors 'self' https://*.cnn.com:* http://*.cnn.com https://*.cnn.io:* http://*.cnn.io:* *.turner.com:* courageousstudio.com;
+Via: 1.1 varnish, 1.1 varnish
+Accept-Ranges: bytes
+Date: Mon, 24 Nov 2025 17:27:21 GMT
+Age: 156
+set-cookie: SecGpc=0; Domain=.cnn.com; Path=/; SameSite=None; Secure
+set-cookie: countryCode=US; Domain=.cnn.com; Path=/; SameSite=None; Secure
+set-cookie: stateCode=VA; Domain=.cnn.com; Path=/; SameSite=None; Secure
+set-cookie: geoData=virginia beach|VA|23454|US|NA|-500|broadband|36.860|-76.040|544; Domain=.cnn.com; Path=/; SameSite=None; Secure
+set-cookie: FastAB=0=997,1=189,2=529,3=796,4=170,5=043,6=960,7=834,8=943,9=176,10=769,11=193,12=873,13=679,14=683,15=953,16=200,17=957,18=693,19=848,h=69,c=69249579,u=69249579; Domain=.cnn.com; Path=/; Expires=Tue, 24 Nov 2026 17:27:21 GMT; HttpOnly; SameSite=None; Secure
+set-cookie: wbdFch=aef5e4bcf1735d50ea034923bf9513ffd67abba7; Domain=www.cnn.com; Path=/; Max-Age=30; SameSite=None; Secure
+X-Served-By: cache-iad-kcgs7200113-IAD, cache-iad-kcgs7200113-IAD, cache-nyc-kteb1890056-NYC
+X-Cache: MISS, HIT, HIT
+X-Cache-Hits: 0, 6, 1
+X-Timer: S1764005241.202164,VS0,VE12
+Vary: Accept-Encoding,Origin,Accept-Language
+alt-svc: h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+

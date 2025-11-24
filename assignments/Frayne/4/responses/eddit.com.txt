@@ -1,0 +1,11 @@
+HTTP/1.1 200 OK
+Date: Mon, 24 Nov 2025 17:27:03 GMT
+Server: Apache
+Upgrade: h2
+Connection: Upgrade
+Last-Modified: Fri, 21 Nov 2025 22:36:25 GMT
+ETag: "366-64422718e6c40"
+Accept-Ranges: bytes
+Content-Length: 870
+Content-Type: text/html
+

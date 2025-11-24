@@ -1,0 +1,49 @@
+HTTP/1.1 301 Moved Permanently
+Date: Mon, 24 Nov 2025 17:29:07 GMT
+Connection: keep-alive
+Location: https://www.natue.com.br
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=frkfG3WNDdLSkr%2B5ZMuy8LKBfiqbKQ3HdUldhjXWuWIvICR8FxsBUwiajHXBfL4xtKixQw3%2FeSTaST5zvY2CL8C0s%2F3xPjU4Lw%3D%3D"}]}
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Server: cloudflare
+CF-RAY: 9a3aa07078ab177e-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/1.1 301 Moved Permanently
+Date: Mon, 24 Nov 2025 17:29:08 GMT
+Connection: keep-alive
+Location: https://www.mundoverde.com.br/
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=GWjiduw6XdrnQ74PUbZnkZU%2BmKRJ4cswLMNQnFrPjN2DxOIWx1Mrfd%2Fku6saPmX3Uk%2Bz0iHGxIKQE%2FkiMcnWqGiRCoWwOtPOoxq4H0rDTDQ%3D"}]}
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Server: cloudflare
+CF-RAY: 9a3aa072bd7fd648-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Connection: keep-alive
+Date: Mon, 24 Nov 2025 17:29:08 GMT
+X-VTEX-Cache-Time: 0.000
+Server: nginx
+Cache-Control: public, max-age=627, s-maxage=60, stale-while-revalidate=1200, stale-if-error=3600
+ETag: "B99A65D4F623503BF42559F8C4B59C62"
+X-VTEX-Janus-Router-Backend-App: io-production-vstore-group-1-1a-cl4
+X-Router-Cache: MISS
+X-Vtex-Io-Cluster-Id: prod-dj-iostore-eks-use1a-cl4
+X-Frame-Options: SAMEORIGIN
+x-vtex-product: store
+x-vtex-renderer: render@8
+x-vtex-etag-control: public, max-age=627
+Link: <https://mundoverde.vtexassets.com>; rel="dns-prefetch",<https://mundoverde.vtexassets.com>; rel="preconnect"; crossorigin,<https://www.google-analytics.com>; rel="dns-prefetch",<https://www.googletagmanager.com>; rel="dns-prefetch",<https://connect.facebook.net>; rel="dns-prefetch"
+X-Vtex-Router-Elapsed-Time: 00:00:00.1208141
+X-Request-ID: 1b5a6fcecd534637b42018a0b705130e
+X-Vtex-Router-Version: 9.17.16
+X-Vtex-Backend-Elapsed-Time: 00:00:00.1193889
+X-VTEX-Cache-Status: STALE
+X-Powered-By-VTEX-Cache: 2.6.1
+X-VTEX-Cache-Server: ip-10-203-63-248.ec2.internal
+Vary: Accept-Encoding,accept-encoding
+X-Cache: Miss from cloudfront
+Via: 1.1 e681dabd190d3783884c0bade3bdc5ca.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: PHL51-P1
+X-Amz-Cf-Id: 7pLV_ZB0yOezb4TWTtD9BTwZScmOnCT_SobSk_R2YyfkodllyBmZyA==
+

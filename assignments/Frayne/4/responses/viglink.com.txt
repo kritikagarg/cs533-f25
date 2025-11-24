@@ -1,0 +1,46 @@
+HTTP/1.1 301 Moved Permanently
+Content-length: 0
+Location: https://www.viglink.com/
+Connection: keep-alive
+
+HTTP/1.1 301 Moved Permanently
+Content-length: 0
+Location: https://sovrn.com/commerce/?utm_source=viglink
+Connection: keep-alive
+
+HTTP/1.1 301 Moved Permanently
+Date: Mon, 24 Nov 2025 17:26:27 GMT
+Content-Type: text/html
+Connection: keep-alive
+CF-RAY: 9a3a9c873d65bacb-IAD
+Location: https://www.sovrn.com/commerce/?utm_source=viglink
+Strict-Transport-Security: max-age=63072000
+cf-cache-status: DYNAMIC
+Set-Cookie: __cf_bm=.NzSXY2gBJXL.QHvln2vX4qStAwTz6i4b34dJst5ibw-1764005187-1.0.1.1-nOc8wbG_5kqbgULLEtsITw8InHD5ppJvaC9W5lOXYbSGO7vveY_KKsCYvAhuSSsEQbhhrAC2uqf_vS1XCr.DBfjrZV1PaE.oC.GaAlhLDfo; path=/; expires=Mon, 24-Nov-25 17:56:27 GMT; domain=.sovrn.com; HttpOnly; Secure; SameSite=None
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400
+
+HTTP/1.1 200 OK
+Date: Mon, 24 Nov 2025 17:26:28 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: keep-alive
+CF-RAY: 9a3a9c898ba8149e-IAD
+Vary: Accept-Encoding
+Vary: Accept-Encoding
+Vary: Accept-Encoding
+Vary: Accept-Encoding,Cookie
+Link: <https://www.sovrn.com/wp-json/>; rel="https://api.w.org/"
+Link: <https://www.sovrn.com/wp-json/wp/v2/pages/33349>; rel="alternate"; title="JSON"; type="application/json"
+Link: <https://www.sovrn.com/?p=33349>; rel=shortlink
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: WP Engine
+X-Cacheable: SHORT
+Cache-Control: max-age=600, must-revalidate
+X-Cache: HIT: 35
+X-Cache-Group: normal
+Strict-Transport-Security: max-age=63072000
+cf-cache-status: DYNAMIC
+Set-Cookie: __cf_bm=Z0X05q7R4ybHfwqTozvyPcz7kaKZ7M4vI.aSMNjVELk-1764005188-1.0.1.1-KDYrwXopJZPCSTo2gKxUE4XUk0M.VnKVV5Kha_G1pcyb_YCRSNjtdYEXggTGys5aJnC9uy24x3rlI_iEwAncydu1QaxM93Z4DE7wgm5PrL4; path=/; expires=Mon, 24-Nov-25 17:56:28 GMT; domain=.www.sovrn.com; HttpOnly; Secure; SameSite=None
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400
+

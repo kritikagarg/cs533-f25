@@ -1,0 +1,21 @@
+HTTP/1.1 302 Found
+cache-control: max-age=0, private, must-revalidate
+connection: close
+content-length: 11
+date: Mon, 24 Nov 2025 17:26:57 GMT
+location: http://survey-smiles.com
+server: Cowboy
+set-cookie: sid=c7c50de7-c95a-11f0-9f3a-099c0b267ba3; path=/; domain=.suveymonkey.com; expires=Sat, 12 Dec 2093 20:41:05 GMT; max-age=2147483647; secure; HttpOnly
+
+HTTP/1.1 200 OK
+date: Mon, 24 Nov 2025 17:26:58 GMT
+content-type: text/html; charset=utf-8
+content-length: 1054
+x-request-id: e88bcb3b-da58-4caf-9018-9ad48e6fe34f
+cache-control: no-store, max-age=0
+accept-ch: sec-ch-prefers-color-scheme
+critical-ch: sec-ch-prefers-color-scheme
+vary: sec-ch-prefers-color-scheme
+x-adblock-key: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANDrp2lz7AOmADaN8tA50LsWcjLFyQFcb/P2Txc58oYOeILb3vBw7J6f4pamkAQVSQuqYsKx3YzdUHCvbVZvFUsCAwEAAQ==_g77+hejcftktpmSlQ5vgKxhIbLOSJ/4wq0x8NNO5G086wRL7G97aPYJlXMpSgCmjTz07+GFVvV2bG48r1pkSKQ==
+set-cookie: parking_session=e88bcb3b-da58-4caf-9018-9ad48e6fe34f; expires=Mon, 24 Nov 2025 17:41:58 GMT; path=/
+

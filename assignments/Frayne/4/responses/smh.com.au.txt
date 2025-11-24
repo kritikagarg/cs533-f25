@@ -1,0 +1,43 @@
+HTTP/1.1 308 Permanent redirect
+Connection: close
+Content-Length: 0
+Server: Varnish
+Retry-After: 0
+cache-control: max-age=86400
+Location: https://www.smh.com.au/
+Accept-Ranges: bytes
+Date: Mon, 24 Nov 2025 17:27:00 GMT
+Via: 1.1 varnish
+X-Served-By: cache-iad-kiad7000053-IAD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1764005220.119948,VS0,VE0
+
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 1185628
+x-render-name: rw
+content-security-policy: frame-ancestors 'self' *.ffxblue.com.au *.ffx.io *.smh.com.au *.theage.com.au *.brisbanetimes.com.au *.watoday.com.au *.cdn.ampproject.org *.platform.ink; upgrade-insecure-requests
+referrer-policy: no-referrer-when-downgrade
+x-xss-protection: 0
+strict-transport-security: max-age=31536000
+x-varnish-grace: normal hit
+content-security-policy-report-only: child-src blob: data: https:; connect-src https: wss:; default-src blob: data: https: 'report-sample' 'unsafe-eval' 'unsafe-inline'; font-src data: https:; form-action https:; frame-src data: https:; img-src blob: data: https:; media-src blob: data: https:; object-src https:; script-src https: 'unsafe-eval' 'unsafe-inline'; style-src https: 'unsafe-inline'; report-uri https://csp.ffx.io/; report-to csp-endpoint
+x-brand-short-name: smh
+x-content-type-options: nosniff
+report-to: {"endpoints":[{"url":"https://csp.ffx.io/"}],"group":"csp-endpoint","include_subdomains":true,"max_age":7884000}
+accept-ch: sec-ch-ua-model,sec-ch-ua-platform-version
+content-type: text/html; charset=utf-8
+x-frame-options: sameorigin
+permissions-policy: camera=(), geolocation=(), microphone=()
+uber-trace-id: 159a41cc24ec0b13:159a41cc24ec0b13:0:0
+cache-control: public, max-age=20, no-transform
+Via: 1.1 varnish, 1.1 varnish
+Accept-Ranges: bytes
+Age: 9
+Date: Mon, 24 Nov 2025 17:27:00 GMT
+X-Served-By: cache-syd10161-SYD, cache-syd10173-SYD, cache-iad-kiad7000087-IAD
+X-Cache: MISS, HIT, MISS
+X-Cache-Hits: 0, 5, 0
+Vary: Accept-Encoding, Accept-Encoding, app-vary, app-vary
+

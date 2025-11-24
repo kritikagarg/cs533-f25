@@ -1,0 +1,16 @@
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=ISO-8859-1
+Content-Security-Policy-Report-Only: object-src 'none';base-uri 'self';script-src 'nonce-pzyZnN_tXNzMWqENR9eNog' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+Accept-CH: Sec-CH-Prefers-Color-Scheme
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Date: Mon, 24 Nov 2025 17:26:32 GMT
+Server: gws
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+Expires: Mon, 24 Nov 2025 17:26:32 GMT
+Cache-Control: private
+Set-Cookie: AEC=AaJma5uTyRGOoVXsStKesCPpuCHYvrFvGSCgEAxa_qxMET1BQd1Ye6myzSs; expires=Sat, 23-May-2026 17:26:32 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax
+Set-Cookie: NID=526=pgThPg81K5GoSH0dtDWPv9gm9oBxKVkNvv1RYbR3-WiLGjn1NSM_fryHiCNKEzKCK1ZLZJZeAxgnxBX42zDzUvyLvQUz2KjXMhm2v10dJG7t_h75PpD_Yfm16vexoqqHzWHlY0TFwO1tc9TpEe4Bfm_dGdWkusP5ATHF7NXM9KeWJ3VWtxB3St7kmuIfH5FVkdlOmjaTuHGY6hG99B3WMoqHFHIxAJaq; expires=Tue, 26-May-2026 17:26:32 GMT; path=/; domain=.google.com; HttpOnly
+Transfer-Encoding: chunked
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+

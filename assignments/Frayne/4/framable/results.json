@@ -1,0 +1,502 @@
+[
+  {
+    "url": "https://ign.com",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://w3.org",
+    "framable": false,
+    "reason": "CSP frame-ancestors present"
+  },
+  {
+    "url": "https://thenai.org",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://viglink.com",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://terra.com.br",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://namecheap.com",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://samsung.com",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://bp2.blogger.com",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://ytimg.com",
+    "framable": false,
+    "reason": "Request failed or site unreachable"
+  },
+  {
+    "url": "https://wikimedia.org",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://www.google.com",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://fandom.com",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://instructables.com",
+    "framable": false,
+    "reason": "CSP frame-ancestors present"
+  },
+  {
+    "url": "https://blog.google",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://hollywoodreporter.com",
+    "framable": false,
+    "reason": "CSP frame-ancestors present"
+  },
+  {
+    "url": "https://zendesk.com",
+    "framable": false,
+    "reason": "CSP frame-ancestors present"
+  },
+  {
+    "url": "https://surveymonkey.com",
+    "framable": false,
+    "reason": "CSP frame-ancestors present"
+  },
+  {
+    "url": "https://github.com",
+    "framable": false,
+    "reason": "X-Frame-Options: deny"
+  },
+  {
+    "url": "https://bp0.blogger.com",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://tvtropes.org",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://tmz.com",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://smh.com.au",
+    "framable": false,
+    "reason": "X-Frame-Options: sameorigin"
+  },
+  {
+    "url": "https://dw.com",
+    "framable": false,
+    "reason": "CSP frame-ancestors present"
+  },
+  {
+    "url": "https://vk.com",
+    "framable": false,
+    "reason": "X-Frame-Options: sameorigin"
+  },
+  {
+    "url": "https://adobe.com",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://www.wikipedia.org",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://reddit.com",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://fr.wikipedia.org",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://cnbc.com",
+    "framable": false,
+    "reason": "CSP frame-ancestors present"
+  },
+  {
+    "url": "https://target.com",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://focus.de",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://plos.org",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://substack.com",
+    "framable": false,
+    "reason": "CSP frame-ancestors present"
+  },
+  {
+    "url": "https://wikia.com",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://instagram.com",
+    "framable": false,
+    "reason": "X-Frame-Options: DENY"
+  },
+  {
+    "url": "https://uol.com.br",
+    "framable": false,
+    "reason": "CSP frame-ancestors present"
+  },
+  {
+    "url": "https://standard.co.uk",
+    "framable": false,
+    "reason": "CSP frame-ancestors present"
+  },
+  {
+    "url": "https://cambridge.org",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://metro.co.uk",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://docs.google.com",
+    "framable": false,
+    "reason": "X-Frame-Options: DENY"
+  },
+  {
+    "url": "https://wp.com",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://techradar.com",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://m.me",
+    "framable": false,
+    "reason": "CSP frame-ancestors present"
+  },
+  {
+    "url": "https://kickstarter.com",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://stackoverflow.com",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://cnn.com",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://nydailynews.com",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://mediafire.com",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://google.es",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://usatoday.com",
+    "framable": false,
+    "reason": "X-Frame-Options: deny"
+  },
+  {
+    "url": "https://groups.google.com",
+    "framable": false,
+    "reason": "X-Frame-Options: DENY"
+  },
+  {
+    "url": "https://doubleclick.net",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://godaddy.com",
+    "framable": false,
+    "reason": "X-Frame-Options: DENY"
+  },
+  {
+    "url": "https://whitehouse.gov",
+    "framable": false,
+    "reason": "X-Frame-Options: DENY"
+  },
+  {
+    "url": "https://express.co.uk",
+    "framable": false,
+    "reason": "X-Frame-Options: DENY"
+  },
+  {
+    "url": "https://google.pl",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://addtoany.com",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://netflix.com",
+    "framable": false,
+    "reason": "X-Frame-Options: DENY"
+  },
+  {
+    "url": "https://alexa.com",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://es.wikipedia.org",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://office.com",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://walmart.com",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://vistaprint.com",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://indiegogo.com",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://mozilla.org",
+    "framable": false,
+    "reason": "X-Frame-Options: DENY"
+  },
+  {
+    "url": "https://naver.com",
+    "framable": false,
+    "reason": "X-Frame-Options: DENY"
+  },
+  {
+    "url": "https://files.wordpress.com",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://scribd.com",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://list-manage.com",
+    "framable": false,
+    "reason": "Request failed or site unreachable"
+  },
+  {
+    "url": "https://dreamstime.com",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://it.wikipedia.org",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://ipv4.google.com",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://pt.wikipedia.org",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://flickr.com",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://cbc.ca",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://tools.google.com",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://nicovideo.jp",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://yandex.com",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://europapress.es",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://pbs.org",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://webnode.page",
+    "framable": false,
+    "reason": "X-Frame-Options: DENY"
+  },
+  {
+    "url": "https://amebaownd.com",
+    "framable": false,
+    "reason": "Request failed or site unreachable"
+  },
+  {
+    "url": "https://nytimes.com",
+    "framable": false,
+    "reason": "X-Frame-Options: DENY"
+  },
+  {
+    "url": "https://booking.com",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://techcrunch.com",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://archive.org",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://storage.googleapis.com",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://picasa.google.com",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://bp.blogspot.com",
+    "framable": false,
+    "reason": "Request failed or site unreachable"
+  },
+  {
+    "url": "https://dailymotion.com",
+    "framable": false,
+    "reason": "X-Frame-Options: DENY"
+  },
+  {
+    "url": "https://imageshack.us",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://ads.google.com",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://nature.com",
+    "framable": false,
+    "reason": "X-Frame-Options: DENY"
+  },
+  {
+    "url": "https://joomla.org",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://googleblog.com",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://oracle.com",
+    "framable": false,
+    "reason": "X-Frame-Options: sameorigin"
+  },
+  {
+    "url": "https://gstatic.com",
+    "framable": true,
+    "reason": "No XFO or CSP blocking"
+  },
+  {
+    "url": "https://un.org",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  },
+  {
+    "url": "https://windows.net",
+    "framable": false,
+    "reason": "Request failed or site unreachable"
+  },
+  {
+    "url": "https://youronlinechoices.com",
+    "framable": false,
+    "reason": "X-Frame-Options: SAMEORIGIN"
+  }
+]

