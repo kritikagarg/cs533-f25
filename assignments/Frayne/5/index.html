@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>CORS Demo</title>
+</head>
+<body>
+  <h1>CORS Blocking Demo</h1>
+  <button id="fetchBtn">Fetch Data from Server 2</button>
+  <pre id="output"></pre>
+
+  <script>
+    document.getElementById('fetchBtn').addEventListener('click', async () => {
+      try {
+        const res = await fetch('http://localhost:5000/data.json');
+        const data = await res.json();
+        document.getElementById('output').textContent = JSON.stringify(data, null, 2);
+      } catch (err) {
+        document.getElementById('output').textContent = '❌ Blocked by CORS policy!';
+        console.error(err);
+      }
+    });
+  </script>
+</body>
+</html>
