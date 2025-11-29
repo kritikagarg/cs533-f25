@@ -82,5 +82,17 @@
       "language": "en-US,en;q=0.9",
       "ip": "::ffff:192.168.8.222"
     }
+  },
+  "fb7dfbfc8c7124bd5af8a19940bbd8881604760dae9c5570f900b36c8bfbc6d0": {
+    "browser": "safari",
+    "firstSeen": "2025-11-29T12:22:12.438Z",
+    "fingerprintId": "fb7dfbfc8c7124bd5af8a19940bbd8881604760dae9c5570f900b36c8bfbc6d0",
+    "headers": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/601.2.4 (KHTML, like Gecko) Version/9.0.1 Safari/601.2.4 facebookexternalhit/1.1 Facebot Twitterbot/1.0",
+      "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+      "encoding": "gzip, deflate",
+      "language": "en-US,en;q=0.9",
+      "ip": "::ffff:192.168.8.175"
+    }
   }
 }

@@ -33,3 +33,17 @@ We hash the following aspects into a sha-256, which we then use to see if you ha
 - IP address
 
 [Video Demo](https://youtu.be/K6NluoDCGRc)
+
+## Screenshots
+### Chrome-Windows
+![Screenshot showing Chrome](screenshots/chome.png)
+### Edge-Windows
+![Screenshot showing Edge](screenshots/edge.png)
+### Firefox-Windows
+![Screenshot showing Firefox](screenshots/ff.png)
+### Curl-UNIX
+![Screenshot showing Curl](screenshots/curl-unix.png)
+### Lynx-UNIX
+![Screenshot showing Lynx](screenshots/lynx.png)
+### Safari-OSX
+![Screenshot showing Safari](screenshots/safari.png)
