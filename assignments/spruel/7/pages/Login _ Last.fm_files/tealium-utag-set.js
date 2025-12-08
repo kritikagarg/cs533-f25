@@ -1,0 +1,1 @@
+define(["require","jquery","jquery-cookie"],function(e){"use strict";const o=e("jquery");e("jquery-cookie");return function(e,i){this.app=i;e=o(e).data("tealium-data"),e.pageViewGuid=i.viewGuid,i=o.cookie("X-UA-Device-Type"),i&&(e.deviceType=i),i=o.cookie("X-UA-Country-Code");i&&(e.ipGeo=i),window.utag_data=e}});
