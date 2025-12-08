@@ -1,0 +1,63 @@
+HTTP/1.1 301 Moved Permanently
+Date: Sun, 07 Dec 2025 20:32:12 GMT
+Connection: keep-alive
+CF-RAY: 9aa6ca7e8d855008-IAD
+Location: https://substack.com/
+Set-Cookie: ab_experiment_sampled=%22false%22; Max-Age=31536000; Domain=substack.com; Path=/; Expires=Mon, 07 Dec 2026 20:32:12 GMT; HttpOnly; Secure; SameSite=Lax
+Set-Cookie: ab_testing_id=%22f4ba129c-9726-4868-a972-4bff9b54cb18%22; Max-Age=31536000; Domain=substack.com; Path=/; Expires=Mon, 07 Dec 2026 20:32:12 GMT; HttpOnly; Secure; SameSite=Lax
+Set-Cookie: __cf_bm=rBVBrZXw3DTuooq3ywNwtKO.TDbzDirD7gTuesH1BNE-1765139532-1.0.1.1-0cWcCYoZsL_rKutfCMhRUzKiW9LWyc9h5_e7yqOQWQeerjno_80_tCozbwrQ3Ph3HOTPWX3uQbtg9pbErKygRg28Zco_BMnwKsDas4BrMtQ; path=/; expires=Sun, 07-Dec-25 21:02:12 GMT; domain=.substack.com; HttpOnly
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 302 
+date: Sun, 07 Dec 2025 20:32:12 GMT
+content-type: text/plain; charset=utf-8
+content-length: 27
+server: cloudflare
+location: /home
+cf-ray: 9aa6ca7f1bda50b1-IAD
+cf-cache-status: DYNAMIC
+cache-control: no-cache
+set-cookie: ab_experiment_sampled=%22false%22; Max-Age=31536000; Domain=substack.com; Path=/; Expires=Mon, 07 Dec 2026 20:32:12 GMT; HttpOnly; Secure; SameSite=Lax
+set-cookie: ab_testing_id=%22bc97f28c-1d68-4819-a744-8c1097dc5dd0%22; Max-Age=31536000; Domain=substack.com; Path=/; Expires=Mon, 07 Dec 2026 20:32:12 GMT; HttpOnly; Secure; SameSite=Lax
+set-cookie: AWSALBTG=E1szqiyxJ0Y2ep2OiP2yn73uvoRAiqUdtpZIkjzOhj1IwVRcgsppWUA7LAXp49wSEtUay+t2Bxa5shenX/DaDjApNd+U+RENw2lLkydFfI1TZ4c5XfqnuJruiWlgOIGoqymYdCPMg4oWYTmnfb9vzBdUdid/PHmsSa0cxTcEmDk2; Expires=Sun, 14 Dec 2025 20:32:12 GMT; Path=/
+set-cookie: AWSALBTGCORS=E1szqiyxJ0Y2ep2OiP2yn73uvoRAiqUdtpZIkjzOhj1IwVRcgsppWUA7LAXp49wSEtUay+t2Bxa5shenX/DaDjApNd+U+RENw2lLkydFfI1TZ4c5XfqnuJruiWlgOIGoqymYdCPMg4oWYTmnfb9vzBdUdid/PHmsSa0cxTcEmDk2; Expires=Sun, 14 Dec 2025 20:32:12 GMT; Path=/; SameSite=None; Secure
+set-cookie: cookie_storage_key=8a579165-1f66-46cc-baac-c4f751830180; Max-Age=7776000; Domain=substack.com; Path=/; Expires=Sat, 07 Mar 2026 20:32:12 GMT; Secure; SameSite=None
+set-cookie: ajs_anonymous_id=%2284097071-ac7b-405a-a337-3e276b5bc308%22; Max-Age=31536000; Domain=substack.com; Path=/; Expires=Mon, 07 Dec 2026 20:32:12 GMT; SameSite=Strict
+set-cookie: visit_id=%7B%22id%22%3A%223324674c-ce86-4dd3-bbb6-98ade562dfec%22%2C%22timestamp%22%3A%222025-12-07T20%3A32%3A12.698Z%22%7D; Max-Age=1800; Domain=substack.com; Path=/; Expires=Sun, 07 Dec 2025 21:02:12 GMT; HttpOnly; SameSite=Strict
+set-cookie: __cf_bm=wlyYjpdLTFJdUG7Z1Wvq6WkXFzicc9CNnKhB3Dyb0xc-1765139532-1.0.1.1-aEWI_3emr69KF.mQ10n0LgCb9Jp_JN33LfNa9vogEok61xzPGa93cpzl5GfKFcJWkb1fFVEKz25pixsccXyMJlVKsqFO12jm3INEoNKBgzI; path=/; expires=Sun, 07-Dec-25 21:02:12 GMT; domain=.substack.com; HttpOnly; Secure; SameSite=None
+strict-transport-security: max-age=31536000
+vary: Accept, Accept-Encoding
+content-security-policy: frame-ancestors 'self' https://*.substack.com https://substack.com
+x-cluster: substack
+x-deploy: 9d1599a183
+x-powered-by: Express
+x-served-by: Substack
+x-service: web
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 200 
+date: Sun, 07 Dec 2025 20:32:12 GMT
+content-type: text/html; charset=utf-8
+server: cloudflare
+cf-ray: 9aa6ca7f8d2250b1-IAD
+cf-cache-status: DYNAMIC
+cache-control: no-cache
+set-cookie: ab_experiment_sampled=%22false%22; Max-Age=31536000; Domain=substack.com; Path=/; Expires=Mon, 07 Dec 2026 20:32:12 GMT; HttpOnly; Secure; SameSite=Lax
+set-cookie: ab_testing_id=%22182dfac1-7bf4-48a4-b67d-d6617ddd4a8a%22; Max-Age=31536000; Domain=substack.com; Path=/; Expires=Mon, 07 Dec 2026 20:32:12 GMT; HttpOnly; Secure; SameSite=Lax
+set-cookie: AWSALBTG=6itbg4aoKRKot1zTOaFn+slJ9WnhHp0/lk0/D60gmBvjyYHnaKahnLYns+2lUBuVidcla/WdEAx2DNDJUDN8a/VyAjEOdMh2eY0QBNwLsyUfIYIG1vx30UR1oa6qdcFcbfvW4S3JMPRLQ8ZOWbOhjR27sfCQPmhH0ziSdMfiSuBw; Expires=Sun, 14 Dec 2025 20:32:12 GMT; Path=/
+set-cookie: AWSALBTGCORS=6itbg4aoKRKot1zTOaFn+slJ9WnhHp0/lk0/D60gmBvjyYHnaKahnLYns+2lUBuVidcla/WdEAx2DNDJUDN8a/VyAjEOdMh2eY0QBNwLsyUfIYIG1vx30UR1oa6qdcFcbfvW4S3JMPRLQ8ZOWbOhjR27sfCQPmhH0ziSdMfiSuBw; Expires=Sun, 14 Dec 2025 20:32:12 GMT; Path=/; SameSite=None; Secure
+set-cookie: cookie_storage_key=324d5f27-f698-437c-85b0-f87f568b7077; Max-Age=7776000; Domain=substack.com; Path=/; Expires=Sat, 07 Mar 2026 20:32:12 GMT; Secure; SameSite=None
+set-cookie: ajs_anonymous_id=%22967e0825-88e7-4020-82c3-c05c8636ba57%22; Max-Age=31536000; Domain=substack.com; Path=/; Expires=Mon, 07 Dec 2026 20:32:12 GMT; SameSite=Strict
+set-cookie: visit_id=%7B%22id%22%3A%22776057b3-f09c-4fb2-b466-60cb0c01a914%22%2C%22timestamp%22%3A%222025-12-07T20%3A32%3A12.781Z%22%7D; Max-Age=1800; Domain=substack.com; Path=/; Expires=Sun, 07 Dec 2025 21:02:12 GMT; HttpOnly; SameSite=Strict
+set-cookie: __cf_bm=.WuHAPtGdjrNe26q9W4VUrhzqUpxyvUveWupOhI09oo-1765139532-1.0.1.1-8BZk1TY9jSjata76kPDcSUws9TQGC1yeCIdDxdPLeoniBsscSadtFjk0Xbks_aRxHDr9u04lb77ZqS.sQsL0A00kDtLyGiQ.gFWIJ7x944Y; path=/; expires=Sun, 07-Dec-25 21:02:12 GMT; domain=.substack.com; HttpOnly; Secure; SameSite=None
+strict-transport-security: max-age=31536000
+vary: Accept-Encoding
+content-security-policy: frame-ancestors 'self' https://*.substack.com https://substack.com
+x-cluster: substack
+x-deploy: 9d1599a183
+x-powered-by: Express
+x-served-by: Substack
+x-service: web
+alt-svc: h3=":443"; ma=86400
+

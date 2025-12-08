@@ -1,0 +1,40 @@
+HTTP/1.1 301 Moved Permanently
+Server: CloudFront
+Date: Sun, 07 Dec 2025 20:32:04 GMT
+Content-Type: text/html
+Content-Length: 167
+Connection: keep-alive
+Location: https://merriam-webster.com/
+X-Cache: Redirect from cloudfront
+Via: 1.1 03c28758fe0abb70088fb45c6855d854.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: IAD61-P2
+Alt-Svc: h3=":443"; ma=86400
+X-Amz-Cf-Id: rAghtymzRtjZ_ZuzWRkHq2-AFpvEZhVJGnILPJXOSfVsvToRZAIpmQ==
+
+HTTP/2 301 
+content-type: text/html
+content-length: 134
+location: https://www.merriam-webster.com:443/
+server: awselb/2.0
+date: Sun, 07 Dec 2025 20:32:04 GMT
+x-cache: Miss from cloudfront
+via: 1.1 aa77c72923f68604fa8f6f77bfdaa2dc.cloudfront.net (CloudFront)
+x-amz-cf-pop: IAD61-P2
+alt-svc: h3=":443"; ma=86400
+x-amz-cf-id: ltqejYA_WV15evfnLNApkIdX3qRIHaTmnG6-tQQlNOsCoGeqqlyfiA==
+
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+content-length: 266903
+date: Sun, 07 Dec 2025 19:50:03 GMT
+x-rid: ridec0e7d44-d3a5-11f0-9e33-0a58a9feac02
+server: nginx
+cache-control: public, max-age=3600
+vary: Accept-Encoding
+x-cache: Hit from cloudfront
+via: 1.1 3a60765023a93f6346539d2ca40f0b12.cloudfront.net (CloudFront)
+x-amz-cf-pop: IAD61-P2
+alt-svc: h3=":443"; ma=86400
+x-amz-cf-id: b5QpcysJbbKfave_opk_wQx_KGveHscQqNCnPgJz1jYuhLVva0XzQA==
+age: 2521
+

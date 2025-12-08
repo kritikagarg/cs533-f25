@@ -1,0 +1,56 @@
+HTTP/1.1 301 Moved Permanently
+Date: Sun, 07 Dec 2025 20:31:09 GMT
+Content-Type: text/html
+Content-Length: 167
+Connection: keep-alive
+Cache-Control: max-age=3600
+Expires: Sun, 07 Dec 2025 21:31:09 GMT
+Location: https://vistaprint.com/
+Set-Cookie: __cf_bm=GI6R.PNTsf3crfbC5iOqQEWuhuQIwdWH.aemMUhA50Y-1765139469-1.0.1.1-zcLVbyBYxyFnXzeYunSnSK8GsWDpX9R.7gXRERGlEMF96scZUjAk.CzK.S.uTAbiBVlA1leG71EctGcPcFtJW8NFGyd89mfkKwsarLQCqi0; path=/; expires=Sun, 07-Dec-25 21:01:09 GMT; domain=.vistaprint.com; HttpOnly
+Server: cloudflare
+CF-RAY: 9aa6c8f19b372d1a-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 301 
+date: Sun, 07 Dec 2025 20:31:09 GMT
+content-type: text/html
+content-length: 167
+location: https://www.vistaprint.com/
+cache-control: max-age=3600
+expires: Sun, 07 Dec 2025 21:31:09 GMT
+set-cookie: __cf_bm=SbE_D1C6k9KDtsfOcl0xIwNFRGuDKFleUPsFAYkCeYY-1765139469-1.0.1.1-7m9Kr6RZGkSr5sRfvqmd.OVf8bIZhazYhUdcXhPa9rzO2kxr7_T7QVVeVMqEfhBggzDB3N3CyHKcckgyWQiovosDjy9YBwdhrLiPZgH5wqI; path=/; expires=Sun, 07-Dec-25 21:01:09 GMT; domain=.vistaprint.com; HttpOnly; Secure; SameSite=None
+strict-transport-security: max-age=31536000
+server: cloudflare
+cf-ray: 9aa6c8f29b84c93b-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 200 
+date: Sun, 07 Dec 2025 20:31:09 GMT
+content-type: text/html
+server: cloudflare
+cf-ray: 9aa6c8f35bd4081d-IAD
+cf-cache-status: DYNAMIC
+cache-control: no-cache, private, max-age=0
+expires: Thu, 01 Jan 1970 00:00:00 UTC
+set-cookie: _ub-s=1371499710; Path=/
+set-cookie: userContext={%22ctc%22:{%22v1%22:[%22anonymous_users%22%2C%22login_prompt_not_logged_in_customers%22%2C%22no_account%22%2C%22design_services_hub_inspiration%22%2C%22not_proadvantage%22%2C%222025_de_unrecognized%22%2C%22excludes_rnb_test_ca_uk%22%2C%22es_payment_before_brief_test%22%2C%22everyone%22%2C%222025_FR_Unrecognized%22%2C%22site_tagging_new_customer%22%2C%22new_user_registered_nonregistered%22%2C%22new_customer_fr_de_nl%22]}%2C%22userProfile%22:{%22v1%22:{%22culture%22:%22en-US%22}}}; path=/; domain=.vistaprint.com; expires=Mon, 08 Dec 2025 08:31:09 GMT
+set-cookie: ucSearchParams=%7B%7D; path=/; domain=.vistaprint.com; expires=Tue, 06 Jan 2026 20:31:09 GMT
+set-cookie: testUserId=_a6c28d1b-fe80-4571-a35c-fdc5b58225b3; path=/; domain=.vistaprint.com; Max-Age=15552000
+set-cookie: optimizelyEndUserId=; path=/; domain=.vistaprint.com; Max-Age=0
+set-cookie: ftContext=; path=/; domain=.vistaprint.com; Max-Age=0
+set-cookie: cf-region-code=VA; Secure; Path=/; SameSite=None
+set-cookie: cf-ipcountry=US; Secure; Path=/; SameSite=None
+set-cookie: vp-bot-score=1; Secure; Path=/; SameSite=None
+set-cookie: vp-bot-verified=false; Secure; Path=/; SameSite=None
+set-cookie: vp-bot-category=; Secure; Path=/; SameSite=None
+set-cookie: __cf_bm=.I7fyd67DDF74UMzkvpUvwCNyv00oqqq3sYUxnb6RxA-1765139469-1.0.1.1-FBICgTuCi4NdAtybtgef4.pKTGkxryC93XDE62AlX1LePHcFxv2RmPmKNxoGhJ3GZLMgal_uuNX2ttuLJGBndzaNXMDmN0S2Fe.7KHQkTNk; path=/; expires=Sun, 07-Dec-25 21:01:09 GMT; domain=.vistaprint.com; HttpOnly; Secure; SameSite=None
+strict-transport-security: max-age=31536000
+vary: Accept-Encoding
+pragma: no-cache
+server-timing: pre-render-fragment-info; dur=0.84, pre-render-fragment-map; dur=0.93, overrides-applied; dur=1.07, pre-render-template; dur=6.47, import-map; dur=9.48, pre-render-import-map; dur=9.59, pre-render-user-context; dur=9.82, pre-render-template; dur=9.91, url-metadata; dur=0.13, create-style; dur=0.12, create-page-head-footer; dur=5.33, core-bookends; dur=22.63, core-comms-bar; dur=14.57, home-experiments-mab-experiment-tracker; dur=14.77, main-sections-banner; dur=14.9, main-sections-home-slim-banner; dur=15.12, main-sections-categories; dur=15.3, main-sections-recommendations; dur=15.41, main-sections-feature-tile-row; dur=15.59, main-sections-feature-tile-row; dur=15.8, main-sections-feature-tile-row; dur=15.98, main-sections-banner; dur=16.14, main-sections-feature-tile-row; dur=16.39, main-sections-feature-tile-row; dur=22.82, core-social-curation; dur=17.07, marketing-email-subscription-component; dur=23.44, main-sections-seo-zone; dur=17.23, core-bookends; dur=24.23, finish-render-template; dur=33.33
+vp-ingress-route: Default
+x-powered-by: UBIK
+x-skipper-location: us-east-1
+x-ubik-location: us-east-1
+alt-svc: h3=":443"; ma=86400
+

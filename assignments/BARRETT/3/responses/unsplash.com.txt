@@ -1,0 +1,39 @@
+HTTP/1.1 301 Moved Permanently
+Connection: close
+Content-Length: 0
+Server: Varnish
+Retry-After: 0
+Location: https://unsplash.com/
+Accept-Ranges: bytes
+Date: Sun, 07 Dec 2025 20:32:12 GMT
+Via: 1.1 varnish
+X-Served-By: cache-iad-kiad7000025-IAD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1765139532.121255,VS0,VE3
+strict-transport-security: max-age=31449600
+Set-Cookie: require_cookie_consent=false; Expires=Mon, 07 Dec 2026 20:32:12 GMT; path=/;
+
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+link: <https://images.unsplash.com>; rel="preconnect", <https://plus.unsplash.com>; rel="preconnect"
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+x-xss-protection: 1
+referrer-policy: origin-when-cross-origin
+x-app-path-locale: en
+x-app-path-route-label: Home
+fastly-is-origin: 1
+fastly-backend-name: F_web_backend
+accept-ranges: bytes
+date: Sun, 07 Dec 2025 20:32:12 GMT
+via: 1.1 varnish
+age: 501
+x-served-by: cache-iad-kjyo7100160-IAD
+x-cache: HIT
+x-cache-hits: 1
+vary: client-geo-region, direct-ads-region, x-locale, x-logged-in, Accept-Encoding
+strict-transport-security: max-age=31449600
+set-cookie: require_cookie_consent=false; Expires=Mon, 07 Dec 2026 20:32:12 GMT; path=/;
+content-length: 750216
+

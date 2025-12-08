@@ -1,0 +1,18 @@
+HTTP/1.1 301 Moved Permanently
+Server: nginx/1.20.1
+Date: Sun, 07 Dec 2025 20:32:11 GMT
+Content-Type: text/html
+Content-Length: 169
+Connection: keep-alive
+Location: https://telegra.ph/
+
+HTTP/2 200 
+server: nginx/1.20.1
+date: Sun, 07 Dec 2025 20:32:11 GMT
+content-type: text/html; charset=utf-8
+content-length: 4576
+x-frame-options: SAMEORIGIN
+pragma: no-cache
+cache-control: no-store
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+

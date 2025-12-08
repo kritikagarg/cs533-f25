@@ -1,0 +1,42 @@
+HTTP/1.1 302 Found
+Date: Sun, 07 Dec 2025 20:32:13 GMT
+Server: Apache
+Location: https://www.stanford.edu/
+Content-Type: text/html; charset=iso-8859-1
+
+HTTP/2 200 
+access-control-allow-headers: Content-Type, Authorization
+access-control-allow-methods: GET,POST
+cache-control: public, max-age=604800
+content-security-policy: upgrade-insecure-requests;
+content-type: text/html; charset=UTF-8
+cross-origin-embedder-policy: unsafe-none; report-to='default'
+cross-origin-embedder-policy-report-only: unsafe-none; report-to='default'
+cross-origin-opener-policy: unsafe-none
+cross-origin-opener-policy-report-only: unsafe-none; report-to='default'
+cross-origin-resource-policy: cross-origin
+link: <https://www.stanford.edu/wp-json/>; rel="https://api.w.org/"
+link: <https://www.stanford.edu/wp-json/wp/v2/pages/64>; rel="alternate"; title="JSON"; type="application/json"
+link: <https://www.stanford.edu/>; rel=shortlink
+permissions-policy: accelerometer=(), autoplay=(), camera=(), cross-origin-isolated=(), display-capture=(self), encrypted-media=(), fullscreen=*, geolocation=(self), gyroscope=(), keyboard-map=(), magnetometer=(), microphone=(), midi=(), payment=*, picture-in-picture=*, publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=*, usb=(), xr-spatial-tracking=(), gamepad=(), serial=()
+referrer-policy: strict-origin-when-cross-origin
+server: nginx
+strict-transport-security: max-age=63072000
+strict-transport-security: max-age=300
+x-content-security-policy: default-src 'self'; img-src *; media-src * data:;
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-pantheon-styx-hostname: styx-fe1-b-65f68cd596-x8h8m
+x-permitted-cross-domain-policies: none
+x-styx-req-id: b90d4eff-d399-11f0-83de-9e577fc68d7e
+age: 7769
+accept-ranges: bytes
+via: 1.1 varnish, 1.1 varnish, 1.1 varnish
+date: Sun, 07 Dec 2025 20:32:13 GMT
+x-served-by: cache-chi-kigq8000175-CHI, cache-iad-kcgs7200148-IAD, cache-iad-kjyo7100056-IAD
+x-cache: HIT, HIT, MISS
+x-cache-hits: 14, 1, 0
+x-timer: S1765139533.207264,VS0,VE24
+vary: Accept-Encoding, Cookie, Cookie
+content-length: 152766
+

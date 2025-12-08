@@ -1,0 +1,36 @@
+HTTP/1.1 301 Moved Permanently
+Date: Sun, 07 Dec 2025 20:31:10 GMT
+Server: Apache/2.4.58
+Location: https://www.sfgate.com/
+Cache-Control: max-age=60
+Expires: Sun, 07 Dec 2025 20:32:10 GMT
+Connection: close
+Content-Type: text/html; charset=iso-8859-1
+
+HTTP/2 307 
+server: Varnish
+retry-after: 0
+cache-control: max-age=0
+accept-ranges: bytes
+date: Sun, 07 Dec 2025 20:31:10 GMT
+via: 1.1 varnish
+set-cookie: _pxhd=0a44b5a44699ae12c9f86c08a2900fe47f91e0482b2a2dfdce9559615994f2ac:aaf0ba63-d3ab-11f0-b7fb-8f5bc3043375; Secure; Expires=Mon, 07 Dec 2026 20:31:10 GMT; path=/;
+x-vcl-version: 455
+set-cookie: _HFID=hfid:fdf691c4cab6516f2bd76c4ceba0b37079f805043b3ce03a102ea17c0871abef42ba220412bfbc506d95dbe46b5a52bb446b98aa2c3f594222f18b5ffe061902; path=/; expires=Mon, 07 Dec 2026 20:31:10 GMT; secure;
+set-cookie: location_data={"is_eu":false,"country_code":"US","postal_code":"23504","metro_code":"544","city":"norfolk","region":"VA","os_name":"","os_version":"","browser_name":"curl","browser_version":"8","platform_hwtype":"","geo_conn_speed":"cable"}; path=/; SameSite=Strict; Secure
+location: https://tollbit.sfgate.com/
+set-cookie: ab_bucket=65; expires=Mon, 07 Dec 2026 20:31:10 GMT; path=/; SameSite=none; Secure
+x-served-by: cache-iad-kiad7000148-IAD
+x-cache: HIT
+x-cache-hits: 0
+strict-transport-security: max-age=300
+x-vclmem: 3192
+content-length: 0
+
+HTTP/2 405 
+allow: GET
+alt-svc: h3=":443"; ma=2592000
+date: Sun, 07 Dec 2025 20:31:11 GMT
+vary: Origin
+via: 2.0 Caddy
+

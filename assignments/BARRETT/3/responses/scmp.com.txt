@@ -1,0 +1,24 @@
+HTTP/1.1 301 Moved Permanently
+Date: Sun, 07 Dec 2025 20:31:59 GMT
+Content-Type: text/html
+Content-Length: 167
+Connection: keep-alive
+Cache-Control: max-age=3600
+Expires: Sun, 07 Dec 2025 21:31:59 GMT
+Location: https://www.scmp.com/
+Server: cloudflare
+CF-RAY: 9aa6ca2ccecd07f0-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 403 
+date: Sun, 07 Dec 2025 20:31:59 GMT
+content-type: text/html; charset=UTF-8
+x-frame-options: SAMEORIGIN
+referrer-policy: same-origin
+cache-control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+expires: Thu, 01 Jan 1970 00:00:01 GMT
+set-cookie: __cf_bm=ORwEc_mc7T.ciYgCmIlp59K7MjiTNAifB.MoPfcGx3M-1765139519-1.0.1.1-NqA7coNL6b1DPhEkPmau1WXBehWgwi60T.XgViVs9ofDXdiGrfqJpJ.pmqyhPcPGZ4Xk6xFYzJOoi55jm51818D4CIlWsVpKsqHaToEkmuY; path=/; expires=Sun, 07-Dec-25 21:01:59 GMT; domain=.scmp.com; HttpOnly; Secure; SameSite=None
+server: cloudflare
+cf-ray: 9aa6ca2dae510605-IAD
+alt-svc: h3=":443"; ma=86400
+

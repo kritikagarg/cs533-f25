@@ -1,0 +1,39 @@
+HTTP/1.1 301 Moved Permanently
+Content-Type: application/binary
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Sun, 07 Dec 2025 20:31:50 GMT
+Location: https://translate.google.com/
+Content-Length: 0
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Set-Cookie: NID=527=A7m5fkj5155AE9QApsR2AmQafCe--uP4WYxMYGK0RDy7KsU5FvSDzZVMox-lP7QjXOrc4C9Ckhzb4o2BHJfGfKLq0avYU0mqpmUnwPh_NJjHnDHfzsMScau0_EZ2VXogXz6TDMn9B2RNxw9MTf71aKIAAfVmNspBmxzM9J-ppbkKvwF-lOOrjdtmYok5GG7JB9FzVk7XHcU9UJbmoZI; expires=Mon, 08-Jun-2026 20:31:50 GMT; path=/; domain=.google.com; HttpOnly
+
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+vary: Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site
+x-ua-compatible: IE=edge
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: Mon, 01 Jan 1990 00:00:00 GMT
+date: Sun, 07 Dec 2025 20:31:50 GMT
+content-length: 0
+p3p: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+content-security-policy: script-src 'nonce-4VcNV6KVs95UBkEos3S2fg' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/TranslateWebserverUi/cspreport;worker-src 'self'
+content-security-policy: require-trusted-types-for 'script';report-uri /_/TranslateWebserverUi/cspreport
+cross-origin-resource-policy: same-site
+permissions-policy: ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+accept-ch: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
+cross-origin-opener-policy: same-origin-allow-popups
+reporting-endpoints: default="/_/TranslateWebserverUi/web-reports?context=eJzjqtHikmJw0JBi-LxjBmvrzXOsk4G4a9F51hlAbKhwidUeiIskrrA2AHFEzzXWT1U3WAWqb7Amsd9kLQDiUym3WOs_3GL9VuzLxlLiy_byqy9b5z9ftr_6fmy_7f3YQvr92O5_8WNjrvFnqwLipOn-bP_m-bNNlQ9gE-Lh2Hbi-kk2gQt3btxnUlJLyi-MLylKzCvOSSxJ1S1PTSpOLSpLLYo3MjAyNTQyMNYzMIsvMAAABSZFFQ"
+server: ESF
+x-xss-protection: 0
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+set-cookie: NID=527=LA-UYm_IHKaaoTcCie-tmNOs6pQZjtf4ws4dtIgzN6EaooHFWvR6k0HlPTy-8bJhd7KvnievYe-AlHDqIVqwhVvQ4SbOA6pk6r_v37hcoooqEhCdkNKdI1qXsYxH75GuZJO-mL38Rb15enyxf4IRhSb2X8Xv9bef8BeaMM5thQ0hwFedzS6na6Y_evP-BLLUdOHtsdjXElNMriwn3BmH; expires=Mon, 08-Jun-2026 20:31:50 GMT; path=/; domain=.google.com; HttpOnly
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+

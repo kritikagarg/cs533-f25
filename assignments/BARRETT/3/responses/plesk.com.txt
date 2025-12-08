@@ -1,0 +1,51 @@
+HTTP/1.1 301 Moved Permanently
+Date: Sun, 07 Dec 2025 20:32:10 GMT
+Content-Type: text/html
+Content-Length: 167
+Connection: keep-alive
+Cache-Control: max-age=3600
+Expires: Sun, 07 Dec 2025 21:32:10 GMT
+Location: https://plesk.com/
+X-Content-Type-Options: nosniff
+Server: cloudflare
+CF-RAY: 9aa6ca70fc6f25cc-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 301 
+date: Sun, 07 Dec 2025 20:32:10 GMT
+location: https://www.plesk.com/
+cf-ray: 9aa6ca71aaad3389-IAD
+x-powered-by: PleskLin
+x-xss-protection: 1; mode=block
+access-control-allow-origin: *
+x-turbo-charged-by: LiteSpeed
+cf-cache-status: DYNAMIC
+strict-transport-security: max-age=15552000
+x-content-type-options: nosniff
+server: cloudflare
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 200 
+date: Sun, 07 Dec 2025 20:32:10 GMT
+content-type: text/html; charset=UTF-8
+cf-ray: 9aa6ca732809d227-IAD
+x-powered-by: PHP/8.2.29
+x-powered-by: PleskLin
+x-xss-protection: 1; mode=block
+x-dns-prefetch-control: on
+x-frame-options: SAMEORIGIN
+content-security-policy: frame-ancestors 'self';
+link: <https://www.plesk.com/wp-json/>; rel="https://api.w.org/"
+link: <https://www.plesk.com/wp-json/wp/v2/pages/27874>; rel="alternate"; title="JSON"; type="application/json"
+link: <https://www.plesk.com/>; rel=shortlink
+cache-control: public, max-age=172800
+expires: Tue, 09 Dec 2025 07:55:25 GMT
+x-litespeed-cache: hit
+access-control-allow-origin: *
+alt-svc: h3=":443"; ma=86400
+x-turbo-charged-by: LiteSpeed
+cf-cache-status: DYNAMIC
+strict-transport-security: max-age=15552000
+x-content-type-options: nosniff
+server: cloudflare
+

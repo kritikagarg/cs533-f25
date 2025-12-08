@@ -1,0 +1,32 @@
+HTTP/1.1 301 Moved Permanently
+Date: Sun, 07 Dec 2025 20:31:17 GMT
+Content-Type: text/html
+Content-Length: 167
+Connection: keep-alive
+Cache-Control: max-age=3600
+Expires: Sun, 07 Dec 2025 21:31:17 GMT
+Location: https://apnews.com/
+Set-Cookie: __cf_bm=Tuy1UPYs_OQBkgw.O84yerAJSF.SdumKASN2S6cNXv4-1765139477-1.0.1.1-5JvoOHa6IMVnlIcCxMMd0zmrdEQNHXiEZdEbP1vYiR_NskrhztdPTDDwuyrJq_Yzp6lGyPER1no6b3ABxC5_6nlv2Vn25KZw3k58RAdhjbJfcMZKEn19.AeEfGjaCgll; path=/; expires=Sun, 07-Dec-25 21:01:17 GMT; domain=.apnews.com; HttpOnly
+Server: cloudflare
+CF-RAY: 9aa6c9264b2dca3a-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 200 
+date: Sun, 07 Dec 2025 20:31:17 GMT
+content-type: text/html;charset=UTF-8
+cf-ray: 9aa6c926ec338792-IAD
+strict-transport-security: max-age=31536000; includeSubDomains
+content-security-policy: frame-ancestors 'self' https://cms.apnews.com/
+cache-control: public, max-age=120, stale-if-error=86400
+x-powered-by: Brightspot
+vary: Accept-Encoding
+x-envoy-upstream-service-time: 1326
+x-envoy-decorator-operation: brightspot-frontend-verify.prod-news.svc.cluster.local:80/*
+via: 1.1 google
+alt-svc: h3=":443"; ma=86400
+last-modified: Sun, 07 Dec 2025 20:28:43 GMT
+cf-cache-status: HIT
+age: 44
+set-cookie: __cf_bm=hiyRnBlWUcP35wG1H7nyn.iLaePP.N9vp7DdTxEVEok-1765139477-1.0.1.1-uXZUXuBc4IAhpWC3OC.Bb927g3h1ari0y.mbr7uLxmiP01oQM_DzZjN2dviJ6jYILM5NUIIMgcyWXGP_Itc6MHnyPqWQclcJKypOPG5UtQa9ZjgjRL.u9Dgh_zxiiWw8; path=/; expires=Sun, 07-Dec-25 21:01:17 GMT; domain=.apnews.com; HttpOnly; Secure; SameSite=None
+server: cloudflare
+

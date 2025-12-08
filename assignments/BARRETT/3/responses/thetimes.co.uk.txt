@@ -1,0 +1,49 @@
+HTTP/1.1 307 Temporary Redirect
+Server: openresty/1.11.2.3
+Date: Sun, 07 Dec 2025 20:31:24 GMT
+Content-Type: text/html
+Content-Length: 193
+Connection: keep-alive
+Location: https://thetimes.co.uk/
+Cache-Control: max-age=60
+
+HTTP/2 301 
+server: openresty/1.11.2.3
+date: Sun, 07 Dec 2025 20:31:26 GMT
+content-type: text/html
+content-length: 191
+location: https://www.thetimes.com
+cache-control: max-age=60
+
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+content-length: 1504765
+server: CloudFront
+date: Sun, 07 Dec 2025 20:31:19 GMT
+x-frame-options: SAMEORIGIN
+x-xss-protection: 0
+x-content-type-options: nosniff
+expires: Sun, 07 Dec 2025 20:34:19 GMT
+etag: "16f5fd-7BU3kfaAxHL0e0MMsJjbrzlmHMY"
+x-acs-version: 2
+cache-control: public, max-age=180, stale-if-error=178
+vary: Accept-Encoding
+via: 1.1 e4ed21ef6440d05d23aa2a82e459e776.cloudfront.net (CloudFront)
+alt-svc: h3=":443"; ma=86400
+age: 8
+x-ni-statuscode: acsaz-307
+x-ni-statusmessage: Teaser pages are enabled for the requested article
+set-cookie: nuk_customer_location_hint=GLOBAL; path=/; domain=.thetimes.com
+set-cookie: nuk_zephr_decisions=eyJuZXctaG90LWNvbGQtcGF5d2FsbCI6IlJFR1dBTEw6SE9UIiwiZnJlZS1hY2Nlc3MtcHV6emxlcy1wcm9tbyI6IkRpc2FibGVfQWNjZXNzIiwiZnJlZS1hY2Nlc3MtYXJ0aWNsZXMiOiJEaXNhYmxlX0FjY2VzcyIsImZwLTExMzAiOiJEaXNhYmxlX0Z1bmN0aW9uYWwiLCJmcC0xMTI5IjoiRGlzYWJsZV9BY2Nlc3MiLCJmcC0xMTI4IjoiRGlzYWJsZV9BY2Nlc3MiLCJmcC0xMTI2IjoiRGlzYWJsZV9BY2Nlc3MiLCJmcC0xMTIzIjoiRGlzYWJsZV9GdW5jdGlvbmFsIiwiZnAtMTExMyI6IkRpc2FibGVfRnVuY3Rpb25hbCIsImZwLTExMTAiOiJEaXNhYmxlX0FjY2VzcyIsImZwLTExMDkiOiJEaXNhYmxlX0FjY2VzcyIsImZwLTExMDgiOiJEaXNhYmxlX0FjY2VzcyIsImZwLTExMDIiOiJEaXNhYmxlX1BsYXRmb3JtIiwiZnAtMTEwMSI6IkRpc2FibGVfUGxhdGZvcm0ifQ==; path=/
+set-cookie: access-details=eyJhY3RpdmVQcm9kdWN0cyI6W10sInJlYXNvbiI6Ik5PX0FDQ0VTUyIsInRyaWFsIjpudWxsLCJjb21wYW55QWNjZXNzRGV0YWlscyI6bnVsbH0=; path=/; domain=www.thetimes.com; priority=High
+set-cookie: access-result=UNAUTHORIZED; path=/; domain=www.thetimes.com; priority=High
+set-cookie: vip-go-seg=access-result--UNAUTHORIZED; path=/; domain=www.thetimes.com; priority=High
+set-cookie: access-decisions=eyJmcC0xMTAxIjpmYWxzZSwiZnAtMTEwMiI6ZmFsc2UsImZwLTExMDgiOmZhbHNlLCJmcC0xMTA5IjpmYWxzZSwiZnAtMTExMCI6ZmFsc2UsImZwLTExMTMiOmZhbHNlLCJmcC0xMTIzIjpmYWxzZSwiZnAtMTEyNiI6ZmFsc2UsImZwLTExMjgiOmZhbHNlLCJmcC0xMTI5IjpmYWxzZSwiZnAtMTEzMCI6ZmFsc2UsImZyZWUtYWNjZXNzLWFydGljbGVzIjpmYWxzZSwiZnJlZS1hY2Nlc3MtcHV6emxlcy1wcm9tbyI6ZmFsc2UsIm5ldy1ob3QtY29sZC1wYXl3YWxsIjpmYWxzZX0=; path=/; domain=www.thetimes.com; priority=High
+set-cookie: nuk_ni_statuscode=acsaz-307; max-age=120
+set-cookie: nuk_customer_country_code=US; path=/; domain=.thetimes.com; secure
+set-cookie: euconsent-v2=expire; expires=Tue, 01-Jan-2019 00:00:00 GMT; path=/
+set-cookie: _tm_com_p=eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..lYc6enDQNwCAVZ6e.1rQueQDakFAegv79OO5Sf-7ccJ4gKfIapcVpQkJMk10M992WYGiQ5JI3IRFrcrx6BPNCYm8jWugNDlgxMU86y5mtpwMAMlVy-VvUexL5Uvyt3DmyyvJxwDUhvKHF4s9uTyx88xPRn0WiM5XkRJVGKo1YUCujYYgyxDYAOuP7liIHKek3MaXrNodPPjt3-nluz5ko6YoWN0MeZwy68zjBOZLBH-h4QW92tVHwNIy8xnOoI6ac8rNzwFro-s95sxohbNRR-I-u5zFU6Jg1k5JR97jUwa2QoXkZjV1KomhFcEd2.jX4tKzS-8dpOlj3-MY93Ow; Max-Age=86400; Path=/
+x-cache: Hit from cloudfront
+x-amz-cf-pop: IAD89-P3
+x-amz-cf-id: JhDJ8XSTzEkIt-UhLhR-0XALVY1nmKvHyrj7YScTQL29kgJl7yFgkw==
+

@@ -1,0 +1,50 @@
+HTTP/1.1 301 Moved Permanently
+Server: CloudFront
+Date: Sun, 07 Dec 2025 20:32:06 GMT
+Content-Type: text/html
+Content-Length: 167
+Connection: keep-alive
+Location: https://surveymonkey.com/
+X-Cache: Redirect from cloudfront
+Via: 1.1 d595bd24206cf641f8d0993f4b0f9b80.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: IAD12-P5
+Alt-Svc: h3=":443"; ma=86400
+X-Amz-Cf-Id: JOB8UUMVWbiuRsb679veK3CfVf71-FOuoTd36W4byl3X-4dcb9hypQ==
+
+HTTP/2 301 
+content-length: 0
+location: https://www.surveymonkey.com/
+server: CloudFront
+date: Sun, 07 Dec 2025 20:32:06 GMT
+x-cache: LambdaGeneratedResponse from cloudfront
+via: 1.1 20087479a4d05dd93cb74ce096decb8e.cloudfront.net (CloudFront)
+x-amz-cf-pop: IAD12-P5
+alt-svc: h3=":443"; ma=86400
+x-amz-cf-id: COoq_CgjUGOhHtxgO0O2cqU2_TxZCtMCMB4rsybcmVbL2NDLeWFz2g==
+
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+content-length: 777511
+date: Sun, 07 Dec 2025 20:26:21 GMT
+server: nginx
+sm-request-id: 4Dj1cz5F3Fg3BKTnpxoMr_-XuSxy8MTxtsHDa1KmLIwNGcbJHP_TIg==
+x-sm-key: sm1p129058_ sm1p129242_ sm1p48056_
+cache-control: public,  no-cache="Set-Cookie",  max-age=300,  s-maxage=600,  stale-while-revalidate=60,  stale-if-error=172800
+referrer-policy: strict-origin-when-cross-origin
+strict-transport-security: max-age=31536000; includeSubDomains
+x-xss-protection: 1;mode=block
+x-content-type-options: nosniff
+content-security-policy: default-src https: data: 'unsafe-eval' 'unsafe-inline' https://*.smassets.net https://www.google.com https://www.gstatic.com https://www.recaptcha.net wss://*.hotjar.com wss://*.qualified.com https://api.amplitude.com https://api2.amplitude.com https://*.crazyegg.com; upgrade-insecure-requests; connect-src https: wss: https://rum-ingest.us1.signalfx.com/ https://api.schedule.zoominfo.com https://ws.zoominfo.com 'self'; script-src https: blob: 'unsafe-eval' 'unsafe-inline' https://js.zi-scripts.com https://schedule.zoominfo.com https://ws-assets.zoominfo.com 'self'; worker-src https: blob: 'self'; media-src https: blob: 'self'; frame-ancestors 'self' https://*.zendesk.com https://*.myshopify.com https://teams.microsoft.com https://*.eloqua.com https://*.surveymonkey.com https://*.sharepoint.com https://*.worldpay.com https://*.cardinalcommerce.com https://*.office.com https://*.office365.com https://*.microsoft365.com https://*.cloud.microsoft
+vary: Accept-Encoding,Accept-Encoding
+set-cookie: attr_multitouch="DZMOpuBH+AUoRIHn4GKSojiXf0g="; Domain=.surveymonkey.com; expires=Mon, 07 Dec 2026 20:32:06 GMT; Path=/; SameSite=none; Secure
+set-cookie: cdp_seg="oWCuvMm36Ps0nQaL5E3df+0PEFA="; Domain=.surveymonkey.com; expires=Sat, 07 Mar 2026 20:32:06 GMT; Path=/; SameSite=none; Secure
+set-cookie: ep201="xlHq61G+yv/pMIaMHpUApWBKB2I="; Domain=.surveymonkey.com; expires=Sun, 07 Dec 2025 21:02:06 GMT; Path=/; SameSite=none; Secure
+set-cookie: ep202="NnRYjzIo2aNgU+rNqCPHsYPMtVc="; Domain=.surveymonkey.com; expires=Sat, 07 Mar 2026 20:32:06 GMT; Path=/; SameSite=none; Secure
+set-cookie: ep203="ffqfXl7Na4OpiOVZsNkJF8w8v4k="; Domain=.surveymonkey.com; expires=Sat, 07 Mar 2026 20:32:06 GMT; HttpOnly; Path=/; SameSite=none; Secure
+x-cache: Hit from cloudfront
+via: 1.1 abc336ad4e023bfb4ade64ee3cb8317a.cloudfront.net (CloudFront)
+x-amz-cf-pop: IAD12-P5
+alt-svc: h3=":443"; ma=86400
+x-amz-cf-id: T2upAOQVBF5nI-lbGa2_z4i4R-XhbraxoBjW9fWeqfZ8jUpBZPP6vg==
+age: 345
+

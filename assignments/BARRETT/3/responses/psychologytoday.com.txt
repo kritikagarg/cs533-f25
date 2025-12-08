@@ -1,0 +1,43 @@
+HTTP/1.1 301 Moved Permanently
+Server: awselb/2.0
+Date: Sun, 07 Dec 2025 20:32:00 GMT
+Content-Type: text/html
+Content-Length: 134
+Connection: keep-alive
+Location: https://www.psychologytoday.com:443/
+
+HTTP/2 302 
+date: Sun, 07 Dec 2025 20:32:00 GMT
+content-type: text/html; charset=iso-8859-1
+location: https://www.psychologytoday.com/us
+server: Apache
+
+HTTP/2 200 
+date: Sun, 07 Dec 2025 20:32:00 GMT
+content-type: text/html; charset=UTF-8
+content-length: 174166
+server: Apache
+cache-control: max-age=5529600, public
+x-drupal-dynamic-cache: MISS
+link: <//cdn2.psychologytoday.com>; rel="preconnect"; crossorigin="1", <//cdn2.psychologytoday.com>; rel="dns-prefetch", <https://www.psychologytoday.com/au>; rel="alternate"; hreflang="en-AU", <https://www.psychologytoday.com/ca>; rel="alternate"; hreflang="en-CA", <https://www.psychologytoday.com/gb>; rel="alternate"; hreflang="en-GB", <https://www.psychologytoday.com/ie>; rel="alternate"; hreflang="en-IE", <https://www.psychologytoday.com/nz>; rel="alternate"; hreflang="en-NZ", <https://www.psychologytoday.com/sg>; rel="alternate"; hreflang="en-SG", <https://www.psychologytoday.com/us>; rel="alternate"; hreflang="en-US", <https://www.psychologytoday.com/za>; rel="alternate"; hreflang="en-ZA", <https://www.psychologytoday.com/ar>; rel="alternate"; hreflang="es-AR", <https://www.psychologytoday.com/cl>; rel="alternate"; hreflang="es-CL", <https://www.psychologytoday.com/es>; rel="alternate"; hreflang="es-ES", <https://www.psychologytoday.com/mx>; rel="alternate"; hreflang="es-MX", <https://www.psychologytoday.com/co>; rel="alternate"; hreflang="es-CO", <https://www.psychologytoday.com/gt>; rel="alternate"; hreflang="es-GT", <https://www.psychologytoday.com/cr>; rel="alternate"; hreflang="es-CR", <https://www.psychologytoday.com/pa>; rel="alternate"; hreflang="es-PA", <https://www.psychologytoday.com/pr>; rel="alternate"; hreflang="es-PR", <https://www.psychologytoday.com/pe>; rel="alternate"; hreflang="es-PE", <https://www.psychologytoday.com/uy>; rel="alternate"; hreflang="es-UY", <https://www.psychologytoday.com>; rel="alternate"; hreflang="x-default", </theme-assets/touch-icons/apple-touch-icon.png>; rel="apple-touch-icon", <//cdn2.psychologytoday.com>; rel=preconnect; crossorigin
+content-language: en
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+expires: Sun, 19 Nov 1978 05:00:00 GMT
+vary: Cookie,Origin,Accept-Encoding
+x-consumer-id: 848de849-ea1d-442f-a4ec-cfe472f6a19f
+xkey: fQEX Lcck hD2v KLlM 7yIT F8ja VgQb X806 YeL1 e-HI 9fG4 36DO 2OQo hJUX PEta bJcX Ton2 XuDL Pks5 EwUD gMzE fCnT 4TG_ 0sDY _GAW 9HSw MSBx iN81 __Ju J2hr Bf76 2aeR 1yY5 uTrn 16GH rIqW 6Sl0 Z-xt cDC1 ljAN Nn-S MsYZ 68c1 ct64 pTQ0 -ht1 Uv4Y dPrC IyWs u1nC 7QY- RAhe vSRG BvBs 94RV ra7g PiIj Ay0I Rvwb Feuw bz6P 5tCH PoGK cWkI oUwh hhy9 awGJ emmh mBoe i-00 H3s1 4o33 6Kbm UlS3 ijWS 29hc yUlc Aw6e 4oXq 641m 1ltQ 1yYT 5Z0p qFa0 qR9l zIbB QqvA roHR hRSt TXuJ ddyd vODb jOdD XY1C Z_Km TtC5 RKPl Tm9J Ty2z Fj7Y Ieo_ wdyg odjP sHHJ 0-LU 8WNT QSCW DeAQ j4LV Fk_T 8lSc F6pS Zsy2 40sq fgDL 0oEP KNDV AGlR sbKR Ny-N XUJj TLg0 xabd EjH1 Kx6E jyi3 veCQ 0ZHk snhN sRde XRf_ KCvA MvV3 kMuJ MpRE wkzg 73TU 1y1d X_iJ q_cu OTpT XgFM 1-4d O8dJ vD7t F0-_ WUtp wqHR dEeO qhjf EOV3 CaK4 XyqP 2bRh d6cI BYd8 Qbn0 L3bs PmWm C_XS OaVj sOLn cxel BWxF YcD9 zMot r2zn r3sJ 1_aF 0H0k xvhb TKM- vZQm AlSl -iTS UcKc 8bgo vbHd _pYc 2cX0 rfiD 3nP_ GYTg 2DFx chOO 73jZ Uo6m swS2 dO7T fA01 ogWu DNWP nVcx lBlB CwYN lD9n ki9g 5ZZi VGsW hiuJ zyqR vCIZ V2iw yyCO 2wmN SzkE _8OL ciKq Pfvd MHyx 96Y3 u6qH Cxys 3V39 1Vzm qhJ5 f3He 7N2J U-Ja 5ML8 -6kh 3Bm7 4d6T ECSW tDd8 YAYD 9btr 2x9Z 9M8n FLYa fNz- xwZP RHAV Z2pT 6R83 oc11 B8E8 q9Xr JWfr P8yB oWsK oSDl b5Ex 0D-t tQA2 2P-7 0Gkg yc4F 9Pl0 txEf FBLc W87x xf6l t5Ay fJlM bBv0 4ZV7 1LpI yMWZ hTNP UWMO PFCD Vvgg mO9b Fzko 7yDn lUH6 i43C fYoL gH5h Dy2P NqcM 0mMn idCc c0S- 4S-X 4Y3l uvQG lOUT kJ3G yTTB ksxI Tzim qCQE afm1 m_yu ZmPG atHj cqjc YPaS sMfi EhTv cglS PQzV LqVd 5JRH _Six TYQ7 0HNp kNFG qLwN QBaD 9wv5
+x-drupal-cache: HIT
+last-modified: Sun, 07 Dec 2025 20:17:05 GMT
+x-varnish: 1028029027 1031244454
+age: 55
+etag: W/"1765139463-gzip"
+x-cache: HIT
+x-cache-hits: 85
+x-served-by: content-varnish-primary-i-0e2d4f65ab99f6b69.ptwww.internal
+accept-ranges: bytes
+via: 1.1 ZZ
+x-country-code: US
+x-region-code: VA
+strict-transport-security: max-age=31536000
+

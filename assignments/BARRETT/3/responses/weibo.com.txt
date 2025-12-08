@@ -1,0 +1,40 @@
+HTTP/1.1 301 Moved Permanently
+Date: Sun, 07 Dec 2025 20:32:13 GMT
+Content-Type: text/html
+Content-Length: 171
+Connection: keep-alive
+Location: https://weibo.com/
+Server: SHANHAI-SERVER
+Lb: 36.51.224.123
+Ssl_node: mapi-10-81-97-72.hk.intra.weibo.cn
+
+HTTP/2 302 
+content-type: text/html; charset=utf-8
+content-length: 479
+location: https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=https%3A%2F%2Fweibo.com%2F&domain=weibo.com&ua=curl%2F8.x%20%28%2Bcourse-assignment%3B%20HEAD-only%29&_rand=1765139534645&sudaref=
+date: Sun, 07 Dec 2025 20:32:14 GMT
+vary: Origin
+set-cookie: XSRF-TOKEN=SPOBRASMoRtHgdrVUrDdcEoT; path=/; secure
+x-login-visitor: true
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+x-download-options: noopen
+x-readtime: 1
+proc_node: weibopro-node-web-hj4-7847b9b848-kg2xs
+server: SHANHAI-SERVER
+lb: 36.51.224.123
+ssl_node: msre-10-81-97-70.hk.intra.weibo.cn
+
+HTTP/2 200 
+server: nginx
+date: Sun, 07 Dec 2025 20:32:16 GMT
+content-type: text/html
+vary: Accept-Encoding
+cache-control: no-cache, must-revalidate
+expires: Sat, 26 Jul 1997 05:00:00 GMT
+pragma: no-cache
+pragma: no-cache
+content-security-policy: upgrade-insecure-requests
+strict-transport-security: max-age=31536000; includeSubDomains
+x-via-ssl: ssl.53.sinag1.hyds.lb.sinanode.com
+

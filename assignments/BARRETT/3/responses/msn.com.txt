@@ -1,0 +1,41 @@
+HTTP/1.1 301 Moved Permanently
+Content-Length: 0
+Location: https://msn.com/
+X-MSEdge-Ref: Ref A: EFDCD6AEDB9249C4A6D63DC1D6B78574 Ref B: ASHEDGE1211 Ref C: 2025-12-07T20:32:09Z
+Date: Sun, 07 Dec 2025 20:32:09 GMT
+
+HTTP/2 301 
+content-length: 0
+location: https://www.msn.com/
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+accept-ch: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
+x-msedge-ref: Ref A: E4676F7F7C8648BBAF2B7168D579B56B Ref B: BL2EDGE1811 Ref C: 2025-12-07T20:32:10Z
+date: Sun, 07 Dec 2025 20:32:09 GMT
+
+HTTP/2 404 
+content-length: 0
+server: Kestrel
+cache-control: no-store,no-cache
+pragma: no-cache
+x-ceto-ref: 6935e44a56fc40ad86a82ed02c2575d4|AFD:6935e44a56fc40ad86a82ed02c2575d4|2025-12-07T20:32:10.174Z
+strict-transport-security: max-age=1209600; includeSubDomains; preload
+date: Sun, 07 Dec 2025 20:32:10 GMT
+set-cookie: _C_ETH=1; domain=.msn.com; path=/; secure; httponly
+set-cookie: _C_Auth=
+set-cookie: sptmarket=en-us||us|en-us|en-us|en||reason=RevIP:us|cf=8|RefA=6935e44a56fc40ad86a82ed02c2575d4.RefC=2025-12-07T20:32:10Z; expires=Tue, 07 Dec 2027 20:32:10 GMT; path=/
+set-cookie: MUID=22FC6F7776B96F0D310979CC77B86E86; expires=Fri, 01 Jan 2027 20:32:10 GMT; domain=.msn.com; path=/; secure; samesite=none
+set-cookie: MUIDB=22FC6F7776B96F0D310979CC77B86E86; expires=Fri, 01 Jan 2027 20:32:10 GMT; path=/; httponly
+set-cookie: _EDGE_S=F=1&SID=1942AC311AC467832FAEBA8A1BC56675; domain=.msn.com; path=/; httponly
+set-cookie: _EDGE_V=1; expires=Fri, 01 Jan 2027 20:32:10 GMT; domain=.msn.com; path=/; httponly
+alt-svc: h3=":443"; ma=93600
+akamai-request-bc: [a=23.48.200.173,b=1419651961,c=g,n=US_VA_ASHBURN,o=20940],[c=c,n=US_VA_ASHBURN,o=20940],[a=202,c=o]
+x-msedge-ref: 549e2b79 | 6935e44a56fc40ad86a82ed02c2575d4|AFD:6935e44a56fc40ad86a82ed02c2575d4|2025-12-07T20:32:10.174Z | 2025-12-07T20:32:10
+x-cdn-ref: 549e2b79 | 6935e44a56fc40ad86a82ed02c2575d4|AFD:6935e44a56fc40ad86a82ed02c2575d4|2025-12-07T20:32:10.174Z | 2025-12-07T20:32:10
+server-timing: clientrtt; dur=20, clienttt; dur=26, origin; dur=23, cdntime; dur=3, wpo;dur=0,1s;dur=0
+akamai-cache-status: NotCacheable from child
+akamai-server-ip: 23.48.200.173
+akamai-request-id: 549e2b79
+timing-allow-origin: *
+akamai-grn: 0.adc83017.1765139530.549e2b79
+vary: Origin
+
