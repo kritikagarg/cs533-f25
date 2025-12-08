@@ -1,0 +1,15 @@
+{
+  "name": "assignment7",
+  "version": "1.0.0",
+  "description": "Phishing site simulation for CS 433/533 Web Security",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Ethan Frayne",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.1",
+    "express": "^5.2.1"
+  }
+}
