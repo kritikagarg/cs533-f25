@@ -1,0 +1,8 @@
+define(["require","vue-loader","vue"],function(e){"use strict";let r=e("vue-loader");e=e("vue");const n=e=>document.createElement("div").appendChild(document.createTextNode(e)).parentNode.innerHTML,o=e.component("redirect-bar",{template:`
+            <div :class="computedClass" role="alert" :style="{ backgroundColor: color }">
+                <div class="container">
+                    <p class="nag-bar-message" v-html="message">
+                    </p>
+                </div>
+            </div>
+        `,computed:{color(){var e=this.$root["overlayColor"];return e||"inherit"},message(){var e,{content:t,redirect:r,langPath:o}=this.$root,r=r.incorrect_resource;if(r)return{url:r,name:e}=r.props,r=n(encodeURI(r)),o=o?"/"+o+r:r,r=n(e),t.redirect.replace("{link}",`<strong><a href="${o}">${r}</a></strong>`)},computedClass(){var e=this.$root["overlayColor"];return"nag-bar nag-bar--corrections "+(e?"":"nag-bar--corrections--default-color")}}});function t(e,t,r=void 0){this.el=e,this.app=t,this.options=r}return t.prototype.start=function(){const t=" corrections_redirect=";var e=document.cookie.split(";").filter(e=>e.startsWith(t));if(e.length){var e=e[0].replace(t,""),e=this.decodeCookieString(e);if(e.for_url===document.location.pathname)return e={data:{redirect:e,langPath:this.app.langPath()},methods:{},components:{redirectBar:o}},e=Object.assign(e,this.options),r(this.el,this.app,e)}},t.prototype.decodeCookieString=function(e){e=decodeURIComponent(e),e=e.substring(1,e.length-1);return JSON.parse(e)},t});
