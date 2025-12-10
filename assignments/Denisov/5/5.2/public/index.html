@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>5.2 CORS Custom Headers</title></head>
+<body>
+<h2>5.2 CORS Custom Headers</h2>
+
+<button onclick="call('/headers-no-expose')">Request without exposed headers</button><br><br>
+<button onclick="call('/headers-with-expose')">Request with exposed headers</button>
+
+<pre id="out" style="padding:10px;border:1px solid #ccc;margin-top:20px"></pre>
+
+<script>
+async function call(path) {
+  const out = document.getElementById('out');
+  out.textContent = "Requesting " + path + "...\n";
+
+  try {
+    const resp = await fetch("http://localhost:4001" + path);
+
+    const headers = {
+      "X-CS533f25-jim-carrey": resp.headers.get("X-CS533f25-jim-carrey"),
+      "X-CS533f25-grand-canyon": resp.headers.get("X-CS533f25-grand-canyon"),
+      "X-CS533f25-harry-potter": resp.headers.get("X-CS533f25-harry-potter"),
+      "X-CS533f25-the-matrix": resp.headers.get("X-CS533f25-the-matrix")
+    };
+
+    const body = await resp.json();
+
+    out.textContent = JSON.stringify({
+      path,
+      status: resp.status,
+      headers_visible_in_js: headers,
+      body
+    }, null, 2);
+
+  } catch (e) {
+    out.textContent = "Error: " + e;
+  }
+}
+</script>
+</body>
+</html>

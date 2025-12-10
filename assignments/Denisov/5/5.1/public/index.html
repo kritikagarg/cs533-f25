@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>5.1 CORS Demo</title>
+</head>
+<body>
+  <h1>5.1 CORS Demo — JSON Request</h1>
+
+  <button onclick="loadData()">Load Favorites (JSON)</button>
+
+  <pre id="output" style="padding:15px;border:1px solid #ccc;"></pre>
+
+  <script>
+    function loadData() {
+      fetch("http://localhost:4001/favorites.json")
+        .then(r => r.json())
+        .then(data => {
+          document.getElementById('output').textContent =
+            JSON.stringify(data, null, 2);
+        })
+        .catch(err => {
+          document.getElementById('output').textContent =
+            "BLOCKED by CORS.\n\n" + err;
+        });
+    }
+  </script>
+</body>
+</html>
