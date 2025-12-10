@@ -1,0 +1,26 @@
+HTTP/1.1 301 Moved Permanently
+Location: http://www.google.co.jp/
+Content-Type: text/html; charset=UTF-8
+Content-Security-Policy-Report-Only: object-src 'none';base-uri 'self';script-src 'nonce-xq1arNzt2HTz-eCoprkRaA' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+Date: Sun, 07 Dec 2025 20:31:47 GMT
+Expires: Tue, 06 Jan 2026 20:31:47 GMT
+Cache-Control: public, max-age=2592000
+Server: gws
+Content-Length: 221
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=Shift_JIS
+Content-Security-Policy-Report-Only: object-src 'none';base-uri 'self';script-src 'nonce-Uin-EWTDqYyNIJHzCwktRA' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Date: Sun, 07 Dec 2025 20:31:47 GMT
+Server: gws
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+Expires: Sun, 07 Dec 2025 20:31:47 GMT
+Cache-Control: private
+Set-Cookie: AEC=AaJma5vY2e9SQ7e6IdDE7y3O1RaUokxqUM4JmH5HoiepJ7tOCXs3nv9pNA; expires=Fri, 05-Jun-2026 20:31:47 GMT; path=/; domain=.google.co.jp; Secure; HttpOnly; SameSite=lax
+Set-Cookie: NID=527=MfqTLtUQLw4aug3jcKrroqkdKYpvTkUP4FaCekfccpwPUEbw2c90_ZuOYJdk8sR9tINQjo1sp3vUDJ-YWUncZY2R1LcoJdVREnebhw-0eXGebphxIhivXpdpiAVhsKoTjQpTQdh4il7pSh-A5klsJmz44Ph8Czw9DuHEl_GsyjwfnXvCiUYMyXrtvocEqobXqYSkvTXRQtIct8PgWQsbRlxfcUiGoyKe; expires=Mon, 08-Jun-2026 20:31:47 GMT; path=/; domain=.google.co.jp; HttpOnly
+Transfer-Encoding: chunked
+

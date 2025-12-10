@@ -1,0 +1,39 @@
+HTTP/1.1 301 Moved Permanently
+Server: AkamaiGHost
+Content-Length: 0
+Location: https://www.walmart.com/
+Expires: Sun, 07 Dec 2025 20:32:17 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Sun, 07 Dec 2025 20:32:17 GMT
+Connection: keep-alive
+Cache-Status: 
+Set-Cookie: akavpau_p2=1765140137~id=459b7e0fd3653d35ec41b5eec26f5550; Path=/; HttpOnly
+Strict-Transport-Security: max-age=31536000
+Server-Timing: ak_p; desc="1765139537908_398664846_3610095931_10_6241_29_0_-";dur=1
+
+HTTP/2 200 
+accept-ch: Downlink, DPR
+content-security-policy: frame-ancestors 'self' *.wal.co *.walmart-customcards.com *.walmart.com:* *.walmart.net *.walmartimages.com; report-uri https://csp.walmart.com/c/r/gl
+content-type: text/html; charset=utf-8
+server-timing: product;desc="edge",host;desc="2115e77f44f7",dc;desc="a652627",fetch-ms;dur=679,req-proc-ms;dur=58,resp-proc-ms;dur=12
+traceparent: 00-439c0030a7a72807d350f6f1745bd9a1-f0befa4aac5f7a1d-00
+x-envoy-upstream-service-time: 678
+x-frame-options: SAMEORIGIN
+x-opt-inj: true
+x-tb: 0
+mpulse_cdn_cache: HIT
+mpulse_origin_time: 0
+expires: Sun, 07 Dec 2025 20:32:18 GMT
+cache-control: max-age=0, no-cache, no-store
+pragma: no-cache
+date: Sun, 07 Dec 2025 20:32:18 GMT
+set-cookie: isoLoc=US_VA_t3; path=/; domain=.www.walmart.com
+cache-status: Hit
+origin-ex: 
+origin-cc: 
+set-cookie: akavpau_p2=1765140138~id=c804d64c79346bd3655cfcb1bb4c10b3; Path=/; HttpOnly; Secure; SameSite=None
+x-ak-protocol: h2
+strict-transport-security: max-age=31536000
+server-timing: ak_p; desc="1765139537985_389047349_369431581_58_10237_21_66_15";dur=1
+

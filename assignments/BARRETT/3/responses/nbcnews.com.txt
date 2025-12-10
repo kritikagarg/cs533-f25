@@ -1,0 +1,29 @@
+HTTP/1.1 301 Moved Permanently
+Cache-Control: max-age=30
+Content-Type: text/html; charset=utf-8
+Location: https://www.nbcnews.com
+Render-Authority: a2-06-w
+X-Cache: true
+Date: Sun, 07 Dec 2025 20:31:14 GMT
+
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+server: nginx
+x-powered-by: Next.js
+content-language: en
+link: <https://nodeassets.nbcnews.com>; rel=preconnect; crossorigin=anonymous, <https://media-cldnry.s-nbcnews.com>; rel=preconnect, <https://securepubads.g.doubleclick.net>; rel=preconnect, <https://id.nbcuni.com>; rel=preconnect, <https://mps.nbcuni.com/fetch/ext/load-nbcnews-bento.js?nowrite=jq>; as=script; rel=preload
+etag: "y3ydq2sg0pn0cs"
+x-backend-server: blue-ramen2-68b486b559-drvj8
+mpulse_cdn_cache: HIT
+mpulse_origin_time: 0
+cache-control: private, no-cache, no-store, must-revalidate
+date: Sun, 07 Dec 2025 20:31:14 GMT
+set-cookie: ng_geolocation=US; path=/; domain=.nbcnews.com; secure; SameSite=None
+strict-transport-security: max-age=2628000 ; preload
+content-security-policy: upgrade-insecure-requests;
+content-security-policy: frame-ancestors 'self' https://*.nbcnews.com https://*.today.com https://*.msnbc.com https://*.telemundo.com https://*.nbcnewstools.net https://*.eonline.com https://*.cnbc.com;
+x-frame-options: SAMEORIGIN
+akamai-grn: 0.c69b3e17.1765139474.abce9927
+set-cookie: akaas_NBCNews=1766003474~rv=74~id=1f69ffaabd874cd33615c4d60726cbd9~rn=; path=/; Expires=Wed, 17 Dec 2025 20:31:14 GMT; Secure; SameSite=None
+server-timing: ak_p; desc="1765139474432_389979078_2882443559_1232_14037_20_40_15";dur=1
+

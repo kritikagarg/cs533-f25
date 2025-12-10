@@ -1,0 +1,37 @@
+HTTP/1.1 301 Moved Permanently
+Server: CloudFront
+Date: Sun, 07 Dec 2025 20:31:11 GMT
+Content-Type: text/html
+Content-Length: 167
+Connection: keep-alive
+Location: https://tripadvisor.com/
+X-Cache: Redirect from cloudfront
+Via: 1.1 4ec656d2dfbb59cd7fab2ac94a540522.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: IAD55-P3
+X-Amz-Cf-Id: 06ygSO2PGuen42_1Aupy69vcUCI_aM3-LWiRYefbXma4uUuB2zaS1Q==
+
+HTTP/2 403 
+content-type: text/html;charset=utf-8
+content-length: 775
+access-control-allow-credentials: true
+charset: utf-8
+x-datadome: protected
+accept-ch: Sec-CH-UA,Sec-CH-UA-Mobile,Sec-CH-UA-Platform,Sec-CH-UA-Arch,Sec-CH-UA-Full-Version-List,Sec-CH-UA-Model,Sec-CH-Device-Memory
+x-dd-b: 1
+set-cookie: datadome=_Tc2iYzlZcnj_1Ld9dzWY76VYK2DqJv3svIo~1ptu_tDVFDsXTiq_4GgMyBtcYxyPkuFEpBG5Pi~fjSy7IbUa6zc3pRiVftA406ki2WIwE5K5Gd6hJya5s1ESmFlKt_H; Max-Age=31104000; Domain=.tripadvisor.com; Path=/; Secure; SameSite=Lax
+set-cookie: TAUnique=%1%enc%3AQJY32jv49n0iQ%2BEIVxfBg8VttlmMkS0eEclikpEkSYqtfoam9Kr%2BrqeIJxRKa3OuNox8JbUSTxk%3D; Max-Age=63072000; HttpOnly; Path=/
+x-datadome-cid: AHrlqAAAAAMA29st9KF2Y34ARqDVhw==
+access-control-allow-origin: *
+access-control-expose-headers: x-dd-b, x-set-cookie
+x-envoy-upstream-service-time: 6
+date: Sun, 07 Dec 2025 20:31:11 GMT
+server: DataDome
+pragma: no-cache
+cache-control: no-store, must-revalidate
+vary: Accept-Encoding
+x-request-id: 89e77fae-1395-94db-83f1-9a80e4c3a9eb
+x-cache: Error from cloudfront
+via: 1.1 4e2b60a8131e436f5ac38dc8a953edf4.cloudfront.net (CloudFront)
+x-amz-cf-pop: IAD55-P3
+x-amz-cf-id: ET87ZdzItejejz8p_YD_kPBQWOAJAgIx53YyK2bXdf48I0AYzxGRPA==
+

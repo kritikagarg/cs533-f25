@@ -1,0 +1,31 @@
+HTTP/1.1 301 Moved Permanently
+Server: AkamaiGHost
+Content-Length: 0
+Location: https://www.estadao.com.br/
+Expires: Sun, 07 Dec 2025 20:32:09 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Sun, 07 Dec 2025 20:32:09 GMT
+Connection: keep-alive
+
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+server: openresty
+etag: W/"135d09-rsmegkTKN5QE4tHiWnZZl+WHFNM"
+x-arc-pb-mx-id: 00000000
+x-arc-pb-request-id: 4f0ded01-935f-4838-8235-ddb61efacb4f
+last-modified: Sun, 07 Dec 2025 20:32:07 GMT
+mpulse_cdn_cache: REVALIDATE
+mpulse_origin_time: 3771
+cache-control: private, max-age=60
+expires: Sun, 07 Dec 2025 20:33:09 GMT
+date: Sun, 07 Dec 2025 20:32:09 GMT
+content-security-policy: upgrade-insecure-requests
+x-arc-ttl: 120
+x-arc-request-id: 0.77e2617.1765139529.e062244f
+x-datadome: protected
+accept-ch: Sec-CH-UA,Sec-CH-UA-Mobile,Sec-CH-UA-Platform,Sec-CH-UA-Arch,Sec-CH-UA-Full-Version-List,Sec-CH-UA-Model,Sec-CH-Device-Memory
+set-cookie: datadome=l7~1ckZp4_SDeiMxsam7_KHPpxNdPVSy3atmX4bAQnJAK7CO~JoO_aHZaekxsSUTYv_tXv1uAiigtHlzwDRhh3GeJFcB17ZEvk7UZzYmi3X1~AHz0X91lBT45nt1sUYU; Max-Age=31536000; Domain=.estadao.com.br; Path=/; Secure; SameSite=Lax
+x-arc-edgecontroller: 1.2.0
+server-timing: ak_p; desc="1765139529307_388398599_3764528207_3058_95985_14_76_15";dur=1
+

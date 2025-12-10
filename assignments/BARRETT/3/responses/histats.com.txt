@@ -1,0 +1,22 @@
+HTTP/1.1 308 Permanent Redirect
+Date: Sun, 07 Dec 2025 20:31:31 GMT
+Content-Type: text/html
+Content-Length: 164
+Connection: keep-alive
+Location: https://histats.com
+
+HTTP/2 301 
+date: Sun, 07 Dec 2025 20:31:31 GMT
+content-type: text/html
+content-length: 178
+location: http://www.histats.com/
+strict-transport-security: max-age=15724800; includeSubDomains
+
+HTTP/2 200 
+date: Sun, 07 Dec 2025 20:31:32 GMT
+content-type: text/html; charset=UTF-8
+strict-transport-security: max-age=15724800; includeSubDomains
+cf-cache-status: DYNAMIC
+server: cloudflare
+cf-ray: 9aa6c9819c9a658c-IAD
+

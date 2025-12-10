@@ -1,0 +1,37 @@
+HTTP/1.1 301 Moved Permanently
+Date: Sun, 07 Dec 2025 20:31:28 GMT
+Content-Type: text/html
+Content-Length: 167
+Connection: keep-alive
+Cache-Control: max-age=3600
+Expires: Sun, 07 Dec 2025 21:31:28 GMT
+Location: https://www.cloudflare.com/
+Set-Cookie: __cf_bm=AIAxs1rKJ_iDz.OlTYX0SK0h1uq12Ju9c3cxl8sdQ8Q-1765139488-1.0.1.1-wxsjcQARYZYvJxuIa.xJBracS0YOfzx5XakugOkwvWOFJBV_P7FbGCwIKCbgYd1EYSfBO0ctMXVOl6_wEOOn7B_xdNXl77tzi4PBfRhkCX0; path=/; expires=Sun, 07-Dec-25 21:01:28 GMT; domain=.cloudflare.com; HttpOnly
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=oOa%2BKfyre6mpcgRRnZja2fxhnofiAp5K3QzcONatxa88MHDQT6eQDKOK6BXlntnvF4hXy2Kqa%2F8JKUgNBEn8v4imJ8BHD7r8XUATUF3vwI9inDj0HUFLNT5f0aW6zcvjtZsDY8%2Bvprq0LFSx"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 9aa6c969c81a8017-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 200 
+date: Sun, 07 Dec 2025 20:31:28 GMT
+content-type: text/html; charset=utf-8
+cf-ray: 9aa6c96a8c7b3e80-IAD
+set-cookie: _cfms_willow=enable; Max-Age=1209600; path=/; domain=.www.cloudflare.com; SameSite=Strict; Secure
+set-cookie: _ga=GA1.1.559a9dad-8cc4-454c-a42f-6b3da202e0b9; Domain=.cloudflare.com; Expires=Thu, 07 Jan 2027 20:31:28 GMT; Path=/
+set-cookie: cfz_google-analytics_v4={"nzcr_ga4":{"v":"559a9dad-8cc4-454c-a42f-6b3da202e0b9","e":1799353888469}}; Domain=.cloudflare.com; Expires=Thu Jan 07 2027 20:31:28 GMT+0000 (Coordinated Universal Time); HttpOnly; SameSite=Lax; Path=/; Secure
+set-cookie: cfz_adobe={"MsVJ_ecid":{"v":"CiY3OTU1MDMzMDI0ODUzODA4NDg3Mjk0ODc0ODY1ODMzNTA1NDE2MVIOCIq_jNSvMyoDVkE2MALwAYq_jNSvMw==","e":1799267488486}}; Domain=.cloudflare.com; Expires=Wed Jan 06 2027 20:31:28 GMT+0000 (Coordinated Universal Time); HttpOnly; SameSite=Lax; Path=/; Secure
+set-cookie: kndctr_8AD56F28618A50850A495FB6_AdobeOrg_identity=CiY3OTU1MDMzMDI0ODUzODA4NDg3Mjk0ODc0ODY1ODMzNTA1NDE2MVIOCIq_jNSvMyoDVkE2MALwAYq_jNSvMw==; Domain=.cloudflare.com; Expires=Wed, 06 Jan 2027 20:31:28 GMT; Path=/; Secure; SameSite=Lax
+set-cookie: __cf_bm=5RxNrnrNUpZoUD6sHLXQdVQpLphXnUWDAhiTel9VFUE-1765139488-1.0.1.1-p6VSt4LM4wMNC0roGcxJniz_O4_NW6NFs_88NI28fy1bFxq0ndUlCvNhMoYN_hHnsJK64jcNmeEP7UgwbX0gg_Cxt.mljcx1mhk9bAQSy9AyjQd5xUiV0wRRv4dKFUe8; path=/; expires=Sun, 07-Dec-25 21:01:28 GMT; domain=.www.cloudflare.com; HttpOnly; Secure; SameSite=None
+strict-transport-security: max-age=31536000; includeSubDomains
+permissions-policy: geolocation=(), camera=(), microphone=()
+referrer-policy: strict-origin-when-cross-origin
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+x-rm: GW
+report-to: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=V791eho4L05pnsioHIRR%2FIwy7XPHeySsTYvAsXAPQ9rj7yOWiEUCZij7qS9Q1QCzQNX6GcQVCmfUsNtNabRRedzpL6V6JjYVkAACaaZTtz6nZolmLoA8Ksw2DaHbDxTlje5MbJCPXPvoPEz0z6etuQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+server: cloudflare
+alt-svc: h3=":443"; ma=86400
+

@@ -1,0 +1,71 @@
+HTTP/1.1 301 Moved Permanently
+Content-Length: 153
+Content-Type: text/html; charset=UTF-8
+Location: https://www.privacyshield.gov/
+Server: Microsoft-IIS/10.0
+X-Powered-By: ASP.NET
+Date: Sun, 07 Dec 2025 20:32:01 GMT
+
+HTTP/2 301 
+strict-transport-security: max-age=63072000; includeSubDomains
+cache-control: no-cache,must-revalidate,max-age=0,no-store,private
+location: https://www.privacyshield.gov/ps/
+expires: Thu, 01 Jan 1970 00:00:00 GMT
+content-length: 1
+date: Sun, 07 Dec 2025 20:32:02 GMT
+set-cookie: CookieConsentPolicy=0:1; path=/; expires=Mon, 07-Dec-2026 20:32:02 GMT; Max-Age=31536000; secure
+set-cookie: LSKey-c$CookieConsentPolicy=0:1; path=/; expires=Mon, 07-Dec-2026 20:32:02 GMT; Max-Age=31536000; secure
+x-origin-cache-control: no-cache,must-revalidate,max-age=0,no-store,private
+akamai-grn: 0.96dcda17.1765139522.f4fcf0cd
+
+HTTP/2 301 
+content-security-policy: upgrade-insecure-requests
+strict-transport-security: max-age=63072000; includeSubDomains
+cache-control: no-cache,must-revalidate,max-age=0,no-store,private
+location: https://www.privacyshield.gov/welcome
+expires: Thu, 01 Jan 1970 00:00:00 GMT
+content-length: 1
+date: Sun, 07 Dec 2025 20:32:02 GMT
+set-cookie: CookieConsentPolicy=0:1; path=/; expires=Mon, 07-Dec-2026 20:32:02 GMT; Max-Age=31536000; secure
+set-cookie: LSKey-c$CookieConsentPolicy=0:1; path=/; expires=Mon, 07-Dec-2026 20:32:02 GMT; Max-Age=31536000; secure
+x-origin-cache-control: no-cache,must-revalidate,max-age=0,no-store,private
+akamai-grn: 0.96dcda17.1765139522.f4fcf1de
+
+HTTP/2 301 
+strict-transport-security: max-age=63072000; includeSubDomains
+cache-control: no-cache,must-revalidate,max-age=0,no-store,private
+location: https://www.privacyshield.gov/ps/welcome
+expires: Thu, 01 Jan 1970 00:00:00 GMT
+content-length: 1
+date: Sun, 07 Dec 2025 20:32:02 GMT
+set-cookie: CookieConsentPolicy=0:1; path=/; expires=Mon, 07-Dec-2026 20:32:02 GMT; Max-Age=31536000; secure
+set-cookie: LSKey-c$CookieConsentPolicy=0:1; path=/; expires=Mon, 07-Dec-2026 20:32:02 GMT; Max-Age=31536000; secure
+x-origin-cache-control: no-cache,must-revalidate,max-age=0,no-store,private
+akamai-grn: 0.96dcda17.1765139522.f4fcf2b7
+
+HTTP/2 301 
+content-security-policy: upgrade-insecure-requests
+strict-transport-security: max-age=63072000; includeSubDomains
+cache-control: no-cache,must-revalidate,max-age=0,no-store,private
+location: https://www.dataprivacyframework.gov/
+expires: Thu, 01 Jan 1970 00:00:00 GMT
+content-length: 1
+date: Sun, 07 Dec 2025 20:32:02 GMT
+set-cookie: CookieConsentPolicy=0:1; path=/; expires=Mon, 07-Dec-2026 20:32:02 GMT; Max-Age=31536000; secure
+set-cookie: LSKey-c$CookieConsentPolicy=0:1; path=/; expires=Mon, 07-Dec-2026 20:32:02 GMT; Max-Age=31536000; secure
+x-origin-cache-control: no-cache,must-revalidate,max-age=0,no-store,private
+akamai-grn: 0.96dcda17.1765139522.f4fcf38e
+
+HTTP/1.1 200 OK
+Content-Length: 3003
+Content-Type: text/html
+Date: Sun, 07 Dec 2025 20:32:02 GMT
+Server: Microsoft-IIS/10.0
+Accept-Ranges: bytes
+ETag: "04326635ef7db1:0"
+Last-Modified: Thu, 17 Jul 2025 21:04:30 GMT
+Set-Cookie: ARRAffinity=712573b2262d6f13b0ef4166eac9b1b56a8512d94aeafa1ae0da22063008fe09;Path=/;HttpOnly;Secure;Domain=www.dataprivacyframework.gov
+Set-Cookie: ARRAffinitySameSite=712573b2262d6f13b0ef4166eac9b1b56a8512d94aeafa1ae0da22063008fe09;Path=/;HttpOnly;SameSite=None;Secure;Domain=www.dataprivacyframework.gov
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Powered-By: ASP.NET
+

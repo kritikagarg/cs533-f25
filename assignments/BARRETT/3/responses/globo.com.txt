@@ -1,0 +1,30 @@
+HTTP/1.1 301 Moved Permanently
+Date: Sun, 07 Dec 2025 20:31:41 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Cache-Control: max-age=600
+Location: https://www.globo.com/
+
+HTTP/1.1 200 OK
+Date: Sun, 07 Dec 2025 20:31:43 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 2270834
+Connection: keep-alive
+cache-control: max-age=10
+show-page-version: 0
+x-request-id: c084c98b-a527-44c1-af8c-b2c91e55a068
+x-mobile: desktop
+x-served-from: Router Home PROD, BS Show Services
+content-security-policy: upgrade-insecure-requests;
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+expires: Sun, 07 Dec 2025 20:31:49 GMT
+x-location-rule: location-barra
+link: <https://s2-home-globo.glbimg.com>; rel="preconnect", <https://s3.glbimg.com>; rel="preconnect"
+age: 4
+vary: Accept-Encoding, X-Forwarded-Proto, User-Agent
+x-bip: home-kubecache-oci-prd-int-varnish-server-7f976f8856-9dhmk
+via: 2.2 KubeCache
+accept-ranges: bytes
+

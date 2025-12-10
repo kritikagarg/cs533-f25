@@ -1,0 +1,47 @@
+HTTP/1.1 301 Moved permanently
+Date: Sun, 07 Dec 2025 20:31:51 GMT
+Cache-Control: max-age=86400,private
+set-cookie: is_gdpr=0; Path=/; Domain=.yandex.com; Expires=Tue, 07 Dec 2027 20:31:51 GMT
+set-cookie: is_gdpr_b=CND3MBCf5wIoAg==; Path=/; Domain=.yandex.com; Expires=Tue, 07 Dec 2027 20:31:51 GMT
+set-cookie: _yasc=yHudrOwtWq7dRui0RrNlyYi4vV+A/3af1iQ0zTrEjAkGiqrdKXZaHO0Kwvsl/udA; domain=.yandex.com; path=/; expires=Wed, 05 Dec 2035 20:31:51 GMT; secure
+set-cookie: bh=YLfI18kGagjU3IiMC8PiAg==; Path=/; Domain=.yandex.com; Expires=Mon, 11 Jan 2027 20:31:51 GMT
+Portal: Home
+Accept-CH: Sec-CH-UA-Platform-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA, Sec-CH-UA-Full-Version-List, Sec-CH-UA-WoW64, Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Platform, Sec-CH-UA-Full-Version, Sec-CH-Viewport-Width, Viewport-Width, DPR, Device-Memory, RTT, Downlink, ECT, Width, Sec-Ch-Viewport-Height
+NEL: {"report_to": "network-errors", "max_age": 100, "success_fraction": 0.001, "failure_fraction": 0.1}
+X-Content-Type-Options: nosniff
+Report-To: { "group": "network-errors", "max_age": 100, "endpoints": [{"url": "https://dr.yandex.net/nel", "priority": 1}, {"url": "https://dr2.yandex.net/nel", "priority": 2}]}
+X-Yandex-Req-Id: 1765139511505482-9287139636726174603-balancer-l7leveler-kubr-yp-vla-28-BAL
+Location: https://yandex.com/
+P3P: policyref="/w3c/p3p.xml", CP="NON DSP ADM DEV PSD IVDo OUR IND STP PHY PRE NAV UNI"
+
+HTTP/2 200 
+accept-ch: Sec-CH-UA-Platform-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA, Sec-CH-UA-Full-Version-List, Sec-CH-UA-WoW64, Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Platform, Sec-CH-UA-Full-Version, Sec-CH-Viewport-Width, Viewport-Width, DPR, Device-Memory, RTT, Downlink, ECT, Width, Sec-Ch-Viewport-Height
+link: <//yastatic.net/s3/frontend/yandex-int/mini-suggest/_/3GLMnpH6.js>;  rel="preload"; as="script"; crossorigin="anonymous";
+link: <https://yastatic.net/react/19.2.0/react-with-dom.min.js>;  rel="preload"; as="script"; crossorigin="anonymous";
+link: <https://yastatic.net/s3/home-static/_/nova/a0242825af62dfead4478c88c31d89e2263e0bd64c6bad8418adb697cdb02607.js>;  rel="preload"; as="script"; crossorigin="anonymous";
+link: <https://yastatic.net/s3/home-static/_/nova/5fc12bdf05e5645df6f03337eb39e569cb2021a3b3f41e8fbf7046703c55249e.js>;  rel="preload"; as="script"; crossorigin="anonymous";
+link: <https://yastatic.net/s3/home-static/_/nova/6c5e6682f9ff936118ceb584a5daed02d9a612c24437619248cb0c33573ca46c.js>;  rel="preload"; as="script"; crossorigin="anonymous";
+expires: Sun, 07 Dec 2025 20:31:51 GMT
+set-cookie: yandex_gid=21206; Path=/; Domain=yandex.com; Expires=Tue, 06 Jan 2026 20:31:51 GMT
+set-cookie: yp=1767731511.ygu.1; Path=/; Domain=yandex.com; Expires=Wed, 05 Dec 2035 20:31:51 GMT
+set-cookie: is_gdpr=0; Path=/; Domain=.yandex.com; Expires=Tue, 07 Dec 2027 20:31:51 GMT
+set-cookie: is_gdpr_b=CND3MBCf5wIoAg==; Path=/; Domain=.yandex.com; Expires=Tue, 07 Dec 2027 20:31:51 GMT
+set-cookie: _yasc=CpE19d2lTFTaDIalGZQh+39lat6j5qF25rVt9qwEE+MW+MtcMRXpEVDQEnzD8Rsn; domain=.yandex.com; path=/; expires=Wed, 05 Dec 2035 20:31:51 GMT; secure
+set-cookie: i=e3fjxdp3n98ZIKCr1LPOLef+1cpjpmqhaY0lcsD1rhnMAp1pEn8UEV8Yh3roiAIHuf0z1wn0mkMuC9bkIlSyJvLBmYU=; Expires=Tue, 07-Dec-2027 20:31:51 GMT; Domain=.yandex.com; Path=/; Secure; HttpOnly
+set-cookie: yandexuid=3217143181765139511; Expires=Tue, 07-Dec-2027 20:31:51 GMT; Domain=.yandex.com; Path=/; Secure
+set-cookie: yashr=7493639711765139511; Path=/; Domain=.yandex.com; Expires=Mon, 07 Dec 2026 20:31:51 GMT; Secure; HttpOnly; Partitioned
+set-cookie: bh=YLfI18kGagjU3IiMC8PiAg==; Path=/; Domain=.yandex.com; Expires=Mon, 11 Jan 2027 20:31:51 GMT
+cache-control: no-cache,no-store,max-age=0,must-revalidate
+nel: {"report_to": "network-errors", "max_age": 100, "success_fraction": 0.001, "failure_fraction": 0.1}
+x-yandex-req-id: 1765139511972610-17766625613621714318-balancer-l7leveler-kubr-yp-klg-209-BAL
+vary: Cookie,Accept-Language,Accept-Encoding
+date: Sun, 07 Dec 2025 20:31:52 GMT
+content-security-policy: report-uri https://csp.yandex.net/csp?project=morda&from=morda.big.com&showid=1765139511972610-17766625613621714318-balancer-l7leveler-kubr-yp-klg-209-BAL&h=home-mordago-prestable-web-backend-62.vla.yp-c.yandex.net&yandexuid=3217143181765139511&&version=2025-12-05-1013&adb=0;media-src https://yastatic.net;connect-src https://*.strm.yandex.net https://mc.yandex.com https://yandex.com https://surveys.yandex.ru https://yastatic.net https://yastat.net https://mc.yandex.ru https://*.mc.yandex.ru https://adstat.yandex.ru https://mc.admetrica.ru https://yandexmetrica.com:* https://*.yandex.net https://an.yandex.ru https://yandex.ru;img-src https://*.verify.yandex.ru https://*.ya.ru https://*.yandex.ru https://ya.ru https://yabs.yandex.by https://yabs.yandex.com.tr https://yabs.yandex.kz https://yabs.yandex.ru https://yabs.yandex.uz https://yandex.ru https://yandex.com https://favicon.yandex.net https://yastatic.net https://avatars.mds.yandex.net blob: data: 'self' https://mc.admetrica.ru https://mc.yandex.com https://*.mc.yandex.ru https://adstat.yandex.ru https://mc.yandex.ru;script-src 'unsafe-inline' https://mc.yandex.com https://yandex.com https://surveys.yandex.ru https://yastatic.net https://mc.yandex.ru https://*.mc.yandex.ru https://adstat.yandex.ru 'unsafe-eval';frame-src https://*.ya.ru https://*.yandex.ru https://ya.ru https://yandex.ru https://yandex.com https://mc.yandex.ru https://mc.yandex.md https://mc.yandex.com https://*.ya.ru https://*.yandex.ru https://ya.ru https://yandex.ru;style-src 'unsafe-inline' https://yastatic.net;object-src 'none';base-uri 'none';default-src 'self' https://yastatic.net https://yastat.net;font-src https://yastatic.net
+x-content-type-options: nosniff
+reporting-endpoints: default="https://yandex.com/portal/front/reports/?slots=1433378%2C0%2C74%3B1434625%2C0%2C92&region=21206&reqid=1765139511972610-17766625613621714318-balancer-l7leveler-kubr-yp-klg-209-BAL&dc=vla&page=desktop.global&enableOtherTypes=0"
+content-type: text/html; charset=UTF-8
+p3p: policyref="/w3c/p3p.xml", CP="NON DSP ADM DEV PSD IVDo OUR IND STP PHY PRE NAV UNI"
+x-frame-options: DENY
+last-modified: Sun, 07 Dec 2025 20:31:51 GMT
+report-to: { "group": "network-errors", "max_age": 100, "endpoints": [{"url": "https://dr.yandex.net/nel", "priority": 1}, {"url": "https://dr2.yandex.net/nel", "priority": 2}]}
+

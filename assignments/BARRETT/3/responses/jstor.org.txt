@@ -1,0 +1,34 @@
+HTTP/1.1 301 Permanent Redirect
+Connection: keep-alive
+Content-Length: 58
+Server: Varnish
+Retry-After: 0
+Location: http://www.jstor.org/
+Accept-Ranges: bytes
+Date: Sun, 07 Dec 2025 20:32:05 GMT
+Via: 1.1 varnish
+X-Served-By: cache-iad-kjyo7100116-IAD
+X-Cache: HIT
+X-Cache-Hits: 0
+
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 44626
+x-frame-options: DENY
+server: envoy
+set-cookie: UUID=269de1ed-d45c-4761-9de1-edd45c776112; expires=Wed, 06 Dec 2028 20:32:06 GMT; Max-Age=94608000; Path=/; SameSite=None; Secure
+set-cookie: csrftoken=dyn8w6L0WdLOMKzTXbNPb3W6qTXxXLpH; expires=Sun, 06 Dec 2026 20:32:06 GMT; Max-Age=31449600; Path=/; SameSite=Lax; Secure
+set-cookie: ReferringRequestId=fastly-default:56be15434d4b31f507c3ee978538e579; Path=/; SameSite=Lax; Secure
+content-type: text/html; charset=utf-8
+x-envoy-upstream-service-time: 111
+X-JSTOR-Restarts: 0
+Accept-Ranges: bytes
+Date: Sun, 07 Dec 2025 20:32:06 GMT
+Via: 1.1 varnish
+X-Served-By: cache-iad-kiad7000166-IAD, cache-iad-kjyo7100069-IAD
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1765139526.831031,VS0,VE415
+Vary: Cookie, origin, Accept-Encoding,Fastly-SSL,Origin,X-Requested-Host
+alt-svc: h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+

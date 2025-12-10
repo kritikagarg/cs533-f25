@@ -1,0 +1,29 @@
+HTTP/1.1 301 Moved Permanently
+Server: CloudFront
+Date: Sun, 07 Dec 2025 20:31:22 GMT
+Content-Type: text/html
+Content-Length: 167
+Connection: keep-alive
+Location: https://abcnews.go.com/
+X-Cache: Redirect from cloudfront
+Via: 1.1 d907e6ff1d7c4efa4a8fcfcbb0b5531c.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: IAD61-P2
+X-Amz-Cf-Id: Iv7usf-6j7BmXUR72Wmh9tyx0rfUZodnP5Rg84T46YyZ7I3ShmtE9Q==
+
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+date: Sun, 07 Dec 2025 20:31:22 GMT
+set-cookie: region=ccpa; path=/; Expires=Sun, 14 Dec 2025 20:31:22 GMT;
+set-cookie: _dcf=1; path=/; Expires=Sun, 14 Dec 2025 20:31:22 GMT;
+set-cookie: SWID=4AFD95C0-6328-4651-C6ED-4E38B01AA25A; path=/; Expires=Thu, 07 Dec 2045 20:31:22 GMT; domain=abcnews.go.com;
+set-cookie: userab_1=0eb72b4dfdc07dfb9f2cad7fb1278582~abc_web_player-460%2Avariant_a_abc_control-1900%2Chp_banner-426%2Avariant_b_arrow-1778%2Cotv_web_content_rec-445%2Avariant_c_trending-1851%2Cotv_web_player-461%2Avariant_a_otv_control-1902; Expires=Mon, 08 Dec 2025 00:31:22 GMT; Domain=abcnews.go.com; Path=/
+server: nginx/1.28.0
+expires: Sun, 07 Dec 2025 20:31:27 GMT
+last-modified: Sun, 07 Dec 2025 20:31:27 GMT
+cache-control: max-age=5
+vary: Accept-Encoding
+x-cache: Miss from cloudfront
+via: 1.1 fe40bff56d1483fa61dd95ff72f0b9c0.cloudfront.net (CloudFront)
+x-amz-cf-pop: IAD61-P2
+x-amz-cf-id: QDG-7cy9Tz2EE5_8XEL0sU7y0tNbvFjWTjsSoKsV3ERGG6XIvWojBA==
+

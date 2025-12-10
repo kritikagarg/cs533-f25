@@ -1,0 +1,100 @@
+| 1 | vistaprint.com | ✔ Yes | - |
+| 2 | sfgate.com | ✔ Yes | - |
+| 3 | aol.com | ❌ No | X-Frame-Options: DENY |
+| 4 | tripadvisor.com | ✔ Yes | - |
+| 5 | archives.gov | ❌ No | X-Frame-Options: SAMEORIGIN |
+| 6 | cpanel.net | ❌ No | X-Frame-Options: SAMEORIGIN |
+| 7 | nbcnews.com | ✔ Yes | - |
+| 8 | https://ytimg.com | ❌ No | Error: fetch failed |
+| 9 | ziddu.com | ✔ Yes | - |
+| 10 | wikihow.com | ✔ Yes | - |
+| 11 | ovh.com | ✔ Yes | - |
+| 12 | apnews.com | ❌ No | CSP: frame-ancestors 'self' https://cms.apnews.com/ |
+| 13 | cbslocal.com | ✔ Yes | - |
+| 14 | android.com | ✔ Yes | - |
+| 15 | search.yahoo.com | ❌ No | X-Frame-Options: DENY |
+| 16 | europapress.es | ✔ Yes | - |
+| 17 | newsweek.com | ✔ Yes | - |
+| 18 | webnode.page | ❌ No | X-Frame-Options: DENY |
+| 19 | cdc.gov | ✔ Yes | - |
+| 20 | narod.ru | ✔ Yes | - |
+| 21 | sciencemag.org | ✔ Yes | - |
+| 22 | abcnews.go.com | ✔ Yes | - |
+| 23 | variety.com | ❌ No | CSP: frame-ancestors 'none' |
+| 24 | theguardian.com | ✔ Yes | - |
+| 25 | line.me | ✔ Yes | - |
+| 26 | thetimes.co.uk | ✔ Yes | - |
+| 27 | t-online.de | ✔ Yes | - |
+| 28 | cloudflare.com | ✔ Yes | - |
+| 29 | https://ssl-images-amazon.com | ❌ No | Error: fetch failed |
+| 30 | cbc.ca | ❌ No | X-Frame-Options: SAMEORIGIN |
+| 31 | www.gov.uk | ❌ No | X-Frame-Options: ALLOWALL |
+| 32 | howstuffworks.com | ✔ Yes | - |
+| 33 | mashable.com | ✔ Yes | - |
+| 34 | amazon.com | ✔ Yes | - |
+| 35 | histats.com | ✔ Yes | - |
+| 36 | rakuten.co.jp | ✔ Yes | - |
+| 37 | gofundme.com | ✔ Yes | - |
+| 38 | harvard.edu | ✔ Yes | - |
+| 39 | change.org | ✔ Yes | - |
+| 40 | google.it | ❌ No | X-Frame-Options: SAMEORIGIN |
+| 41 | independent.co.uk | ❌ No | X-Frame-Options: SAMEORIGIN |
+| 42 | globo.com | ✔ Yes | - |
+| 43 | adobe.com | ✔ Yes | - |
+| 44 | www.over-blog.com | ❌ No | X-Frame-Options: DENY |
+| 45 | stackoverflow.com | ❌ No | X-Frame-Options: SAMEORIGIN |
+| 46 | ovh.net | ✔ Yes | - |
+| 47 | mail.google.com | ❌ No | X-Frame-Options: SAMEORIGIN |
+| 48 | buzzfeed.com | ❌ No | X-Frame-Options: SAMEORIGIN |
+| 49 | dropbox.com | ✔ Yes | - |
+| 50 | google.co.jp | ❌ No | X-Frame-Options: SAMEORIGIN |
+| 51 | goodreads.com | ✔ Yes | - |
+| 52 | britannica.com | ✔ Yes | - |
+| 53 | photos1.blogger.com | ✔ Yes | - |
+| 54 | unesco.org | ✔ Yes | - |
+| 55 | translate.google.com | ❌ No | X-Frame-Options: SAMEORIGIN |
+| 56 | g.co | ✔ Yes | - |
+| 57 | fandom.com | ✔ Yes | - |
+| 58 | yandex.com | ✔ Yes | - |
+| 59 | https://sakura.ne.jp | ❌ No | Error: fetch failed |
+| 60 | lemonde.fr | ✔ Yes | - |
+| 61 | https://nhk.or.jp | ❌ No | Error: fetch failed |
+| 62 | instructables.com | ✔ Yes | - |
+| 63 | doi.org | ✔ Yes | - |
+| 64 | pinterest.com | ✔ Yes | - |
+| 65 | scmp.com | ✔ Yes | - |
+| 66 | gravatar.com | ❌ No | X-Frame-Options: SAMEORIGIN |
+| 67 | workspace.google.com | ✔ Yes | - |
+| 68 | psychologytoday.com | ✔ Yes | - |
+| 69 | nba.com | ✔ Yes | - |
+| 70 | discord.com | ❌ No | X-Frame-Options: DENY |
+| 71 | wikimedia.org | ✔ Yes | - |
+| 72 | gizmodo.com | ❌ No | X-Frame-Options: SAMEORIGIN |
+| 73 | https://privacyshield.gov | ❌ No | Error: fetch failed |
+| 74 | pbs.org | ✔ Yes | - |
+| 75 | apache.org | ❌ No | CSP: frame-ancestors 'none' |
+| 76 | google.ru | ❌ No | X-Frame-Options: SAMEORIGIN |
+| 77 | merriam-webster.com | ✔ Yes | - |
+| 78 | twitter.com | ✔ Yes | - |
+| 79 | jstor.org | ✔ Yes | - |
+| 80 | surveymonkey.com | ✔ Yes | - |
+| 81 | google.es | ❌ No | X-Frame-Options: SAMEORIGIN |
+| 82 | playstation.com | ✔ Yes | - |
+| 83 | https://amebaownd.com | ❌ No | Error: fetch failed |
+| 84 | giphy.com | ❌ No | X-Frame-Options: DENY |
+| 85 | salesforce.com | ✔ Yes | - |
+| 86 | estadao.com.br | ✔ Yes | - |
+| 87 | vk.com | ✔ Yes | - |
+| 88 | msn.com | ✔ Yes | - |
+| 89 | plesk.com | ✔ Yes | - |
+| 90 | google.com.tw | ❌ No | X-Frame-Options: SAMEORIGIN |
+| 91 | get.google.com | ✔ Yes | - |
+| 92 | telegra.ph | ❌ No | X-Frame-Options: SAMEORIGIN |
+| 93 | unsplash.com | ❌ No | X-Frame-Options: SAMEORIGIN |
+| 94 | goo.gl | ❌ No | X-Frame-Options: SAMEORIGIN |
+| 95 | substack.com | ❌ No | CSP: frame-ancestors 'self' https://*.substack.com https://substack.com |
+| 96 | stanford.edu | ✔ Yes | - |
+| 97 | weibo.com | ❌ No | X-Frame-Options: SAMEORIGIN |
+| 98 | spiegel.de | ✔ Yes | - |
+| 99 | usatoday.com | ✔ Yes | - |
+| 100 | walmart.com | ✔ Yes | - |

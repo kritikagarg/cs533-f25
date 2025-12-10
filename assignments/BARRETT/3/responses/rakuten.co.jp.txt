@@ -1,0 +1,19 @@
+HTTP/1.1 301 Moved Permanently
+date: Sun, 07 Dec 2025 20:31:32 GMT
+server: Apache
+location: https://www.rakuten.co.jp/
+content-type: text/html; charset=iso-8859-1
+connection: close
+
+HTTP/2 200 
+server: Apache
+pragma: no-cache
+cache-control: private
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+x-frame-options: DENY
+content-type: text/html; charset=UTF-8
+date: Sun, 07 Dec 2025 20:31:39 GMT
+set-cookie: Apache=937a4089.6456290d23214; path=/; expires=Mon, 07-Dec-26 20:31:39 GMT
+vary: User-Agent
+

@@ -1,0 +1,45 @@
+HTTP/1.1 301 Moved Permanently
+Content-Type: text/html
+Content-Length: 134
+Connection: keep-alive
+Server: awselb/2.0
+Date: Sun, 07 Dec 2025 20:31:39 GMT
+Location: https://gofundme.com:443/
+Via: 1.1 087ba80479043f9abd7dd5cf2f636314.cloudfront.net (CloudFront)
+Set-Cookie: gdid=19c95566-4d83-43d3-959a-68dfdc99c2f7; max-age=315360000; path=/; domain=gofundme.com
+X-Cache: Miss from cloudfront
+X-Amz-Cf-Pop: IAD61-P4
+X-Amz-Cf-Id: UZAAbxtxiZvFRY4ztF3eRYnb1J34TuJJLMpn_CkGkN_-JjC35gO_rA==
+
+HTTP/2 301 
+content-type: text/html
+content-length: 162
+location: https://www.gofundme.com/
+date: Sun, 07 Dec 2025 20:31:39 GMT
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+server: nginx
+content-security-policy-report-only: frame-ancestors gofundme.com *.gofundme.com *.hopin.com pillar.io *.pillar.io takethemameal.com *.takethemameal.com kudoboard.com *.kudoboard.com werememberdev.com *.werememberdev.com weremember.com *.weremember.com forevermissed.com *.forevermissed.com fm-stage.com *.fm-stage.com fm-qa.com *.fm-qa.com;
+via: 1.1 fa1e2e434547c02a4b589a4e0e41d4dc.cloudfront.net (CloudFront)
+set-cookie: gdid=5638be97-0d60-4237-b5a7-eacb1f8ac2f9; max-age=315360000; path=/; domain=gofundme.com
+x-cache: Miss from cloudfront
+x-amz-cf-pop: IAD61-P4
+x-amz-cf-id: eO13y5ppaHGm7W2_37DVuk5jjVi-L7qh_tojId-7rfdVrS3sJQU_7w==
+
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+content-length: 1306443
+date: Sun, 07 Dec 2025 20:30:25 GMT
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+server: nginx
+set-cookie: visitor={"locale":"en_US","shimLocale":"en_US","country":"US"}; path=/; domain=.gofundme.com
+set-cookie: gdid=b54cbe8a-bd76-417f-bf41-4b4baca4d8f2; max-age=315360000; path=/; domain=.gofundme.com
+cache-control: max-age=120, s-maxage=120, stale-while-revalidate=3600, stale-if-error=86400
+etag: "hbqz1sjn5nrz02"
+content-security-policy-report-only: frame-ancestors gofundme.com *.gofundme.com *.hopin.com pillar.io *.pillar.io takethemameal.com *.takethemameal.com kudoboard.com *.kudoboard.com werememberdev.com *.werememberdev.com weremember.com *.weremember.com forevermissed.com *.forevermissed.com fm-stage.com *.fm-stage.com fm-qa.com *.fm-qa.com;
+vary: Accept-Encoding
+via: 1.1 c2095fc8ad28e69d5b1b0d8a45d5666e.cloudfront.net (CloudFront)
+age: 74
+x-cache: Hit from cloudfront
+x-amz-cf-pop: IAD61-P4
+x-amz-cf-id: 9Y0pOcEIHPtKzQNs27rD1bXNhmpAvQ-sgACWIJA1fTXOiunoEqFtJw==
+

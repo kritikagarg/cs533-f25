@@ -1,0 +1,36 @@
+HTTP/1.1 301 Moved Permanently
+Connection: close
+Content-Length: 0
+Server: Varnish
+Retry-After: 0
+Location: https://apache.org/
+Accept-Ranges: bytes
+Date: Sun, 07 Dec 2025 20:32:03 GMT
+Via: 1.1 varnish
+X-Served-By: cache-iad-kiad7000107-IAD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1765139524.810688,VS0,VE1
+
+HTTP/2 200 
+server: Apache
+last-modified: Sat, 06 Dec 2025 17:52:11 GMT
+etag: W/"beda-6454c38bc8fb5"
+cache-control: max-age=3600
+expires: Sat, 06 Dec 2025 18:52:12 GMT
+access-control-allow-origin: *
+content-security-policy: default-src 'self' data: 'unsafe-inline' https://www.apachecon.com/ https://analytics.apache.org/ http://analytics.apache.org/ https://www.youtube-nocookie.com https://www.youtube.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.apachecon.com/ https://analytics.apache.org/ http://analytics.apache.org/ https://www.youtube-nocookie.com https://www.youtube.com; style-src 'self' 'unsafe-inline'; frame-ancestors 'none'; img-src 'self' data: https://www.apache.org/ https://www.apachecon.com/;
+access-control-expose-headers: Content-Security-Policy
+content-type: text/html
+via: 1.1 varnish, 1.1 varnish
+accept-ranges: bytes
+date: Sun, 07 Dec 2025 20:32:03 GMT
+age: 2350
+x-served-by: cache-hel1410020-HEL, cache-iad-kiad7000043-IAD
+x-cache: HIT, HIT
+x-cache-hits: 8, 4
+x-timer: S1765139524.907439,VS0,VE0
+vary: Accept-Encoding
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+content-length: 48858
+

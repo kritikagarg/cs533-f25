@@ -1,0 +1,26 @@
+HTTP/1.1 301 Moved Permanently
+Server: AkamaiGHost
+Content-Length: 0
+Location: https://www.nba.com/
+Date: Sun, 07 Dec 2025 20:32:00 GMT
+Connection: keep-alive
+
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+x-full-ttl: 300.000
+x-varnish: 35991899
+x-vcl-version: NBA.com prod 1.7a
+x-vcl-region: West US2
+x-status: miss
+x-hits: 0
+x-cache-ability: uncacheable
+x-envoy-upstream-service-time: 175
+cache-control: private, no-cache, no-store, must-revalidate
+date: Sun, 07 Dec 2025 20:32:00 GMT
+x-frame-options: sameorigin
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+strict-transport-security: max-age=86400
+set-cookie: _abck=C84F7170EB309C962395228556F39315~-1~YAAQjXIRAmmBxaKaAQAA65yD+g/p+vEvRU6b2byfG21QoZTpG3nf9XKJq9ZfCbVzoHQPpHo9JMensUQlri94a+55wcKuM02AV5oqTNIVaWqN2AvKcmS6fNIMZxX6uLxho07EMlnxc30LSfv+foVm3SMfD/ntWj40yggNQdYmkKdPpQllPPUrUtEyX+4V5tD30Sa3GGPYI8BumrPBJt+vHUZLoIHjIrCNP9f0LA5obTPgALXnKfrg/qc/jKpRcnqiNsBrtdEWlAVi0v3HfZ4KvoRS8HaU7ulc3RI3Hi85SsRNe5QBtbjkEraT/ovY0HxB846smYTGBJ6QnIsOvHsvxgPGUCfTCu11hjkLyd4DiS+Q1WRxa9e7cWrL/Zhf/MHBmwndvSFIGQ+Fnx3jLySsVz4ss7vBQDUABp/tMxv5PKgJTrjHYbWT68uQPkCmpG5dwW8=~-1~-1~-1~-1~-1; Domain=.nba.com; Path=/; Expires=Mon, 07 Dec 2026 20:32:00 GMT; Max-Age=31536000; Secure
+set-cookie: bm_sz=5D22647945BC95E3985B28D3BAC69C0C~YAAQjXIRAmqBxaKaAQAA65yD+h52Swkm3y2fiDySH0W9t6nqP1wKe/xGd4FaVk98IgULEDSX6c9nmV+Fr8zGzQ194Z86lla9KAmtTEi2BE3i6HeWaG3Ji7sTqkVLg7SpH2z2X2+2IAxl/J2nkQYSFOfSQfj0F8+oAyy2YTfIGrOuQ3b87Js+Vyoaxgi+MBOgrFyRs+LSdEc0kNrgOdOFa05h1MgVg9AYMV37W4eDI3U0AdY7frjdIsJi9y7vzIv3UjJs55SrF3NMne9CCPe4ef0rbxIFW70Qs8BGvVsSQG/WSvEomV99UQwvBZ8WNfekVn23aeIe0v6kR4MhdcEU+yyQiHOwdoH2F/okWATlMczqni/QqD3sv+m7tk+qwcQV6sqqhXNkwQ5QvrRdmEQ=~3687491~4604725; Domain=.nba.com; Path=/; Expires=Mon, 08 Dec 2025 00:32:00 GMT; Max-Age=14400
+

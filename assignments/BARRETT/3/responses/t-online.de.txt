@@ -1,0 +1,37 @@
+HTTP/1.1 301 Moved Permanently
+content-length: 0
+location: https://t-online.de/
+x-request-id: 019afa83-1b9a-7f25-a808-8c427d95b0fb
+cache-control: public,max-age=300
+
+HTTP/2 301 
+content-length: 0
+location: https://www.t-online.de/
+x-request-id: 019afa83-1d2c-75d0-ad9e-5030f9308115
+cache-control: public,max-age=300
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+content-length: 1277178
+date: Sun, 07 Dec 2025 20:31:03 GMT
+x-envoy-upstream-service-time: 0
+cache-control: max-age=90, stale-while-revalidate=30, stale-if-error=86400
+etag: W/"vetagd43251deabe8933ae6ed29c71a1cadb965f953e44b315167bf92b4ebd1c7d72a"
+accept-ranges: bytes
+server: envoy
+vary: Accept-Encoding
+x-cache: Hit from cloudfront
+via: 1.1 e0bed00f7c599b055dc1b21ec2ba7e72.cloudfront.net (CloudFront)
+x-amz-cf-pop: IAD12-P5
+alt-svc: h3=":443"; ma=86400
+x-amz-cf-id: hgE1SwH7D0CCHgVxUJzFPCB1eV29sWc1i3xjpoRqyS127pW_QgbKUA==
+age: 27
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+content-security-policy: frame-ancestors 'self' https://*.t-online.de;
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+vary: Origin
+server-timing: cdn-cache-hit,cdn-pop;desc="IAD12-P5",cdn-rid;desc="hgE1SwH7D0CCHgVxUJzFPCB1eV29sWc1i3xjpoRqyS127pW_QgbKUA==",cdn-hit-layer;desc="EDGE",cdn-downstream-fbl;dur=18
+
