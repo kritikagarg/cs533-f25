@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Set Cookie</title>
+</head>
+<body>
+    <h2>Setting Victim Cookie</h2>
+    <p>This page sets a cookie with Path=/victim-path but no HttpOnly flag.</p>
+    <script>
+document.cookie = "sessionToken=secret-victim-session-123; path=/";
+        document.write('<p>Cookie set: ' + document.cookie + '</p>');
+    </script>
+</body>
+</html>
