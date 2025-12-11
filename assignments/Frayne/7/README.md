@@ -27,26 +27,23 @@ While completing the assignment, I ran into a few challenges:
 ## Screenshots
 
 ### **1. Phishing Site Displayed in Browser (Regular Assignment)**
-![Phishing site in Chrome](<img width="1918" height="915" alt="PhishingPage" src="public/Images/PhishingPage.png" />
-)
+
+![Phishing site in Chrome](public/Images/PhishingPage.png)
+
 *The main phishing page successfully rendered from my local Express.js server.*
 
 ### **2. Harvested Credentials Log (Regular Assignment)**
-![Credentials log](<img width="1026" height="464" alt="logfile" src="public/Images/LogFile.png" />
-)
+![Credentials log](public/Images/LogFile.png)
 *Shows dummy usernames and passwords being captured and logged.*
 
 ---
 
 ### **3. Extra Credit – Zphisher Pages**
-![Zphisher Facebook site](<img width="1357" height="733" alt="Facebookextra" src="public/Images/facebookextra.png" />
-)
+![Zphisher Facebook site](public/Images/facebookextra.png)
 *Zphisher Facebook template page running on Ubuntu inside WSL.*
-![Zphisher Instagram site](<img width="1351" height="756" alt="InstagramExtra" src="public/Images/InstagramExtra.png" />
-)
+![Zphisher Instagram site](public/Images/InstagramExtra.png)
 *Zphisher Instagram template page running on Ubuntu inside WSL.*
-![Zphisher Twitch site](<img width="1311" height="753" alt="TwitchExtra" src="public/Images/TwitchExtra.png" />
-)
+![Zphisher Twitch site](public/Images/TwitchExtra.png")
 *Zphisher Twitch template page running on Ubuntu inside WSL.*
 ---
 

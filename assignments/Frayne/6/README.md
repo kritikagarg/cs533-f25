@@ -32,8 +32,10 @@ This approach mimics real-world browser fingerprinting used for analytics, track
 ---
 
 ## Screenshot of Fingerprints
-- Chrome ![alt text](<CS533 Assignment 6 Chrome-1.png>)
-- Edge ![alt text](<CS533 Assignment 6 Edge.png>)
+- Chrome 
+![alt text](<Images/CS533 Assignment 6 Chrome-1.png>)
+- Edge 
+![alt text](<Images/CS533 Assignment 6 Edge.png>)
 
 ## Testing Setup (Clients Used)
 
