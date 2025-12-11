@@ -1,0 +1,18 @@
+{
+  "name": "cs533-f25-Assignment5",
+  "version": "1.0.0",
+  "description": "Assignment 5 - CORS/CSP demos",
+  "main": "serverA.js",
+  "scripts": {
+    "start:serverA": "node serverA.js",
+    "start:serverB": "node serverB.js",
+    "start:both": "concurrently \"node serverA.js\" \"node serverB.js\""
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "helmet": "^7.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
