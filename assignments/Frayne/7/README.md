@@ -43,7 +43,7 @@ While completing the assignment, I ran into a few challenges:
 *Zphisher Facebook template page running on Ubuntu inside WSL.*
 ![Zphisher Instagram site](public/Images/InstagramExtra.png)
 *Zphisher Instagram template page running on Ubuntu inside WSL.*
-![Zphisher Twitch site](public/Images/TwitchExtra.png")
+![Zphisher Twitch site](public/Images/TwitchExtra.png)
 *Zphisher Twitch template page running on Ubuntu inside WSL.*
 ---
 
