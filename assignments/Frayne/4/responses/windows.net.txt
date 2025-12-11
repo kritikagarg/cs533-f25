@@ -1,0 +1,13 @@
+HTTP/1.1 301 Moved Permanently
+Date: Mon, 24 Nov 2025 17:29:40 GMT
+Server: Kestrel
+Location: http://www.microsoft.com/net
+Strict-Transport-Security: max-age=31536000
+
+HTTP/1.1 403 Forbidden
+Server: AkamaiGHost
+Content-Length: 0
+Location: https://mscom.errorpage.failover.com/403/403.htm?referenceerror=18.b1bd017.1764005381.5a507c0
+Date: Mon, 24 Nov 2025 17:29:41 GMT
+Connection: keep-alive
+

@@ -1,0 +1,20 @@
+HTTP/1.1 302 Found
+date: Mon, 24 Nov 2025 17:27:22 GMT
+server: Apache
+set-cookie: __tad=1764005242.6128450; expires=Thu, 22 Nov 2035 17:27:22 GMT; Max-Age=315360000
+location: http://ww25.mediafie.com/?subid1=20251125-0427-2254-b834-614b4d8cee4f
+content-type: text/html; charset=UTF-8
+connection: close
+
+HTTP/1.1 200 OK
+date: Mon, 24 Nov 2025 17:27:22 GMT
+content-type: text/html; charset=utf-8
+content-length: 1174
+x-request-id: ac8869b1-1181-4e78-9111-f39b0124c03d
+cache-control: no-store, max-age=0
+accept-ch: sec-ch-prefers-color-scheme
+critical-ch: sec-ch-prefers-color-scheme
+vary: sec-ch-prefers-color-scheme
+x-adblock-key: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANDrp2lz7AOmADaN8tA50LsWcjLFyQFcb/P2Txc58oYOeILb3vBw7J6f4pamkAQVSQuqYsKx3YzdUHCvbVZvFUsCAwEAAQ==_pQiltsiWyXhS/bWfRMd3M7/2ztFrTflpQQnQBOxTQEsFySwLHtXSRG0dtNmqkR+WS4US9MAblLNX0Hx+9ASjoQ==
+set-cookie: parking_session=ac8869b1-1181-4e78-9111-f39b0124c03d; expires=Mon, 24 Nov 2025 17:42:22 GMT; path=/
+

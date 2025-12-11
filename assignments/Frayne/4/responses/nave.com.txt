@@ -1,0 +1,42 @@
+HTTP/1.1 302 Found
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+x-download-options: noopen
+x-permitted-cross-domain-policies: none
+referrer-policy: strict-origin-when-cross-origin
+location: https://www.realnames.com/
+content-type: text/html; charset=utf-8
+cache-control: no-cache
+x-request-id: e8654bbc-3841-4f30-b728-062a2d5b95f2
+x-runtime: 0.004158
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+
+HTTP/1.1 302 Found
+Location: https://www.hover.com/email/realnames
+Content-Length: 0
+
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Content-Length: 0
+Connection: keep-alive
+Set-Cookie: __uzma=62a6770b-ba4b-4395-8f1f-71cb0e91ed9d; HttpOnly; path=/; Expires=Mon, 25-May-26 17:28:12 GMT; Max-Age=15724800; SameSite=Lax
+Set-Cookie: __uzmb=1764005292; HttpOnly; path=/; Expires=Mon, 25-May-26 17:28:12 GMT; Max-Age=15724800; SameSite=Lax
+Set-Cookie: __uzme=1455; HttpOnly; path=/; Expires=Mon, 25-May-26 17:28:12 GMT; Max-Age=15724800; SameSite=Lax
+Set-Cookie: __uzmc=987031080407; HttpOnly; path=/; Expires=Mon, 25-May-26 17:28:12 GMT; Max-Age=15724800; SameSite=Lax
+Set-Cookie: __uzmd=1764005292; HttpOnly; path=/; Expires=Mon, 25-May-26 17:28:12 GMT; Max-Age=15724800; SameSite=Lax
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+x-download-options: noopen
+x-permitted-cross-domain-policies: none
+referrer-policy: strict-origin-when-cross-origin
+vary: Accept
+etag: W/"6b98dd57cba25c8c3f9c61ec02f0a938"
+cache-control: max-age=0, private, must-revalidate
+content-security-policy: default-src 'self' https:; font-src 'self' https://hover-assets.s3.ca-central-1.amazonaws.com/ https://s3.ca-central-1.amazonaws.com/hover-assets/ https://fonts.gstatic.com/ https://p1.answerdash.com/ https://maxcdn.bootstrapcdn.com/; img-src 'self' data: https://hover-assets.s3.ca-central-1.amazonaws.com/ https://s3.ca-central-1.amazonaws.com/hover-assets/ https://*.paypal.com/ https://www.facebook.com/ https://connect.facebook.net/ https://www.linkedin.com/ https://px.ads.linkedin.com/ https://px4.ads.linkedin.com https://chart.googleapis.com/ https://www.google.com/ https://www.google.ca/ https://*.google-analytics.com/ https://*.googletagmanager.com/ https://*.zopim.io/ https://api.smooch.io/ https://hover.zendesk.com/ https://*.licdn.com/ https://*.hsforms.net/ https://*.hsforms.com/; object-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://ad.doubleclick.net/ https://hover-assets.s3.ca-central-1.amazonaws.com/ https://s3.ca-central-1.amazonaws.com/hover-assets/ https://*.google-analytics.com/ https://www.googleadservices.com/ https://*.googletagmanager.com/ https://www.google.com/ https://www.gstatic.com https://*.braintreegateway.com/ https://*.paypal.com/ https://*.marketingsolutions.yahoo.com/ https://cdnjs.cloudflare.com/ https://www.paypalobjects.com/ https://browser.sentry-cdn.com/ https://sentry.io/ https://js.sentry-cdn.com/ https://p1.answerdash.com/ https://utt.impactcdn.com/ https://*.impact.com/ https://hover-affiliates.pxf.io/ https://d33wwcok8lortz.cloudfront.net/ https://snap.licdn.com/ https://px.ads.linkedin.com/ https://connect.facebook.net/ https://static.zdassets.com/ https://api.smooch.io/ https://hover.zendesk.com/ https://googleads.g.doubleclick.net/ https://*.hscollectedforms.net/ https://*.hsleadflows.net/ https://*.hsforms.net/ https://*.hsforms.com/; style-src 'self' 'unsafe-inline' https://*.braintreegateway.com/ https://hover-assets.s3.ca-central-1.amazonaws.com/ https://s3.ca-central-1.amazonaws.com/hover-assets/ https://p1.answerdash.com/ https://fonts.googleapis.com/ https://maxcdn.bootstrapcdn.com/ https://*.paypal.com/; frame-src 'self' https://assets.braintreegateway.com/ https://td.doubleclick.net/ https://hover-affiliates.pxf.io/ https://www.ojrq.net/ https://*.fls.doubleclick.net/ https://*.kaptcha.com/ https://*.paypal.com/ https://*.hsforms.net/ https://*.hsforms.com/; connect-src 'self' https://*.google-analytics.com/ https://*.analytics.google.com/ https://*.googletagmanager.com/ https://analytics.google.com/ https://www.google.com/ https://pagead2.googlesyndication.com/ https://px.ads.linkedin.com/ https://*.braintree-api.com/ https://*.braintreegateway.com/ https://client-analytics.braintreegateway.com/ https://*.paypal.com/ https://api.smooch.io/ https://hover.zendesk.com/ https://ekr.zdassets.com/ https://ad.doubleclick.net/ https://stats.g.doubleclick.net/ wss://widget-mediator.zopim.com/ https://cdn.linkedin.oribi.io/ https://sentry.io/ https://js.sentry-cdn.com/ https://www.facebook.com/ https://*.hscollectedforms.net/ https://*.hsforms.com/ https://hubspot-forms-static-embed.s3.amazonaws.com; media-src 'self' https://px.ads.linkedin.com/ https://static.zdassets.com/
+set-cookie: hover_session=dac50575a08a3821c882b9849aefab36; path=/; secure; HttpOnly
+x-request-id: c9f87709-5ad0-49c3-b4af-870e6311624d
+x-runtime: 0.046645
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+

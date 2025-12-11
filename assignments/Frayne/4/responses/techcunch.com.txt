@@ -1,0 +1,20 @@
+HTTP/1.1 302 Found
+date: Mon, 24 Nov 2025 17:29:03 GMT
+server: Apache
+set-cookie: __tad=1764005343.3860953; expires=Thu, 22 Nov 2035 17:29:03 GMT; Max-Age=315360000
+location: http://ww25.techcunch.com/?subid1=20251125-0429-0340-b884-a91755ceb081
+content-type: text/html; charset=UTF-8
+connection: close
+
+HTTP/1.1 200 OK
+date: Mon, 24 Nov 2025 17:29:03 GMT
+content-type: text/html; charset=utf-8
+content-length: 1178
+x-request-id: 58978eaf-c5ce-4aad-afc4-219cc1048108
+cache-control: no-store, max-age=0
+accept-ch: sec-ch-prefers-color-scheme
+critical-ch: sec-ch-prefers-color-scheme
+vary: sec-ch-prefers-color-scheme
+x-adblock-key: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANDrp2lz7AOmADaN8tA50LsWcjLFyQFcb/P2Txc58oYOeILb3vBw7J6f4pamkAQVSQuqYsKx3YzdUHCvbVZvFUsCAwEAAQ==_K4vvtm9Fujv09btjvlGozcxxhTyyMQ6yIKMGgeeen3OjlmwclwNCsHef6a1zn9uZHvQs+jc76FG80eFa6WYTBQ==
+set-cookie: parking_session=58978eaf-c5ce-4aad-afc4-219cc1048108; expires=Mon, 24 Nov 2025 17:44:03 GMT; path=/
+

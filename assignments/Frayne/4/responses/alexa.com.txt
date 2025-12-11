@@ -1,0 +1,46 @@
+HTTP/1.1 302 Moved Temporarily
+Content-Type: application/octet-stream
+Content-Length: 0
+Connection: keep-alive
+Server: awselb/2.0
+Date: Mon, 24 Nov 2025 17:26:31 GMT
+Location: https://alexa.amazon.com/home
+X-Cache: Hit from cloudfront
+Via: 1.1 bc27cc294719c352afcb94bb7f30a5d6.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: PHL51-P3
+X-Amz-Cf-Id: nlxwy91rATOBuqZXsg_cQzJEzBAsizOuzcXRqC7k-TSDxZH1zahInA==
+Age: 56
+
+HTTP/1.1 302 Found
+Connection: keep-alive
+Server: Server
+Date: Mon, 24 Nov 2025 17:27:27 GMT
+Vary: Content-Type,Accept-Encoding,User-Agent
+x-amz-rid: HJE3BVZHJB00W52NPM2K
+Set-Cookie: session-id=130-5943966-4803444; Domain=.amazon.com; Expires=Tue, 01 Jan 2036 08:00:01 GMT; Path=/; Secure
+Set-Cookie: session-id-time=2082787201l; Domain=.amazon.com; Expires=Tue, 01 Jan 2036 08:00:01 GMT; Path=/; Secure
+Access-Control-Allow-Headers: accept, origin, x-requested-with, content-type, anti-csrftoken-a2z, csrf
+Access-Control-Allow-Methods: GET, OPTIONS, POST, PUT, DELETE
+Content-Security-Policy: frame-ancestors 'self' chrome-extension://gpolicddglcmghlihkoopmmlkejkaham https://*.amazon.com
+Location: https://www.amazon.com/dp/B0DCCNHWV5?ref=aucc_web_red_xaa_evgn_tx_0002&nodl=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Cache: Miss from cloudfront
+Via: 1.1 a1f9184f86aacfcb380aff6f877cd89a.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: PHL51-P3
+X-Amz-Cf-Id: fmcJfqTbVGvxDPGMgX56szJ81fx2eq-O7Czz6yywjnV9mtu1N3cm6g==
+
+HTTP/1.1 503 Service Unavailable
+Content-Type: text/html
+Connection: keep-alive
+Date: Mon, 24 Nov 2025 17:27:27 GMT
+expires: -1
+cache-control: no-cache
+pragma: no-cache
+X-Cache: Error from cloudfront
+Via: 1.1 ca0fc43bc87ea655f66615a99ef77b4e.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: PHL51-P1
+Alt-Svc: h3=":443"; ma=86400
+X-Amz-Cf-Id: Y1hK_yWY3q3tC2GWG5nWTfWvZklOzEivvSZDrQHSwVmbgqyy-KCqJg==
+

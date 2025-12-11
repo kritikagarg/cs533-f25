@@ -1,0 +1,28 @@
+HTTP/1.1 301 Moved Permanently
+Date: Mon, 24 Nov 2025 17:27:26 GMT
+Connection: keep-alive
+Location: https://www.addtoany.com/
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+Speculation-Rules: "/cdn-cgi/speculation"
+Server: cloudflare
+CF-RAY: 9a3a9df54dd39a65-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/1.1 200 OK
+Date: Mon, 24 Nov 2025 17:27:26 GMT
+Content-Type: text/html; charset=utf-8
+Connection: keep-alive
+Server: cloudflare
+link: </css/main.18.min.css>; rel=preload; as=style
+Speculation-Rules: "/cdn-cgi/speculation"
+vary: Accept-Encoding
+via: e14s
+Last-Modified: Mon, 24 Nov 2025 12:58:33 GMT
+CF-Cache-Status: HIT
+Age: 2772
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+CF-RAY: 9a3a9df6190c3173-IAD
+alt-svc: h3=":443"; ma=86400
+

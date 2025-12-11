@@ -1,0 +1,21 @@
+HTTP/1.1 302 Found
+cache-control: max-age=0, private, must-revalidate
+connection: close
+content-length: 11
+date: Mon, 24 Nov 2025 17:27:20 GMT
+location: http://survey-smiles.com
+server: Cowboy
+set-cookie: sid=d5046a47-c95a-11f0-b95e-fab9c8391893; path=/; domain=.stackoveflow.com; expires=Sat, 12 Dec 2093 20:41:27 GMT; max-age=2147483647; secure; HttpOnly
+
+HTTP/1.1 200 OK
+date: Mon, 24 Nov 2025 17:27:20 GMT
+content-type: text/html; charset=utf-8
+content-length: 1054
+x-request-id: 4c3acf51-1d19-41f5-89f0-1ed545027f77
+cache-control: no-store, max-age=0
+accept-ch: sec-ch-prefers-color-scheme
+critical-ch: sec-ch-prefers-color-scheme
+vary: sec-ch-prefers-color-scheme
+x-adblock-key: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANDrp2lz7AOmADaN8tA50LsWcjLFyQFcb/P2Txc58oYOeILb3vBw7J6f4pamkAQVSQuqYsKx3YzdUHCvbVZvFUsCAwEAAQ==_g77+hejcftktpmSlQ5vgKxhIbLOSJ/4wq0x8NNO5G086wRL7G97aPYJlXMpSgCmjTz07+GFVvV2bG48r1pkSKQ==
+set-cookie: parking_session=4c3acf51-1d19-41f5-89f0-1ed545027f77; expires=Mon, 24 Nov 2025 17:42:20 GMT; path=/
+

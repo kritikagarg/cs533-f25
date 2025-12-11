@@ -1,0 +1,23 @@
+HTTP/1.1 301 Moved Permanently
+Content-Length: 205
+Content-Type: text/html; charset=UTF-8
+Location: https://www.samsung.com/
+Server: Microsoft-IIS/8.5
+Date: Mon, 24 Nov 2025 17:26:29 GMT
+
+HTTP/1.1 403 Forbidden
+Mime-Version: 1.0
+Content-Type: text/html
+Content-Length: 369
+Expires: Mon, 24 Nov 2025 17:26:30 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 24 Nov 2025 17:26:30 GMT
+Connection: keep-alive
+Set-Cookie: country_region=CA-ON; path=/; domain=.samsung.com
+Set-Cookie: s_fpid=816b0f4c-99ed-49d3-92ce-a27f16599eef; expires=Wed, 24-Nov-2027 17:26:30 GMT; path=/; domain=.samsung.com; secure; HttpOnly
+Set-Cookie: country_codes=us; path=/; domain=.samsung.com
+Set-Cookie: device_type=pc; path=/; domain=.samsung.com
+Alt-Svc: h3=":443"; ma=93600
+Server-Timing: ak_p; desc="1764005190777_389047354_711334779_15_17959_19_41_-";dur=1
+

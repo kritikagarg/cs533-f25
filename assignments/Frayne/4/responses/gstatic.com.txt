@@ -1,0 +1,24 @@
+HTTP/1.1 301 Moved Permanently
+Location: https://www.gstatic.com/
+Cross-Origin-Resource-Policy: cross-origin
+X-Content-Type-Options: nosniff
+Server: sffe
+Content-Length: 221
+X-XSS-Protection: 0
+Date: Mon, 24 Nov 2025 17:28:53 GMT
+Expires: Mon, 24 Nov 2025 17:58:53 GMT
+Cache-Control: public, max-age=1800
+Content-Type: text/html; charset=UTF-8
+Age: 47
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+HTTP/1.1 404 Not Found
+Cross-Origin-Resource-Policy: cross-origin
+Content-Type: text/html; charset=UTF-8
+X-Content-Type-Options: nosniff
+Date: Mon, 24 Nov 2025 17:29:40 GMT
+Server: sffe
+Content-Length: 1561
+X-XSS-Protection: 0
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+

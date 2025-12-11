@@ -1,0 +1,11 @@
+HTTP/1.1 418 
+Server: kittenx
+Date: Mon, 24 Nov 2025 17:27:02 GMT
+Content-Length: 0
+Connection: keep-alive
+X-Frontend: front918004
+Access-Control-Expose-Headers: X-Frontend
+X-Trace-Id: hAFfzhcl-mgT5lZI5IdPX61xeH8VMQ
+X-Trace-Id-V2: 019ab6e796807d7ab257b7408cfa6808
+Server-Timing: tid;desc="hAFfzhcl-mgT5lZI5IdPX61xeH8VMQ",front;dur=0.051
+

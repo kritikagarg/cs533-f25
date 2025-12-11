@@ -1,0 +1,28 @@
+HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Mon, 24 Nov 2025 17:27:24 GMT
+Content-Type: text/html; charset=utf-8
+Connection: keep-alive
+X-Redirect-By: redirects.php
+Location: https://www.whitehouse.gov/
+x-cache: HIT
+x-rq: dca5 181 253 80
+Strict-Transport-Security: max-age=31536000;includeSubdomains;preload
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Mon, 24 Nov 2025 17:27:24 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: keep-alive
+Vary: Accept-Encoding
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Content-Security-Policy: upgrade-insecure-requests; frame-ancestors 'none'
+x-rq: dca5 181 249 80
+cache-control: max-age=300, must-revalidate
+accept-ranges: bytes
+x-cache: HIT
+Strict-Transport-Security: max-age=31536000;includeSubdomains;preload
+

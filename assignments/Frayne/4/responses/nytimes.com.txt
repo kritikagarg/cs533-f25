@@ -1,0 +1,72 @@
+HTTP/1.1 301 Moved Permanently
+Connection: close
+Content-Length: 0
+Server: Varnish
+Retry-After: 0
+trace: fastly_error_code=770
+Location: https://www.nytimes.com/
+Accept-Ranges: bytes
+Date: Mon, 24 Nov 2025 17:29:02 GMT
+X-Served-By: cache-iad-kcgs7200071-IAD
+X-Cache: HIT
+X-Cache-Hits: 0
+Set-Cookie: nyt-gdpr=0; Expires=Mon, 24 Nov 2025 23:29:02 GMT; Path=/; Domain=.nytimes.com
+x-gdpr: 0
+Permissions-Policy: browsing-topics=()
+X-Frame-Options: DENY
+Set-Cookie: datadome=0; Domain=.nytimes.com; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT; SameSite=Lax; Secure
+X-API-Version: F-0
+Content-Security-Policy: upgrade-insecure-requests; default-src data: 'unsafe-inline' 'unsafe-eval' https: nytresource:; script-src data: 'unsafe-inline' 'unsafe-eval' https: blob: nytresource:; style-src data: 'unsafe-inline' https: nytresource:; img-src data: https: blob: android-webview-video-poster: nytresource:; font-src data: https: nytresource:; connect-src data: https: wss: blob: nytresource:; media-src data: https: blob: nytresource:; object-src https:; child-src https: data: blob: nytresource:; form-action https: nytimes: nytcooking: nytxwd:; report-uri https://csp.nytimes.com/report;
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+Access-Control-Expose-Headers: X-Nyt-Mktg-Group
+x-nyt-mktg-group: group1
+x-nyt-edge-cache: HIT
+x-nyt-app-webview: 0
+x-nyt-app-map: webview=false,preloaded=false,service-worker-enabled=false
+Access-Control-Allow-Headers: traceparent, tracestate, X-B3-Sampled, X-B3-SpanId, X-B3-TraceId, x-datadog-origin, x-datadog-parent-id, x-datadog-sampling-priority, x-datadog-trace-id, x-nyt-entitlements, x-nyt-internal-meter-override, x-nyt-programming-abtest
+
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 1233461
+x-b3-traceid: 713dc267be35e460
+x-nyt-data-last-modified: Mon, 24 Nov 2025 17:24:54 GMT
+last-modified: Mon, 24 Nov 2025 17:24:54 GMT
+build-timestamp: 1764004456000
+x-pagetype: vi-homepage
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+content-type: text/html; charset=utf-8
+x-envoy-upstream-service-time: 295
+server: envoy
+x-envoy-decorator-operation: vi.nyt.net:443/*
+cache-control: s-maxage=30,no-cache
+x-nyt-route: homepage
+X-Origin-Time: 2025-11-24 17:25:24 UTC
+Fastly-Restarts: 1
+Accept-Ranges: bytes
+Age: 246
+Date: Mon, 24 Nov 2025 17:29:02 GMT
+X-Served-By: cache-lga21938-LGA, cache-iad-kiad7000139-IAD
+X-Cache: HIT, HIT
+X-Cache-Hits: 4, 0
+X-Timer: S1764005342.140939,VS0,VE51
+Vary: x-statsig-assignments, Accept-Encoding, Fastly-SSL
+Set-Cookie: nyt-a=9OaHkF9pmv9Sw8TY2_8_-y; Expires=Tue, 24 Nov 2026 17:29:02 GMT; Path=/; Domain=.nytimes.com; SameSite=none; Secure
+Set-Cookie: nyt-gdpr=0; Expires=Mon, 24 Nov 2025 23:29:02 GMT; Path=/; Domain=.nytimes.com
+x-gdpr: 0
+Set-Cookie: nyt-purr=cfshcfhshckfhdfshgas2taaa; Expires=Tue, 24 Nov 2026 17:29:02 GMT; Path=/; Domain=.nytimes.com; SameSite=Lax; Secure
+Permissions-Policy: browsing-topics=()
+Set-Cookie: nyt-geo=US; Expires=Mon, 24 Nov 2025 23:29:02 GMT; Path=/; Domain=.nytimes.com
+X-Frame-Options: DENY
+Set-Cookie: datadome=0; Domain=.nytimes.com; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT; SameSite=Lax; Secure
+X-API-Version: F-F-VI
+Content-Security-Policy: upgrade-insecure-requests; default-src data: 'unsafe-inline' 'unsafe-eval' https: nytresource:; script-src data: 'unsafe-inline' 'unsafe-eval' https: blob: nytresource:; style-src data: 'unsafe-inline' https: nytresource:; img-src data: https: blob: android-webview-video-poster: nytresource:; font-src data: https: nytresource:; connect-src data: https: wss: blob: nytresource:; media-src data: https: blob: nytresource:; object-src https:; child-src https: data: blob: nytresource:; form-action https: nytimes: nytcooking: nytxwd:; report-uri https://csp.nytimes.com/report;
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+Access-Control-Expose-Headers: X-Nyt-Mktg-Group, X-Nyt-Mktg-Group
+x-nyt-mktg-group: group1
+Set-Cookie: nyt-traceid=000000000000000043926023057ca4af; Path=/; Domain=.nytimes.com; SameSite=none; Secure
+x-nyt-edge-cache: HIT-HIT
+x-nyt-app-webview: 0
+x-nyt-app-map: webview=false,preloaded=false,service-worker-enabled=false
+Access-Control-Allow-Headers: traceparent, tracestate, X-B3-Sampled, X-B3-SpanId, X-B3-TraceId, x-datadog-origin, x-datadog-parent-id, x-datadog-sampling-priority, x-datadog-trace-id, x-nyt-entitlements, x-nyt-internal-meter-override, x-nyt-programming-abtest, traceparent, tracestate, X-B3-Sampled, X-B3-SpanId, X-B3-TraceId, x-datadog-origin, x-datadog-parent-id, x-datadog-sampling-priority, x-datadog-trace-id, x-nyt-entitlements, x-nyt-internal-meter-override, x-nyt-programming-abtest
+

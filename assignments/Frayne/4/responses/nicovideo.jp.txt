@@ -1,0 +1,30 @@
+HTTP/1.1 301 Moved Permanently
+Content-Type: text/html; charset=iso-8859-1
+Connection: keep-alive
+Date: Mon, 24 Nov 2025 17:28:58 GMT
+Location: https://www.nicovideo.jp/
+Server: Apache
+X-Cache: Miss from cloudfront
+Via: 1.1 e887b311f5a4e2b9f32ce96feeb041ca.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: PHL51-P1
+X-Amz-Cf-Id: eKb_5mSm4lzSW3FinCHzgr8Jk0BbIjORzvvz5lkzKmFAyCjeL_fZLA==
+
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=UTF-8
+Connection: keep-alive
+Date: Mon, 24 Nov 2025 17:28:58 GMT
+Content-Language: ja
+Server: Apache
+x-niconico-authflag: 0
+Set-Cookie: nicosid=1764005338.298547590; expires=Thu, 22 Nov 2035 17:28:58 GMT; Max-Age=315360000; path=/; domain=.nicovideo.jp
+X-niconico-sid: 1764005338.298547590
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Content-Security-Policy: frame-ancestors 'none'
+X-Frame-Options: SAMEORIGIN
+Access-Control-Allow-Credentials: true
+X-Cache: Miss from cloudfront
+Via: 1.1 ccbaf468b9286180aaf02d6bf95cd27e.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: IAD55-P7
+X-Amz-Cf-Id: 9kIRgyJVkkzdv9y2IetfFJJ00z4dLxBNbQzknOAFAlFxBP-rGgMpiA==
+
