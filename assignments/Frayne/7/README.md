@@ -63,5 +63,4 @@ This assignment demonstrates:
 - Logging POST submission data
 - Accessing the server from other devices on the network
 - Running a phishing template tool (Zphisher) inside WSL/Ubuntu
->>>>>>> 342e1e8 (Assignment 7 Submission)
 
