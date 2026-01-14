@@ -2,8 +2,6 @@
 
 Instructor: [Kritika Garg](https://kritikagarg.github.io/)
 
-Email: kgarg001@odu.edu
-
 ## Course Objectives
 
 The goal of this course is to review common web security vulnerabilities and exploits, along with the defenses designed to counter them. We will explore the ongoing tension between the web as a "simple document reader" and the web as an "application environment". As the web ecosystem grows in functionality, so too do its vulnerabilities"
